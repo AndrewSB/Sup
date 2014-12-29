@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import TwitterKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let authenticateButton = DGTAuthenticateButton(authenticationCompletion: {
+            (session: DGTSession!, error: NSError!) in
+            // play with Digits session
+        })
+        authenticateButton.center = self.view.center
+        self.view.addSubview(authenticateButton)
     }
 
     override func didReceiveMemoryWarning() {
