@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -37,45 +38,47 @@
                                 <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8K-jD-sCS">
-                                <rect key="frame" x="253" y="550" width="94" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Sign in now">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFm-Mn-COU">
+                                <rect key="frame" x="125" y="465" width="350" height="33"/>
+                                <color key="backgroundColor" red="0.28905817866325378" green="0.088762156665325165" blue="0.29782581329345703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UFm-Mn-COU" secondAttribute="height" multiplier="350:33" id="C5f-sO-ZgX"/>
+                                    <constraint firstAttribute="width" constant="350" id="y0W-jb-3yQ"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Use your phone">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join us with" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgf-AR-VUt">
-                                <rect key="frame" x="252" y="380" width="96.5" height="21.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4S-3k-PKn">
-                                <rect key="frame" x="196" y="530" width="208.5" height="21.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qe-M7-e1a">
+                                <rect key="frame" x="125" y="523" width="350" height="33"/>
+                                <color key="backgroundColor" red="0.27462610602378845" green="0.22923529148101807" blue="0.44498589634895325" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="2vJ-dx-Ve8"/>
+                                    <constraint firstAttribute="width" secondItem="2qe-M7-e1a" secondAttribute="height" multiplier="350:33" id="Gnr-I0-Nq2"/>
+                                </constraints>
+                                <color key="tintColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Use your email"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="W0T-Pm-x9k" firstAttribute="centerX" secondItem="U8K-jD-sCS" secondAttribute="centerX" id="21b-rK-N2p"/>
+                            <constraint firstItem="2qe-M7-e1a" firstAttribute="top" secondItem="W0T-Pm-x9k" secondAttribute="bottom" constant="-77" id="0oF-f2-MYd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="W0T-Pm-x9k" secondAttribute="trailing" constant="-20" id="91h-xJ-GxB"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="W0T-Pm-x9k" secondAttribute="bottom" id="Ahx-gb-J1i"/>
                             <constraint firstItem="W0T-Pm-x9k" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="VPx-1E-asX"/>
-                            <constraint firstItem="U8K-jD-sCS" firstAttribute="top" secondItem="n4S-3k-PKn" secondAttribute="bottom" constant="-2" id="YM7-p2-NL5"/>
-                            <constraint firstItem="n4S-3k-PKn" firstAttribute="centerX" secondItem="W0T-Pm-x9k" secondAttribute="centerX" id="ZVU-FZ-sXa"/>
+                            <constraint firstItem="UFm-Mn-COU" firstAttribute="centerX" secondItem="W0T-Pm-x9k" secondAttribute="centerX" constant="0.5" id="XFQ-yE-1Rw"/>
                             <constraint firstItem="ELF-xK-jYA" firstAttribute="bottom" secondItem="W0T-Pm-x9k" secondAttribute="centerY" constant="-100" id="b2Q-38-7cB"/>
-                            <constraint firstItem="U8K-jD-sCS" firstAttribute="top" secondItem="W0T-Pm-x9k" secondAttribute="bottom" constant="-50" id="cD8-ug-wDc"/>
-                            <constraint firstItem="dgf-AR-VUt" firstAttribute="top" secondItem="W0T-Pm-x9k" secondAttribute="centerY" constant="80" id="mhm-I0-Unq"/>
-                            <constraint firstItem="W0T-Pm-x9k" firstAttribute="centerX" secondItem="dgf-AR-VUt" secondAttribute="centerX" id="odY-kH-wc0"/>
+                            <constraint firstItem="2qe-M7-e1a" firstAttribute="top" secondItem="UFm-Mn-COU" secondAttribute="bottom" constant="25" id="cJV-Wx-4nL"/>
                             <constraint firstItem="W0T-Pm-x9k" firstAttribute="centerX" secondItem="ELF-xK-jYA" secondAttribute="centerX" id="rk9-5A-R7J"/>
+                            <constraint firstItem="2qe-M7-e1a" firstAttribute="centerX" secondItem="W0T-Pm-x9k" secondAttribute="centerX" id="vE0-yc-zYO"/>
                             <constraint firstItem="W0T-Pm-x9k" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-20" id="xWX-gL-0LB"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailButton" destination="2qe-M7-e1a" id="sRn-xM-sUD"/>
                         <outlet property="logoNameLabel" destination="ELF-xK-jYA" id="NVe-Ok-jHd"/>
+                        <outlet property="phoneButton" destination="UFm-Mn-COU" id="xPf-y0-ZeK"/>
                         <outlet property="webBG" destination="W0T-Pm-x9k" id="AAo-Na-q0b"/>
                     </connections>
                 </viewController>
