@@ -169,6 +169,7 @@
 				46CDA0BD1A50FEE1001FCCB3 /* Frameworks */,
 				46CDA0BE1A50FEE1001FCCB3 /* Resources */,
 				46CDA0E51A50FFDA001FCCB3 /* ShellScript */,
+				46BF80D91A511A2F00F46CA6 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -258,6 +259,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		46BF80D91A511A2F00F46CA6 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "python \"$PROJECT_DIR/slice.py\" \"$PROJECT_DIR/Design.sketch\" \"$PROJECT_DIR/Sup/Images.xcassets\"";
+		};
 		46CDA0E51A50FFDA001FCCB3 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
