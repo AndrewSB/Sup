@@ -8,13 +8,16 @@
 
 import UIKit
 import TwitterKit
+import ImageIO
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
+    @IBOutlet weak var webBG: UIWebView!
+    @IBOutlet weak var logoNameLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         addBackground()
+        logoNameLabel.transform = (CGAffineTransformMakeRotation(2*CGFloat(M_PI)))
         
         let authenticateButton = DGTAuthenticateButton(authenticationCompletion: {
             (session: DGTSession!, error: NSError!) in
@@ -26,11 +29,10 @@ class ViewController: UIViewController {
     
     func addBackground() {
         let filePath = NSBundle.mainBundle().pathForResource("railway", ofType: "gif")
+        let gif: NSData! = NSData(contentsOfFile: filePath!)
         
-        let webBG = UIWebView(frame: self.view.frame)
-        webBG.loadData(NSData(contentsOfFile: filePath!), MIMEType: "image/gif", textEncodingName: nil, baseURL: nil)
-        webBG.userInteractionEnabled = false
-        self.view.addSubview(webBG)
+        self.webBG.loadData(gif, MIMEType: "image/gif", textEncodingName: nil, baseURL: nil)
+        self.webBG.userInteractionEnabled = false
     }
 
 

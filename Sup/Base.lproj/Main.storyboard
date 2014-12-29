@@ -2,12 +2,19 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="bello-script.ttf">
+            <string>Bello-Script</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Sup" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="LoginViewController" customModule="Sup" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +22,40 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView userInteractionEnabled="NO" contentMode="scaleToFill" mediaPlaybackRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0T-Pm-x9k">
+                                <rect key="frame" x="-4" y="0.0" width="608" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sup?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELF-xK-jYA">
+                                <rect key="frame" x="93" y="92" width="128.5" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128.5" id="nsu-lc-88S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Bello-Script" family="Bello-Script" pointSize="62"/>
+                                <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="W0T-Pm-x9k" secondAttribute="trailing" constant="-20" id="91h-xJ-GxB"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="W0T-Pm-x9k" secondAttribute="bottom" id="Ahx-gb-J1i"/>
+                            <constraint firstItem="W0T-Pm-x9k" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="VPx-1E-asX"/>
+                            <constraint firstItem="ELF-xK-jYA" firstAttribute="bottom" secondItem="W0T-Pm-x9k" secondAttribute="centerY" constant="-100" id="b2Q-38-7cB"/>
+                            <constraint firstItem="W0T-Pm-x9k" firstAttribute="centerX" secondItem="ELF-xK-jYA" secondAttribute="centerX" id="rk9-5A-R7J"/>
+                            <constraint firstItem="W0T-Pm-x9k" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-20" id="xWX-gL-0LB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="logoNameLabel" destination="ELF-xK-jYA" id="NVe-Ok-jHd"/>
+                        <outlet property="webBG" destination="W0T-Pm-x9k" id="AAo-Na-q0b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="280" y="254"/>
         </scene>
     </scenes>
 </document>

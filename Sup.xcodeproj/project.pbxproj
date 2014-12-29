@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		46BF80D41A51087200F46CA6 /* railway.gif in Resources */ = {isa = PBXBuildFile; fileRef = 46BF80D31A51087200F46CA6 /* railway.gif */; };
+		46BF80D81A510B4900F46CA6 /* bello-script.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46BF80D61A510B2700F46CA6 /* bello-script.ttf */; };
 		46CDA0C61A50FEE1001FCCB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDA0C51A50FEE1001FCCB3 /* AppDelegate.swift */; };
-		46CDA0C81A50FEE1001FCCB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDA0C71A50FEE1001FCCB3 /* ViewController.swift */; };
+		46CDA0C81A50FEE1001FCCB3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDA0C71A50FEE1001FCCB3 /* LoginViewController.swift */; };
 		46CDA0CB1A50FEE1001FCCB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46CDA0C91A50FEE1001FCCB3 /* Main.storyboard */; };
 		46CDA0CD1A50FEE1001FCCB3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46CDA0CC1A50FEE1001FCCB3 /* Images.xcassets */; };
 		46CDA0D01A50FEE1001FCCB3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46CDA0CE1A50FEE1001FCCB3 /* LaunchScreen.xib */; };
@@ -32,10 +33,11 @@
 
 /* Begin PBXFileReference section */
 		46BF80D31A51087200F46CA6 /* railway.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = railway.gif; sourceTree = "<group>"; };
+		46BF80D61A510B2700F46CA6 /* bello-script.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bello-script.ttf"; sourceTree = "<group>"; };
 		46CDA0C01A50FEE1001FCCB3 /* Sup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CDA0C41A50FEE1001FCCB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46CDA0C51A50FEE1001FCCB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46CDA0C71A50FEE1001FCCB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46CDA0C71A50FEE1001FCCB3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		46CDA0CA1A50FEE1001FCCB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46CDA0CC1A50FEE1001FCCB3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		46CDA0CF1A50FEE1001FCCB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -69,6 +71,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46BF80D71A510B2B00F46CA6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				46BF80D31A51087200F46CA6 /* railway.gif */,
+				46BF80D61A510B2700F46CA6 /* bello-script.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		46CDA0B71A50FEE1001FCCB3 = {
 			isa = PBXGroup;
 			children = (
@@ -92,11 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				46CDA0C51A50FEE1001FCCB3 /* AppDelegate.swift */,
-				46CDA0C71A50FEE1001FCCB3 /* ViewController.swift */,
+				46CDA0C71A50FEE1001FCCB3 /* LoginViewController.swift */,
 				46CDA0C91A50FEE1001FCCB3 /* Main.storyboard */,
 				46CDA0CC1A50FEE1001FCCB3 /* Images.xcassets */,
-				46BF80D31A51087200F46CA6 /* railway.gif */,
 				46CDA0CE1A50FEE1001FCCB3 /* LaunchScreen.xib */,
+				46BF80D71A510B2B00F46CA6 /* Resources */,
 				46CDA0C31A50FEE1001FCCB3 /* Supporting Files */,
 			);
 			path = Sup;
@@ -228,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BF80D81A510B4900F46CA6 /* bello-script.ttf in Resources */,
 				46BF80D41A51087200F46CA6 /* railway.gif in Resources */,
 				46CDA0ED1A51006E001FCCB3 /* TwitterKitResources.bundle in Resources */,
 				46CDA0CB1A50FEE1001FCCB3 /* Main.storyboard in Resources */,
@@ -266,7 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46CDA0C81A50FEE1001FCCB3 /* ViewController.swift in Sources */,
+				46CDA0C81A50FEE1001FCCB3 /* LoginViewController.swift in Sources */,
 				46CDA0C61A50FEE1001FCCB3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
