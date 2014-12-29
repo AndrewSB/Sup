@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461BA8A71A51440C0025C13B /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461BA8A51A51440C0025C13B /* TwitterKit.framework */; };
+		461BA8A81A51440C0025C13B /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 461BA8A61A51440C0025C13B /* TwitterKitResources.bundle */; };
 		46BF80D41A51087200F46CA6 /* railway.gif in Resources */ = {isa = PBXBuildFile; fileRef = 46BF80D31A51087200F46CA6 /* railway.gif */; };
 		46BF80D81A510B4900F46CA6 /* bello-script.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46BF80D61A510B2700F46CA6 /* bello-script.ttf */; };
 		46BF80E01A512A6500F46CA6 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BF80DB1A512A6500F46CA6 /* Bolts.framework */; };
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		461BA8A51A51440C0025C13B /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
+		461BA8A61A51440C0025C13B /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
 		46BF80D31A51087200F46CA6 /* railway.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = railway.gif; sourceTree = "<group>"; };
 		46BF80D61A510B2700F46CA6 /* bello-script.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bello-script.ttf"; sourceTree = "<group>"; };
 		46BF80DB1A512A6500F46CA6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 				46BF80F41A512B8B00F46CA6 /* Security.framework in Frameworks */,
 				46BF80F51A512B8B00F46CA6 /* StoreKit.framework in Frameworks */,
 				46BF80F61A512B8B00F46CA6 /* SystemConfiguration.framework in Frameworks */,
+				461BA8A71A51440C0025C13B /* TwitterKit.framework in Frameworks */,
 				46BF80F01A512B7800F46CA6 /* QuartzCore.framework in Frameworks */,
 				46BF80EE1A512B7300F46CA6 /* MobileCoreServices.framework in Frameworks */,
 				46BF80EB1A512B6C00F46CA6 /* CoreGraphics.framework in Frameworks */,
@@ -234,6 +239,8 @@
 		46CDA0EF1A510121001FCCB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				461BA8A51A51440C0025C13B /* TwitterKit.framework */,
+				461BA8A61A51440C0025C13B /* TwitterKitResources.bundle */,
 				46BF81001A512C3D00F46CA6 /* Parse */,
 				46CDA0EE1A510114001FCCB3 /* Fabric */,
 			);
@@ -327,6 +334,7 @@
 				46BF80D41A51087200F46CA6 /* railway.gif in Resources */,
 				46CDA0CB1A50FEE1001FCCB3 /* Main.storyboard in Resources */,
 				46CDA0D01A50FEE1001FCCB3 /* LaunchScreen.xib in Resources */,
+				461BA8A81A51440C0025C13B /* TwitterKitResources.bundle in Resources */,
 				46CDA0CD1A50FEE1001FCCB3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

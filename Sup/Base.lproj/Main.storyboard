@@ -3,7 +3,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -38,24 +37,23 @@
                                 <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFm-Mn-COU">
-                                <rect key="frame" x="125" y="465" width="350" height="33"/>
-                                <color key="backgroundColor" red="0.28905817866325378" green="0.088762156665325165" blue="0.29782581329345703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFm-Mn-COU">
+                                <rect key="frame" x="125" y="452" width="350" height="40"/>
+                                <color key="backgroundColor" red="0.45682191848754883" green="0.29187163710594177" blue="0.67602276802062988" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="UFm-Mn-COU" secondAttribute="height" multiplier="350:33" id="C5f-sO-ZgX"/>
-                                    <constraint firstAttribute="width" constant="350" id="y0W-jb-3yQ"/>
+                                    <constraint firstAttribute="height" constant="40" id="Lis-Nl-k2B"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Use your phone">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qe-M7-e1a">
-                                <rect key="frame" x="125" y="523" width="350" height="33"/>
-                                <color key="backgroundColor" red="0.27462610602378845" green="0.22923529148101807" blue="0.44498589634895325" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qe-M7-e1a">
+                                <rect key="frame" x="125" y="523" width="350" height="44"/>
+                                <color key="backgroundColor" red="0.25882352941176473" green="0.59607843137254901" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="2vJ-dx-Ve8"/>
-                                    <constraint firstAttribute="width" secondItem="2qe-M7-e1a" secondAttribute="height" multiplier="350:33" id="Gnr-I0-Nq2"/>
+                                    <constraint firstAttribute="height" constant="44" id="BPV-5P-gVD"/>
                                 </constraints>
                                 <color key="tintColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Use your email"/>
@@ -66,14 +64,21 @@
                             <constraint firstItem="2qe-M7-e1a" firstAttribute="top" secondItem="W0T-Pm-x9k" secondAttribute="bottom" constant="-77" id="0oF-f2-MYd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="W0T-Pm-x9k" secondAttribute="trailing" constant="-20" id="91h-xJ-GxB"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="W0T-Pm-x9k" secondAttribute="bottom" id="Ahx-gb-J1i"/>
+                            <constraint firstItem="UFm-Mn-COU" firstAttribute="trailing" secondItem="W0T-Pm-x9k" secondAttribute="trailing" constant="-20" id="BIK-ML-znQ"/>
                             <constraint firstItem="W0T-Pm-x9k" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="VPx-1E-asX"/>
                             <constraint firstItem="UFm-Mn-COU" firstAttribute="centerX" secondItem="W0T-Pm-x9k" secondAttribute="centerX" constant="0.5" id="XFQ-yE-1Rw"/>
                             <constraint firstItem="ELF-xK-jYA" firstAttribute="bottom" secondItem="W0T-Pm-x9k" secondAttribute="centerY" constant="-100" id="b2Q-38-7cB"/>
                             <constraint firstItem="2qe-M7-e1a" firstAttribute="top" secondItem="UFm-Mn-COU" secondAttribute="bottom" constant="25" id="cJV-Wx-4nL"/>
+                            <constraint firstItem="UFm-Mn-COU" firstAttribute="leading" secondItem="W0T-Pm-x9k" secondAttribute="leading" constant="20" id="eg8-Jp-vcH"/>
                             <constraint firstItem="W0T-Pm-x9k" firstAttribute="centerX" secondItem="ELF-xK-jYA" secondAttribute="centerX" id="rk9-5A-R7J"/>
                             <constraint firstItem="2qe-M7-e1a" firstAttribute="centerX" secondItem="W0T-Pm-x9k" secondAttribute="centerX" id="vE0-yc-zYO"/>
                             <constraint firstItem="W0T-Pm-x9k" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-20" id="xWX-gL-0LB"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="XFQ-yE-1Rw"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="emailButton" destination="2qe-M7-e1a" id="sRn-xM-sUD"/>
