@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import TwitterKit
-import ImageIO
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var webBG: UIWebView!
@@ -18,13 +16,6 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         addBackground()
         logoNameLabel.transform = (CGAffineTransformMakeRotation(2*CGFloat(M_PI)))
-        
-        let authenticateButton = DGTAuthenticateButton(authenticationCompletion: {
-            (session: DGTSession!, error: NSError!) in
-            // play with Digits session
-        })
-        authenticateButton.center = self.view.center
-        self.view.addSubview(authenticateButton)
     }
     
     func addBackground() {
@@ -35,6 +26,8 @@ class LoginViewController: UIViewController {
         self.webBG.userInteractionEnabled = false
     }
 
+    @IBAction func didHitEmailButton(sender: AnyObject) {
+    }
 
 
 }
