@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46BF80D41A51087200F46CA6 /* railway.gif in Resources */ = {isa = PBXBuildFile; fileRef = 46BF80D31A51087200F46CA6 /* railway.gif */; };
 		46CDA0C61A50FEE1001FCCB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDA0C51A50FEE1001FCCB3 /* AppDelegate.swift */; };
 		46CDA0C81A50FEE1001FCCB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDA0C71A50FEE1001FCCB3 /* ViewController.swift */; };
 		46CDA0CB1A50FEE1001FCCB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46CDA0C91A50FEE1001FCCB3 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46BF80D31A51087200F46CA6 /* railway.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = railway.gif; sourceTree = "<group>"; };
 		46CDA0C01A50FEE1001FCCB3 /* Sup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CDA0C41A50FEE1001FCCB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46CDA0C51A50FEE1001FCCB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				46CDA0C71A50FEE1001FCCB3 /* ViewController.swift */,
 				46CDA0C91A50FEE1001FCCB3 /* Main.storyboard */,
 				46CDA0CC1A50FEE1001FCCB3 /* Images.xcassets */,
+				46BF80D31A51087200F46CA6 /* railway.gif */,
 				46CDA0CE1A50FEE1001FCCB3 /* LaunchScreen.xib */,
 				46CDA0C31A50FEE1001FCCB3 /* Supporting Files */,
 			);
@@ -225,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BF80D41A51087200F46CA6 /* railway.gif in Resources */,
 				46CDA0ED1A51006E001FCCB3 /* TwitterKitResources.bundle in Resources */,
 				46CDA0CB1A50FEE1001FCCB3 /* Main.storyboard in Resources */,
 				46CDA0D01A50FEE1001FCCB3 /* LaunchScreen.xib in Resources */,
@@ -465,6 +469,7 @@
 				46CDA0E11A50FEE1001FCCB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46CDA0E21A50FEE1001FCCB3 /* Build configuration list for PBXNativeTarget "SupTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +478,7 @@
 				46CDA0E41A50FEE1001FCCB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
