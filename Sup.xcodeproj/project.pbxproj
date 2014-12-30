@@ -12,6 +12,7 @@
 		46A579B71A524F360031D1E9 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579B61A524F360031D1E9 /* InitialViewController.swift */; };
 		46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579B81A524F3F0031D1E9 /* LoginViewController.swift */; };
 		46A579BB1A524F480031D1E9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579BA1A524F480031D1E9 /* SignupViewController.swift */; };
+		46A579BD1A5253A00031D1E9 /* PushNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579BC1A5253A00031D1E9 /* PushNoAnimationSegue.swift */; };
 		46BF80E01A512A6500F46CA6 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BF80DB1A512A6500F46CA6 /* Bolts.framework */; };
 		46BF80E11A512A6500F46CA6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BF80DC1A512A6500F46CA6 /* Parse.framework */; };
 		46BF80E21A512A6500F46CA6 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BF80DD1A512A6500F46CA6 /* ParseCrashReporting.framework */; };
@@ -54,6 +55,7 @@
 		46A579B61A524F360031D1E9 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		46A579B81A524F3F0031D1E9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		46A579BA1A524F480031D1E9 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		46A579BC1A5253A00031D1E9 /* PushNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNoAnimationSegue.swift; sourceTree = "<group>"; };
 		46BF80DB1A512A6500F46CA6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		46BF80DC1A512A6500F46CA6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		46BF80DD1A512A6500F46CA6 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
@@ -191,10 +193,11 @@
 			isa = PBXGroup;
 			children = (
 				46CDA0C51A50FEE1001FCCB3 /* AppDelegate.swift */,
-				46CDA0C71A50FEE1001FCCB3 /* WelcomeViewController.swift */,
 				46A579B61A524F360031D1E9 /* InitialViewController.swift */,
+				46CDA0C71A50FEE1001FCCB3 /* WelcomeViewController.swift */,
 				46A579B81A524F3F0031D1E9 /* LoginViewController.swift */,
 				46A579BA1A524F480031D1E9 /* SignupViewController.swift */,
+				46A579BC1A5253A00031D1E9 /* PushNoAnimationSegue.swift */,
 				46CDA0C91A50FEE1001FCCB3 /* Main.storyboard */,
 				46CDA0CC1A50FEE1001FCCB3 /* Images.xcassets */,
 				46CDA0CE1A50FEE1001FCCB3 /* LaunchScreen.xib */,
@@ -387,6 +390,7 @@
 				46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */,
 				46A579B71A524F360031D1E9 /* InitialViewController.swift in Sources */,
 				46A579BB1A524F480031D1E9 /* SignupViewController.swift in Sources */,
+				46A579BD1A5253A00031D1E9 /* PushNoAnimationSegue.swift in Sources */,
 				46CDA0C81A50FEE1001FCCB3 /* WelcomeViewController.swift in Sources */,
 				46CDA0C61A50FEE1001FCCB3 /* AppDelegate.swift in Sources */,
 			);

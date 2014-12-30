@@ -9,5 +9,13 @@
 import UIKit
 
 class InitialViewController: UIViewController {
-
+    override func viewDidAppear(animated: Bool) {
+        let loggedIn = false
+        
+        if loggedIn {
+            
+        } else {
+            performSegueWithIdentifier("segueToWelcome", sender: self)
+        }
+    }
 }
