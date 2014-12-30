@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		461BA8A71A51440C0025C13B /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461BA8A51A51440C0025C13B /* TwitterKit.framework */; };
 		461BA8A81A51440C0025C13B /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 461BA8A61A51440C0025C13B /* TwitterKitResources.bundle */; };
-		46BF80D41A51087200F46CA6 /* railway.gif in Resources */ = {isa = PBXBuildFile; fileRef = 46BF80D31A51087200F46CA6 /* railway.gif */; };
-		46BF80D81A510B4900F46CA6 /* bello-script.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46BF80D61A510B2700F46CA6 /* bello-script.ttf */; };
 		46BF80E01A512A6500F46CA6 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BF80DB1A512A6500F46CA6 /* Bolts.framework */; };
 		46BF80E11A512A6500F46CA6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BF80DC1A512A6500F46CA6 /* Parse.framework */; };
 		46BF80E21A512A6500F46CA6 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BF80DD1A512A6500F46CA6 /* ParseCrashReporting.framework */; };
@@ -50,8 +48,6 @@
 /* Begin PBXFileReference section */
 		461BA8A51A51440C0025C13B /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
 		461BA8A61A51440C0025C13B /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
-		46BF80D31A51087200F46CA6 /* railway.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = railway.gif; sourceTree = "<group>"; };
-		46BF80D61A510B2700F46CA6 /* bello-script.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bello-script.ttf"; sourceTree = "<group>"; };
 		46BF80DB1A512A6500F46CA6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		46BF80DC1A512A6500F46CA6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		46BF80DD1A512A6500F46CA6 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
@@ -123,8 +119,6 @@
 		46BF80D71A510B2B00F46CA6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				46BF80D31A51087200F46CA6 /* railway.gif */,
-				46BF80D61A510B2700F46CA6 /* bello-script.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -330,8 +324,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46BF80D81A510B4900F46CA6 /* bello-script.ttf in Resources */,
-				46BF80D41A51087200F46CA6 /* railway.gif in Resources */,
 				46CDA0CB1A50FEE1001FCCB3 /* Main.storyboard in Resources */,
 				46CDA0D01A50FEE1001FCCB3 /* LaunchScreen.xib in Resources */,
 				461BA8A81A51440C0025C13B /* TwitterKitResources.bundle in Resources */,
