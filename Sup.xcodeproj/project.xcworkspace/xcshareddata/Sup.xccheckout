@@ -20,7 +20,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>64DE5FE0FB45735A8F897C7A3C18049C0538797A</key>
-		<string>../../WTReTextField/</string>
+		<string>../../WTReTextField</string>
 		<key>C66B26F3514994C95D217BD5BE3D088634DEAFEC</key>
 		<string>../..</string>
 	</dict>
