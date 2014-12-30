@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+	
+	<title>Sup?</title>
+	
+	<link rel="shortcut icon" id="favicon" href="http://s14.postimg.org/kkxfglrkt/Favicon.png"> 
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+    
+    <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+    <link href='sup.css' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+    
+    <script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+		});
+	</script>
+    
+</head>
+    
+    
+    
+<body>
+  <div class="wrapper">
+      
+    <div class="main">
+	    
+        <section class="page1">
+            <div id="containerone">
+            
+                <div id="containeroneright">
+                    <div id="logo">
+                        <a><img src="http://s9.postimg.org/6ng6e7byn/Logo.png"</a>
+                    </div>
+                    <div id="description">
+                        <a><img src="http://s14.postimg.org/ubq5su0o1/Description.png"></a>
+                    </div>
+                        
+                    <div id="download">
+                        <a href=""><img src="http://s14.postimg.org/i27526ggx/Download.png" onmouseover="this.src='http://s14.postimg.org/qqua9lw4h/Download_Hover.png'" onmouseout="this.src='http://s14.postimg.org/i27526ggx/Download.png'"></a>
+                    </div>
+                        
+                    <div id="social">
+                        <a href=""><img src="http://s14.postimg.org/5z6escusd/image.png" onmouseover="this.src='http://s14.postimg.org/4lerx1vj1/TW_Hover.png'" onmouseout="this.src='http://s14.postimg.org/5z6escusd/image.png'"></a>
+                        <a href=""><img src="http://s14.postimg.org/4dr50jkkd/image.png" onmouseover="this.src='http://s14.postimg.org/x0u5ackwt/FB_Hover.png'" onmouseout="this.src='http://s14.postimg.org/4dr50jkkd/image.png'"></a>
+                        <a href=""><img src="http://s14.postimg.org/o9n4g31lp/image.png" onmouseover="this.src='http://s14.postimg.org/51zzjhja5/IG_Hover.png'" onmouseout="this.src='http://s14.postimg.org/o9n4g31lp/image.png'"></a>
+                    </div>
+                </div>
+                    
+                    
+                <div id="containeroneleft">
+                    <div id="iPhone">
+                        
+                        <script type = "text/javascript">
+                            function displayNextImage() {
+                                x = (x === images.length - 1) ? 0 : x + 1;
+                                document.getElementById("img").src = images[x];
+                            }
+
+                            function displayPreviousImage() {
+                                x = (x <= 0) ? images.length - 1 : x - 1;
+                                document.getElementById("img").src = images[x];
+                                }
+
+                            function startTimer() {
+                                setInterval(displayNextImage, 3000);
+                                }
+
+                            var images = [], x = -1;
+                            images[0] ="http://s8.postimg.org/wmu6wzi6t/i_Phone_Image_One.png";
+                            images[1] ="http://s8.postimg.org/6olzd7nbp/STATUS.png";
+                            images[2] ="http://s8.postimg.org/qaf1n5f4l/Updating_Status.png";
+                            images[3] ="http://s8.postimg.org/7s63p67yt/Pre_Log_In.png";
+                        </script> 
+                        <body onload = "startTimer()">
+                            <img id="img" src="http://s8.postimg.org/7s63p67yt/Pre_Log_In.png">
+                        </body>
+                    </div> 
+                        
+
+                        
+                </div>
+            </div>
+        </section>
+	    
+        
+        <section class="page2">
+            
+            <div id="containertwo">
+            
+                <div id="titletwo">
+                    <a><img src="http://s14.postimg.org/9szv1ic4h/Title_Two.png"></a>
+                </div>
+                
+                <div id="containerspace">
+                    <div id="leftspace">
+                        <div id="columnone"><a><img src="http://s14.postimg.org/aie204na9/Column_One.png"></a></div>
+                    </div>
+                        
+                    <div id="centerspace">
+                        <div id="columnone"><a><img src="http://s14.postimg.org/pfmj150ip/Column_Two.png"></a></div>
+                    </div>
+                        
+                    <div id="rightspace">
+                        <div id="columnone"><a><img src="http://s14.postimg.org/6i6wnvwtd/Column_Three.png"></a></div>
+                    </div>
+                </div>
+                
+                <div id="downloadtwo">
+                    <a href=""><img src="http://s14.postimg.org/np3hznizh/Download_Two.png" onmouseover="this.src='http://s14.postimg.org/4ccltdtct/Download_Two_Hover.png'" onmouseout="this.src='http://s14.postimg.org/np3hznizh/Download_Two.png'"></a>
+                </div>
+                
+                <div id="links">
+                    <a href="">About</a>
+                    <a href="">Support</a>
+                    <a href="">Blog</a>
+                    <a href="">Press</a>
+                    <a href="">FAQ</a>
+                    <a href="">Terms</a>
+                    <a href="">Privacy</a>
+                </div>
+                
+            </div>
+	   
+        </section>
+	    
+
+    </div>
+    
+    
+  </div>
+    
+</body>
+    
+</html>

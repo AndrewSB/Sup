@@ -1,0 +1,252 @@
+html {
+      height: 100%;
+    }
+
+    body {
+      background: #ffffff;
+      padding: 0;
+      text-align: center;
+      position: relative;
+      margin: 0;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    .wrapper {
+    	height: 100% !important;
+    	height: 100%;
+    	margin: 0 auto; 
+    	overflow: hidden;
+    }
+
+    code {
+      margin: 20px 1%;
+      float: left;
+      width: 48%;
+      height: 105px;
+      background: rgba(0,0,0,0.1);
+      border: rgba(0,0,0,0.05) 5px solid;
+      border-radius: 5px;
+      padding:5px;
+      color: white;
+      text-align: center;
+      font-size: 15px;
+      margin-top: 25px;
+      display: block;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+
+    #main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+
+
+
+    
+
+    
+    #main section.page1 {
+      background: #ffffff;
+    }
+
+    #containerone {
+        
+        height: 650px;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        
+    }
+
+    #containeroneleft {
+        background-color: #ffffff;
+        height: 650px;
+        max-width: 50%;
+        margin-top: -650px;
+    } 
+
+        #iPhone {
+            text-align: right;
+            padding-top: 35px;
+            padding-right: 30px;
+            pointer-events: none;
+        } 
+
+
+
+
+    #containeroneright {
+        background-color: #ffffff;
+        height: 650px;
+        width: 400px;
+        margin-right: auto;
+        margin-left: 400px;
+    }
+
+        #logo {
+            padding-top: 150px;
+            text-align: left;
+            padding-left: 30px;
+            pointer-events: none;
+        } 
+
+        #description {
+            
+            text-align: left;
+            padding-left: 30px;
+            pointer-events: none;
+        } 
+
+        #download {
+            padding-top: 25px;
+            text-align: left;
+            padding-left: 30px;
+        } 
+
+
+
+        #social {
+            padding-top: 25px;
+            text-align: left;
+            padding-left: 30px;
+            word-spacing: 15px;
+        } 
+
+        
+        
+
+    
+
+    #main section.page2 {
+      background: #ffffff;
+    }
+    
+        #containertwo {
+        margin-top: 50px;
+        height: 650px;
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    } 
+
+        #titletwo {
+            padding-top: 20px;
+            pointer-events: none;
+        }
+
+        #containerspace {
+            background-color: #ffffff;
+            height: 500px;
+            width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+            pointer-events: none;
+            
+        } 
+
+            #leftspace {
+                width: 333px;
+                height: 500px;
+                
+                margin-left: 0px;
+
+            }
+            
+            #columnone {
+                padding-top: 80px;
+            } 
+
+            #centerspace {
+                width: 333px;
+                height: 500px;
+                
+                margin-top: -500px;
+                margin-right: auto;
+                margin-left: auto;
+                
+               
+            } 
+
+            #rightspace {
+                width: 333px;
+                height: 500px;
+                margin-top: -500px;
+                margin-left: 768px;
+                
+            } 
+
+        #downloadtwo {
+            margin-top: -60px;
+            margin-bottom: 20px;
+        } 
+
+        #links {
+            padding-top: 30px;
+            word-spacing: 50px;
+        } 
+
+        #links a {
+            text-decoration: none;
+            color: #cccccc;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            font-size: 100%;
+        } 
+
+
+
+
+
+    body.disabled-onepage-scroll .onepage-wrapper  section {
+      min-height: 100%;
+      height: auto;
+    }
+    
+    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page3 .page_container  {
+      padding: 20px;
+      margin-top: 150px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    
+    body.disabled-onepage-scroll  section .page_container h1{
+      text-align: center;
+      font-size: 50px;
+    }
+    body.disabled-onepage-scroll section .page_container h2, body.disabled-onepage-scroll section .page_container .credit, body.disabled-onepage-scroll section .page_container .btns{
+      text-align: center;
+      width: 100%;
+    }
+    
+    body.disabled-onepage-scroll .main section.page1 > img {
+      position: absolute;
+      width: 80%;
+      left: 10%;
+    }
+    
+    body.disabled-onepage-scroll .main section > img {
+      position: relative;
+      max-width: 80%;
+      bottom: 0;
+    }
+    body.disabled-onepage-scroll code {
+      width: 95%;
+      margin: 0 auto 25px;
+      float: none;
+      overflow: hidden;
+    }
+    
+    body.disabled-onepage-scroll .main section.page3 .page_container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      right: 0;
+    }
