@@ -5,14 +5,22 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Main Navigation Controller-->
         <scene sceneID="Hp5-CM-5Np">
             <objects>
-                <navigationController navigationBarHidden="YES" id="QZ2-hq-1Oy" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="QZ2-hq-1Oy" customClass="MainNavigationController" customModule="Sup" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sba-3e-Acu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.081625573337078094" green="0.85938334465026855" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                            <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="P00-xl-LLe">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="AwU-7v-E39" kind="relationship" relationship="rootViewController" id="OMn-n4-Wwh"/>
                     </connections>
@@ -33,7 +41,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SUP?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSv-zl-NxN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUP?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSv-zl-NxN">
                                 <rect key="frame" x="200" y="100" width="200.5" height="109.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="80"/>
                                 <color key="textColor" red="0.15686274510000001" green="0.85490196080000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
@@ -68,7 +76,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUP?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZV-Sm-sCG">
-                                <rect key="frame" x="200.5" y="100" width="200.5" height="109.5"/>
+                                <rect key="frame" x="200" y="100" width="200.5" height="109.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="80"/>
                                 <color key="textColor" red="0.15686274509803921" green="0.85490196078431369" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -79,7 +87,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="132" id="uEz-P7-ugs"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="26"/>
                                 <state key="normal" title="SIGN UP">
                                     <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -94,12 +102,12 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="132" id="GcQ-tu-Hdc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="26"/>
                                 <state key="normal" title="LOG IN">
                                     <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="7Nw-ec-Dqk" kind="custom" customClass="PushNoAnimationSegue" id="aOo-wV-GN9"/>
+                                    <segue destination="7Nw-ec-Dqk" kind="custom" customClass="PushNoAnimationSegue" id="2uk-2A-8dt"/>
                                 </connections>
                             </button>
                             <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVQ-Bc-Az4">
@@ -133,7 +141,7 @@
             </objects>
             <point key="canvasLocation" x="326" y="327"/>
         </scene>
-        <!--Login View Controller-->
+        <!--LOG IN-->
         <scene sceneID="mwB-7h-s0b">
             <objects>
                 <viewController storyboardIdentifier="loginVC" id="7Nw-ec-Dqk" customClass="LoginViewController" customModule="Sup" customModuleProvider="target" sceneMemberID="viewController">
@@ -146,10 +154,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="LOG IN" id="SHM-Qu-0Jd"/>
+                    <connections>
+                        <segue destination="MLP-4L-6sJ" kind="unwind" identifier="unwindToWelcome" unwindAction="unwindToViewController:" id="RA7-m2-nUX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EZm-wS-ofl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="MLP-4L-6sJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-40" y="1095"/>
+            <point key="canvasLocation" x="-31" y="1086"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="Nke-Ga-gp3">
@@ -167,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G9p-jW-bZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="658" y="1095"/>
+            <point key="canvasLocation" x="1470" y="1095"/>
         </scene>
     </scenes>
 </document>

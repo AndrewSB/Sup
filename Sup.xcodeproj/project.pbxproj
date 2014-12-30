@@ -37,6 +37,8 @@
 		46CDA0DC1A50FEE1001FCCB3 /* SupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDA0DB1A50FEE1001FCCB3 /* SupTests.swift */; };
 		46CDA0E81A50FFF3001FCCB3 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CDA0E61A50FFF3001FCCB3 /* Crashlytics.framework */; };
 		46CDA0E91A50FFF3001FCCB3 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CDA0E71A50FFF3001FCCB3 /* Fabric.framework */; };
+		46ED8C391A5283B000D1313A /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED8C381A5283B000D1313A /* MainNavigationController.swift */; };
+		46ED8C3B1A5284A300D1313A /* PopNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED8C3A1A5284A300D1313A /* PopNoAnimationSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		46CDA0DB1A50FEE1001FCCB3 /* SupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupTests.swift; sourceTree = "<group>"; };
 		46CDA0E61A50FFF3001FCCB3 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		46CDA0E71A50FFF3001FCCB3 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		46ED8C381A5283B000D1313A /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		46ED8C3A1A5284A300D1313A /* PopNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopNoAnimationSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,11 +197,13 @@
 			isa = PBXGroup;
 			children = (
 				46CDA0C51A50FEE1001FCCB3 /* AppDelegate.swift */,
+				46ED8C381A5283B000D1313A /* MainNavigationController.swift */,
 				46A579B61A524F360031D1E9 /* InitialViewController.swift */,
 				46CDA0C71A50FEE1001FCCB3 /* WelcomeViewController.swift */,
 				46A579B81A524F3F0031D1E9 /* LoginViewController.swift */,
 				46A579BA1A524F480031D1E9 /* SignupViewController.swift */,
 				46A579BC1A5253A00031D1E9 /* PushNoAnimationSegue.swift */,
+				46ED8C3A1A5284A300D1313A /* PopNoAnimationSegue.swift */,
 				46CDA0C91A50FEE1001FCCB3 /* Main.storyboard */,
 				46CDA0CC1A50FEE1001FCCB3 /* Images.xcassets */,
 				46CDA0CE1A50FEE1001FCCB3 /* LaunchScreen.xib */,
@@ -388,9 +394,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */,
+				46ED8C3B1A5284A300D1313A /* PopNoAnimationSegue.swift in Sources */,
 				46A579B71A524F360031D1E9 /* InitialViewController.swift in Sources */,
 				46A579BB1A524F480031D1E9 /* SignupViewController.swift in Sources */,
 				46A579BD1A5253A00031D1E9 /* PushNoAnimationSegue.swift in Sources */,
+				46ED8C391A5283B000D1313A /* MainNavigationController.swift in Sources */,
 				46CDA0C81A50FEE1001FCCB3 /* WelcomeViewController.swift in Sources */,
 				46CDA0C61A50FEE1001FCCB3 /* AppDelegate.swift in Sources */,
 			);

@@ -16,10 +16,22 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        println("at welcome")
+
         logInButton.setTitle("LOG\nIN", forState: .Normal)
         logInButton.titleLabel?.textAlignment = .Center
         
         signUpButton.setTitle("SIGN\nUP", forState: .Normal)
         signUpButton.titleLabel?.textAlignment = .Center
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        println("welcome appeared")
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    @IBAction func unwindToViewController (sender: UIStoryboardSegue){
+        println("ayy you unwinded")
     }
 }
