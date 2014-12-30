@@ -21,6 +21,8 @@ class LoginViewController: UIViewController {
         self.navigationItem.setLeftBarButtonItem(backButton, animated: true)
         
         usernameTextField.becomeFirstResponder()
+        
+        usernameTextField.pattern = "^(\\S|[a-z]|[A-Z]|[0-9])*$"
     }
     
     override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {

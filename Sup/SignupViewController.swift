@@ -31,6 +31,9 @@ class SignupViewController: UIViewController {
         self.navigationItem.setLeftBarButtonItem(backButton, animated: true)
         
         emailTextField.becomeFirstResponder()
+        
+        emailTextField.pattern = "^.*@.*$"
+        usernameTextField.pattern = "^(\\S|[a-z]|[A-Z]|[0-9])*$"
     }
     
     override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {
