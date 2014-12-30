@@ -11,7 +11,6 @@ import UIKit
 class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var keyboardView: UIView!
     @IBOutlet weak var logInButton: UIButton!
     
     
@@ -25,27 +24,21 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         usernameTextField.becomeFirstResponder()
         usernameTextField.delegate = self
-//        passwordTextField.delegate = UserDataTextFieldDelegate()
+        passwordTextField.delegate = self
     }
     
     func unwind() {
         performSegueWithIdentifier("unwindToWelcome", sender: self)
     }
     
-    @IBAction func unwindToLogin (sender: UIStoryboardSegue){
-        println("ayy you unwinded")
-    }
-    
-    @IBAction func loginButtonHit(sender: AnyObject) {
-    }
-    
+    // MARK: UITextFieldDelegateMethods
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
     
-    func textFieldShouldEndEditing(textField: UITextField!) -> Bool {  //delegate method
-        return false
+    func textFieldShouldEndEditing(textField: UITextField!) -> Bool {
+        return true
     }
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
@@ -53,4 +46,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    @IBAction func unwindToLogin (sender: UIStoryboardSegue){
+        println("ayy you unwinded")
+    }
+    
+    @IBAction func loginButtonHit(sender: AnyObject) {
+        PFUser.logInWithUsernameInBackground(usernameTextField.text, password: passwordTextField.text, block: {(succeeded, error) in
+            if error == nil {
+                println("logged in, segue to main")
+            } else {
+                println(error)
+            }
+        })
+    }
 }

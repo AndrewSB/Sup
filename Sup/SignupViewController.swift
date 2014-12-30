@@ -47,5 +47,19 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func signupButtonHit(sender: AnyObject) {
+        //validate
+        let user = PFUser()
+        user.username = usernameTextField.text
+        user.email = emailTextField.text
+        user.password = passwordTextField.text
+        
+        user.signUpInBackgroundWithBlock({(succeeded, error) in
+            if error == nil {
+                println("sign up successful, segue to main")
+            } else {
+                let eString = error.userInfo?.indexForKey("error")
+                println(eString)
+            }
+        })
     }
 }

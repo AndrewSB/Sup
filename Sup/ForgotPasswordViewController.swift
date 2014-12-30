@@ -24,7 +24,12 @@ class ForgotPasswordViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func submitButtonHit(sender: AnyObject) {
         //validate input
-        let user = PFUser()
-        user
+        PFUser.requestPasswordResetForEmailInBackground(emailTextField.text, block: {(succeeded, error) in
+            if succeeded {
+                println("go check your email")
+            } else {
+                println("email doesn't exist")
+            }
+        })
     }
 }

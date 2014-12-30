@@ -158,11 +158,6 @@
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="byH-Oe-8t2">
-                                <rect key="frame" x="16" y="74" width="375" height="22"/>
-                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
-                            </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="euG-kg-Idn">
                                 <rect key="frame" x="-4" y="62" width="608" height="1"/>
                                 <color key="backgroundColor" red="0.94107431173324585" green="0.94123542308807373" blue="0.94106405973434448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -202,27 +197,32 @@
                                     <action selector="loginButtonHit:" destination="7Nw-ec-Dqk" eventType="touchUpInside" id="gv7-EZ-xAU"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="juw-BV-3gD">
+                                <rect key="frame" x="16" y="72" width="375" height="22"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ztL-eN-k6P" firstAttribute="top" secondItem="byH-Oe-8t2" secondAttribute="bottom" constant="6" id="8Zs-3W-uoZ"/>
+                            <constraint firstItem="ZOK-yB-547" firstAttribute="top" secondItem="juw-BV-3gD" secondAttribute="bottom" constant="29" id="4mt-To-l4T"/>
+                            <constraint firstItem="juw-BV-3gD" firstAttribute="top" secondItem="zVQ-jR-3Fq" secondAttribute="bottom" constant="16" id="912-iO-21e"/>
                             <constraint firstItem="zVQ-jR-3Fq" firstAttribute="leading" secondItem="wcQ-D0-fVt" secondAttribute="leadingMargin" id="FT6-Os-O3R"/>
                             <constraint firstItem="xiy-VY-SOz" firstAttribute="leading" secondItem="wcQ-D0-fVt" secondAttribute="leadingMargin" constant="-20" id="H00-Mz-gPp"/>
                             <constraint firstAttribute="centerX" secondItem="ztL-eN-k6P" secondAttribute="centerX" constant="-10" id="Lyd-Hm-gg7"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="byH-Oe-8t2" secondAttribute="trailing" constant="193" id="Ose-0Q-tPB"/>
                             <constraint firstItem="ztL-eN-k6P" firstAttribute="leading" secondItem="wcQ-D0-fVt" secondAttribute="leadingMargin" constant="-20" id="QO5-Tb-cjD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ztL-eN-k6P" secondAttribute="trailing" constant="-20" id="V8F-ve-CJO"/>
                             <constraint firstItem="xiy-VY-SOz" firstAttribute="top" secondItem="ZOK-yB-547" secondAttribute="bottom" constant="45" id="YEg-ec-pNo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="euG-kg-Idn" secondAttribute="trailing" constant="-20" id="axn-A8-F2d"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xiy-VY-SOz" secondAttribute="trailing" constant="-20" id="det-IE-gqv"/>
-                            <constraint firstItem="byH-Oe-8t2" firstAttribute="leading" secondItem="wcQ-D0-fVt" secondAttribute="leadingMargin" id="e67-ve-A4k"/>
                             <constraint firstItem="ZOK-yB-547" firstAttribute="top" secondItem="ztL-eN-k6P" secondAttribute="bottom" constant="20" id="eXp-sN-3gU"/>
-                            <constraint firstItem="byH-Oe-8t2" firstAttribute="top" secondItem="zVQ-jR-3Fq" secondAttribute="bottom" constant="18" id="ecN-0g-kNy"/>
                             <constraint firstAttribute="centerX" secondItem="ZOK-yB-547" secondAttribute="centerX" constant="-0.5" id="ehg-Cb-JPT"/>
                             <constraint firstItem="euG-kg-Idn" firstAttribute="top" secondItem="zVQ-jR-3Fq" secondAttribute="bottom" constant="6" id="fkC-wS-kzU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ztL-eN-k6P" secondAttribute="trailing" constant="-30" id="frM-Uq-iqW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zVQ-jR-3Fq" secondAttribute="trailing" constant="193" id="gvq-e7-unY"/>
                             <constraint firstItem="euG-kg-Idn" firstAttribute="leading" secondItem="wcQ-D0-fVt" secondAttribute="leadingMargin" constant="-20" id="hD0-Hr-iLh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="juw-BV-3gD" secondAttribute="trailing" constant="193" id="ozB-ly-5g5"/>
+                            <constraint firstItem="juw-BV-3gD" firstAttribute="leading" secondItem="wcQ-D0-fVt" secondAttribute="leadingMargin" id="zWV-01-vdr"/>
                             <constraint firstItem="zVQ-jR-3Fq" firstAttribute="top" secondItem="riH-Rn-Fes" secondAttribute="bottom" constant="14" id="zyg-F4-NKr"/>
                         </constraints>
                         <variation key="default">
@@ -235,7 +235,7 @@
                     <navigationItem key="navigationItem" title="LOG IN" id="SHM-Qu-0Jd"/>
                     <connections>
                         <outlet property="logInButton" destination="xiy-VY-SOz" id="hpX-Gp-MAa"/>
-                        <outlet property="passwordTextField" destination="byH-Oe-8t2" id="v4i-6e-jdM"/>
+                        <outlet property="passwordTextField" destination="juw-BV-3gD" id="D2b-1D-fqq"/>
                         <outlet property="usernameTextField" destination="zVQ-jR-3Fq" id="iPE-LY-M34"/>
                         <segue destination="MLP-4L-6sJ" kind="unwind" identifier="unwindToWelcome" unwindAction="unwindToWelcome:" id="RA7-m2-nUX"/>
                     </connections>
@@ -257,7 +257,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qDV-5a-KsE" customClass="WTReTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qDV-5a-KsE">
                                 <rect key="frame" x="16" y="80" width="375" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="9ck-56-kQz"/>
@@ -281,8 +281,8 @@
                                 <color key="textColor" red="0.80383342504501343" green="0.80397236347198486" blue="0.80382460355758667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="n0I-Kr-Xfv">
-                                <rect key="frame" x="-106" y="170" width="608" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="n0I-Kr-Xfv">
+                                <rect key="frame" x="-4" y="170" width="608" height="44"/>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.85098039219999999" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Q8H-3I-aTp"/>
@@ -300,10 +300,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="xUK-ui-ZNd" secondAttribute="trailing" constant="-20" id="9ve-oW-pPP"/>
-                            <constraint firstItem="n0I-Kr-Xfv" firstAttribute="leading" secondItem="Eu0-oS-dHC" secondAttribute="leadingMargin" constant="-122" id="AUr-uK-3sv"/>
+                            <constraint firstItem="n0I-Kr-Xfv" firstAttribute="leading" secondItem="Eu0-oS-dHC" secondAttribute="leadingMargin" constant="-20" id="AUr-uK-3sv"/>
                             <constraint firstItem="qDV-5a-KsE" firstAttribute="top" secondItem="mdJ-D7-5aI" secondAttribute="bottom" constant="16" id="JAi-14-1du"/>
                             <constraint firstItem="n0I-Kr-Xfv" firstAttribute="top" secondItem="CKX-ex-Z2R" secondAttribute="bottom" constant="24.5" id="L2T-Bz-eal"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="n0I-Kr-Xfv" secondAttribute="trailing" constant="82" id="OWq-RN-sVM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="n0I-Kr-Xfv" secondAttribute="trailing" constant="-20" id="OWq-RN-sVM"/>
                             <constraint firstItem="xUK-ui-ZNd" firstAttribute="top" secondItem="qDV-5a-KsE" secondAttribute="bottom" constant="6" id="PCt-aY-nh3"/>
                             <constraint firstAttribute="centerX" secondItem="CKX-ex-Z2R" secondAttribute="centerX" constant="-0.5" id="QFt-ff-5oO"/>
                             <constraint firstItem="qDV-5a-KsE" firstAttribute="leading" secondItem="Eu0-oS-dHC" secondAttribute="leadingMargin" id="RRx-Qz-gC6"/>
@@ -341,7 +341,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qzJ-4R-Xap" customClass="WTReTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qzJ-4R-Xap">
                                 <rect key="frame" x="16" y="34" width="472" height="22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
@@ -353,7 +353,7 @@
                                     <constraint firstAttribute="height" constant="1" id="lJk-fc-Ap6"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RIy-Pr-Scs" customClass="WTReTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RIy-Pr-Scs">
                                 <rect key="frame" x="16" y="74" width="472" height="22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" returnKeyType="next"/>
@@ -365,10 +365,10 @@
                                     <constraint firstAttribute="height" constant="1" id="9qU-ZC-Z4W"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G7O-yq-lu7" customClass="WTReTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G7O-yq-lu7">
                                 <rect key="frame" x="16" y="114" width="482" height="22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dcq-8b-0a3">
                                 <rect key="frame" x="-4" y="142" width="608" height="1"/>
