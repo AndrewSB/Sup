@@ -27,11 +27,10 @@ class WelcomeViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        println("welcome appeared")
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
-    @IBAction func unwindToViewController (sender: UIStoryboardSegue){
+    @IBAction func unwindToWelcome (sender: UIStoryboardSegue){
         println("ayy you unwinded")
     }
 }

@@ -11,6 +11,7 @@ import UIKit
 class LoginViewController: UIViewController {
     @IBOutlet weak var usernameTextField: WTReTextField!
     @IBOutlet weak var passwordTextField: WTReTextField!
+    @IBOutlet weak var keyboardView: UIView!
     
     override func viewDidLoad() {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
@@ -21,18 +22,16 @@ class LoginViewController: UIViewController {
         self.navigationItem.setLeftBarButtonItem(backButton, animated: true)
         
         usernameTextField.becomeFirstResponder()
-        
         usernameTextField.pattern = "^(\\S|[a-z]|[A-Z]|[0-9])*$"
     }
     
-    override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {
-        println("custom unwinded")
-        let segue = PushNoAnimationSegue(identifier: identifier, source: fromViewController, destination: toViewController)
-        return segue
-    }
-    
     func unwind() {
-        println("unwinded")
         performSegueWithIdentifier("unwindToWelcome", sender: self)
     }
+    
+    @IBAction func unwindToLogin (sender: UIStoryboardSegue){
+        println("ayy you unwinded")
+    }
+    
+    
 }

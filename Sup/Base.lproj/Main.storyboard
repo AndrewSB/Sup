@@ -177,6 +177,17 @@
                                     <constraint firstAttribute="height" constant="1" id="aEZ-Tu-NNq"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOK-yB-547">
+                                <rect key="frame" x="252" y="123" width="97" height="29"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="12"/>
+                                <state key="normal" title="Forgot Password?">
+                                    <color key="titleColor" red="0.80383342504501343" green="0.80397236347198486" blue="0.80382460355758667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Rs9-ZT-Tlv" kind="presentation" id="il6-ku-jP4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -188,7 +199,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="ztL-eN-k6P" secondAttribute="trailing" constant="-20" id="V8F-ve-CJO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="euG-kg-Idn" secondAttribute="trailing" constant="-20" id="axn-A8-F2d"/>
                             <constraint firstItem="byH-Oe-8t2" firstAttribute="leading" secondItem="wcQ-D0-fVt" secondAttribute="leadingMargin" id="e67-ve-A4k"/>
+                            <constraint firstItem="ZOK-yB-547" firstAttribute="top" secondItem="ztL-eN-k6P" secondAttribute="bottom" constant="20" id="eXp-sN-3gU"/>
                             <constraint firstItem="byH-Oe-8t2" firstAttribute="top" secondItem="zVQ-jR-3Fq" secondAttribute="bottom" constant="18" id="ecN-0g-kNy"/>
+                            <constraint firstAttribute="centerX" secondItem="ZOK-yB-547" secondAttribute="centerX" constant="-0.5" id="ehg-Cb-JPT"/>
                             <constraint firstItem="euG-kg-Idn" firstAttribute="top" secondItem="zVQ-jR-3Fq" secondAttribute="bottom" constant="6" id="fkC-wS-kzU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ztL-eN-k6P" secondAttribute="trailing" constant="-30" id="frM-Uq-iqW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zVQ-jR-3Fq" secondAttribute="trailing" constant="193" id="gvq-e7-unY"/>
@@ -206,13 +219,77 @@
                     <connections>
                         <outlet property="passwordTextField" destination="byH-Oe-8t2" id="v4i-6e-jdM"/>
                         <outlet property="usernameTextField" destination="zVQ-jR-3Fq" id="iPE-LY-M34"/>
-                        <segue destination="MLP-4L-6sJ" kind="unwind" identifier="unwindToWelcome" unwindAction="unwindToViewController:" id="RA7-m2-nUX"/>
+                        <segue destination="MLP-4L-6sJ" kind="unwind" identifier="unwindToWelcome" unwindAction="unwindToWelcome:" id="RA7-m2-nUX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EZm-wS-ofl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="MLP-4L-6sJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-31" y="1086"/>
+        </scene>
+        <!--FORGOT PASSWORD-->
+        <scene sceneID="ACk-0h-Kt4">
+            <objects>
+                <viewController id="Orz-NH-gIg" customClass="ForgotPasswordViewController" customModule="Sup" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mdJ-D7-5aI"/>
+                        <viewControllerLayoutGuide type="bottom" id="cLN-zV-iyo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Eu0-oS-dHC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qDV-5a-KsE" customClass="WTReTextField">
+                                <rect key="frame" x="16" y="36" width="375" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="9ck-56-kQz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                            </textField>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xUK-ui-ZNd">
+                                <rect key="frame" x="-4" y="64" width="608" height="1"/>
+                                <color key="backgroundColor" red="0.9410743117" green="0.94123542309999997" blue="0.94106405969999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Ych-5b-iAz"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="We'll email a reset password link to you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKX-ex-Z2R">
+                                <rect key="frame" x="194.5" y="85" width="213" height="16.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="213" id="dzf-9P-FKz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="12"/>
+                                <color key="textColor" red="0.80383342504501343" green="0.80397236347198486" blue="0.80382460355758667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="xUK-ui-ZNd" secondAttribute="trailing" constant="-20" id="9ve-oW-pPP"/>
+                            <constraint firstItem="qDV-5a-KsE" firstAttribute="top" secondItem="mdJ-D7-5aI" secondAttribute="bottom" constant="16" id="JAi-14-1du"/>
+                            <constraint firstItem="xUK-ui-ZNd" firstAttribute="top" secondItem="qDV-5a-KsE" secondAttribute="bottom" constant="6" id="PCt-aY-nh3"/>
+                            <constraint firstAttribute="centerX" secondItem="CKX-ex-Z2R" secondAttribute="centerX" constant="-0.5" id="QFt-ff-5oO"/>
+                            <constraint firstItem="qDV-5a-KsE" firstAttribute="leading" secondItem="Eu0-oS-dHC" secondAttribute="leadingMargin" id="RRx-Qz-gC6"/>
+                            <constraint firstItem="CKX-ex-Z2R" firstAttribute="top" secondItem="xUK-ui-ZNd" secondAttribute="bottom" constant="20" id="yJk-Mi-CBC"/>
+                            <constraint firstItem="xUK-ui-ZNd" firstAttribute="leading" secondItem="Eu0-oS-dHC" secondAttribute="leadingMargin" constant="-20" id="yuH-4Y-Fra"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="FORGOT PASSWORD" id="13M-YT-U2d">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="mrd-Qz-3do">
+                            <connections>
+                                <action selector="didHitCancel:" destination="Orz-NH-gIg" id="mP0-RZ-cro"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="JEB-HQ-W4d" kind="unwind" identifier="unwindToLogin" unwindAction="unwindToLogin:" id="u6e-ht-hZD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KTz-Gr-v35" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="JEB-HQ-W4d" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="309" y="1866"/>
         </scene>
         <!--SIGN UP-->
         <scene sceneID="Nke-Ga-gp3">
@@ -262,12 +339,23 @@
                                     <constraint firstAttribute="height" constant="1" id="22r-Fr-DsC"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By signing up, you agree to the Terms of Service and Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9j-7C-JtP">
+                                <rect key="frame" x="202" y="163" width="197" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="197" id="sFN-Op-1vm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="12"/>
+                                <color key="textColor" red="0.80383342504501343" green="0.80397236347198486" blue="0.80382460355758667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="v2v-Zv-kw7" firstAttribute="leading" secondItem="Xjx-qD-EsD" secondAttribute="leadingMargin" constant="-20" id="4nM-EN-x0E"/>
+                            <constraint firstItem="L9j-7C-JtP" firstAttribute="top" secondItem="Dcq-8b-0a3" secondAttribute="bottom" constant="20" id="63D-bb-X71"/>
                             <constraint firstItem="Dcq-8b-0a3" firstAttribute="top" secondItem="G7O-yq-lu7" secondAttribute="bottom" constant="6" id="8gq-hG-2Y1"/>
                             <constraint firstItem="RIy-Pr-Scs" firstAttribute="leading" secondItem="Xjx-qD-EsD" secondAttribute="leadingMargin" id="Bpf-9C-StA"/>
+                            <constraint firstAttribute="centerX" secondItem="L9j-7C-JtP" secondAttribute="centerX" constant="-0.5" id="EHL-PO-EGd"/>
                             <constraint firstItem="Dcq-8b-0a3" firstAttribute="leading" secondItem="Xjx-qD-EsD" secondAttribute="leadingMargin" constant="-20" id="Hfq-Vj-bqC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="G7O-yq-lu7" secondAttribute="trailing" constant="86" id="XAl-3F-uOG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Dcq-8b-0a3" secondAttribute="trailing" constant="-20" id="Zio-zD-sYx"/>
@@ -297,6 +385,29 @@
                 <exit id="9md-cR-zxa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="900" y="1093"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0Vl-sW-mme">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rs9-ZT-Tlv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="edg-Gf-Guc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.16470588235294117" green="0.83921568627450982" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                            <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Orz-NH-gIg" kind="relationship" relationship="rootViewController" id="aXS-Gl-whM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TuT-wV-TMN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-377" y="1866"/>
         </scene>
     </scenes>
 </document>

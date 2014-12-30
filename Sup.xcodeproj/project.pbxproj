@@ -39,6 +39,7 @@
 		46CDA0E91A50FFF3001FCCB3 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CDA0E71A50FFF3001FCCB3 /* Fabric.framework */; };
 		46EAEB7E1A52A03000A5D38F /* WTReParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EAEB7B1A52A03000A5D38F /* WTReParser.m */; };
 		46EAEB7F1A52A03000A5D38F /* WTReTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EAEB7D1A52A03000A5D38F /* WTReTextField.m */; };
+		46EAEB811A52AC2000A5D38F /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EAEB801A52AC2000A5D38F /* ForgotPasswordViewController.swift */; };
 		46ED8C391A5283B000D1313A /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED8C381A5283B000D1313A /* MainNavigationController.swift */; };
 		46ED8C3B1A5284A300D1313A /* PopNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED8C3A1A5284A300D1313A /* PopNoAnimationSegue.swift */; };
 /* End PBXBuildFile section */
@@ -93,6 +94,7 @@
 		46EAEB7B1A52A03000A5D38F /* WTReParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTReParser.m; sourceTree = "<group>"; };
 		46EAEB7C1A52A03000A5D38F /* WTReTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTReTextField.h; sourceTree = "<group>"; };
 		46EAEB7D1A52A03000A5D38F /* WTReTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTReTextField.m; sourceTree = "<group>"; };
+		46EAEB801A52AC2000A5D38F /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		46ED8C381A5283B000D1313A /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		46ED8C3A1A5284A300D1313A /* PopNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopNoAnimationSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -298,6 +300,7 @@
 			children = (
 				46CDA0C71A50FEE1001FCCB3 /* WelcomeViewController.swift */,
 				46A579B81A524F3F0031D1E9 /* LoginViewController.swift */,
+				46EAEB801A52AC2000A5D38F /* ForgotPasswordViewController.swift */,
 				46A579BA1A524F480031D1E9 /* SignupViewController.swift */,
 			);
 			name = Onboarding;
@@ -438,6 +441,7 @@
 			files = (
 				46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */,
 				46ED8C3B1A5284A300D1313A /* PopNoAnimationSegue.swift in Sources */,
+				46EAEB811A52AC2000A5D38F /* ForgotPasswordViewController.swift in Sources */,
 				46A579B71A524F360031D1E9 /* InitialViewController.swift in Sources */,
 				46A579BB1A524F480031D1E9 /* SignupViewController.swift in Sources */,
 				46A579BD1A5253A00031D1E9 /* PushNoAnimationSegue.swift in Sources */,
