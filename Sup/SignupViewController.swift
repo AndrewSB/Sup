@@ -9,6 +9,11 @@
 import UIKit
 
 class SignupViewController: UIViewController {
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
     override func loadView() {
         CATransaction.begin()
         CATransaction.setDisableActions(true)
@@ -28,6 +33,8 @@ class SignupViewController: UIViewController {
         
         self.navigationItem.setHidesBackButton(true, animated: false)
         self.navigationItem.setLeftBarButtonItem(backButton, animated: true)
+        
+        emailTextField.becomeFirstResponder()
     }
     
     override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {

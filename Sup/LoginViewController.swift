@@ -9,6 +9,9 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         
@@ -16,6 +19,8 @@ class LoginViewController: UIViewController {
         
         self.navigationItem.setHidesBackButton(true, animated: false)
         self.navigationItem.setLeftBarButtonItem(backButton, animated: true)
+        
+        usernameTextField.becomeFirstResponder()
     }
     
     override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {
