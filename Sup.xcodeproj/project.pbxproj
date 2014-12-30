@@ -198,12 +198,8 @@
 			children = (
 				46CDA0C51A50FEE1001FCCB3 /* AppDelegate.swift */,
 				46ED8C381A5283B000D1313A /* MainNavigationController.swift */,
-				46A579B61A524F360031D1E9 /* InitialViewController.swift */,
-				46CDA0C71A50FEE1001FCCB3 /* WelcomeViewController.swift */,
-				46A579B81A524F3F0031D1E9 /* LoginViewController.swift */,
-				46A579BA1A524F480031D1E9 /* SignupViewController.swift */,
-				46A579BC1A5253A00031D1E9 /* PushNoAnimationSegue.swift */,
-				46ED8C3A1A5284A300D1313A /* PopNoAnimationSegue.swift */,
+				46ED8C3D1A528A9700D1313A /* View Controllers */,
+				46ED8C3C1A528A8A00D1313A /* Transitions */,
 				46CDA0C91A50FEE1001FCCB3 /* Main.storyboard */,
 				46CDA0CC1A50FEE1001FCCB3 /* Images.xcassets */,
 				46CDA0CE1A50FEE1001FCCB3 /* LaunchScreen.xib */,
@@ -258,6 +254,34 @@
 			);
 			name = Frameworks;
 			path = Sup;
+			sourceTree = "<group>";
+		};
+		46ED8C3C1A528A8A00D1313A /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				46A579BC1A5253A00031D1E9 /* PushNoAnimationSegue.swift */,
+				46ED8C3A1A5284A300D1313A /* PopNoAnimationSegue.swift */,
+			);
+			name = Transitions;
+			sourceTree = "<group>";
+		};
+		46ED8C3D1A528A9700D1313A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				46A579B61A524F360031D1E9 /* InitialViewController.swift */,
+				46ED8C3E1A528AA100D1313A /* Onboarding */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		46ED8C3E1A528AA100D1313A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				46CDA0C71A50FEE1001FCCB3 /* WelcomeViewController.swift */,
+				46A579B81A524F3F0031D1E9 /* LoginViewController.swift */,
+				46A579BA1A524F480031D1E9 /* SignupViewController.swift */,
+			);
+			name = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
