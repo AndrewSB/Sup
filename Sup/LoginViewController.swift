@@ -8,10 +8,12 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
-    @IBOutlet weak var usernameTextField: WTReTextField!
-    @IBOutlet weak var passwordTextField: WTReTextField!
+class LoginViewController: UIViewController, UITextFieldDelegate {
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var keyboardView: UIView!
+    @IBOutlet weak var logInButton: UIButton!
+    
     
     override func viewDidLoad() {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
@@ -22,7 +24,8 @@ class LoginViewController: UIViewController {
         self.navigationItem.setLeftBarButtonItem(backButton, animated: true)
         
         usernameTextField.becomeFirstResponder()
-        usernameTextField.pattern = "^(\\S|[a-z]|[A-Z]|[0-9])*$"
+        usernameTextField.delegate = self
+//        passwordTextField.delegate = UserDataTextFieldDelegate()
     }
     
     func unwind() {
@@ -33,5 +36,21 @@ class LoginViewController: UIViewController {
         println("ayy you unwinded")
     }
     
+    @IBAction func loginButtonHit(sender: AnyObject) {
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldShouldEndEditing(textField: UITextField!) -> Bool {  //delegate method
+        return false
+    }
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        println("string: \"\(string)\"")
+        return true
+    }
     
 }

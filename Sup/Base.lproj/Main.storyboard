@@ -153,12 +153,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zVQ-jR-3Fq" customClass="WTReTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zVQ-jR-3Fq">
                                 <rect key="frame" x="16" y="34" width="375" height="22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="byH-Oe-8t2" customClass="WTReTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="byH-Oe-8t2">
                                 <rect key="frame" x="16" y="74" width="375" height="22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
@@ -198,6 +198,9 @@
                                 <state key="normal" title="LOG IN">
                                     <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonHit:" destination="7Nw-ec-Dqk" eventType="touchUpInside" id="gv7-EZ-xAU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -231,6 +234,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="LOG IN" id="SHM-Qu-0Jd"/>
                     <connections>
+                        <outlet property="logInButton" destination="xiy-VY-SOz" id="hpX-Gp-MAa"/>
                         <outlet property="passwordTextField" destination="byH-Oe-8t2" id="v4i-6e-jdM"/>
                         <outlet property="usernameTextField" destination="zVQ-jR-3Fq" id="iPE-LY-M34"/>
                         <segue destination="MLP-4L-6sJ" kind="unwind" identifier="unwindToWelcome" unwindAction="unwindToWelcome:" id="RA7-m2-nUX"/>
@@ -277,11 +281,29 @@
                                 <color key="textColor" red="0.80383342504501343" green="0.80397236347198486" blue="0.80382460355758667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="n0I-Kr-Xfv">
+                                <rect key="frame" x="-106" y="170" width="608" height="48"/>
+                                <color key="backgroundColor" red="0.15686274510000001" green="0.85098039219999999" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Q8H-3I-aTp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="26"/>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonHit:" destination="7Nw-ec-Dqk" eventType="touchUpInside" id="RBV-iQ-bDH"/>
+                                    <action selector="submitButtonHit:" destination="Orz-NH-gIg" eventType="touchUpInside" id="SsU-Nv-PBZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="xUK-ui-ZNd" secondAttribute="trailing" constant="-20" id="9ve-oW-pPP"/>
+                            <constraint firstItem="n0I-Kr-Xfv" firstAttribute="leading" secondItem="Eu0-oS-dHC" secondAttribute="leadingMargin" constant="-122" id="AUr-uK-3sv"/>
                             <constraint firstItem="qDV-5a-KsE" firstAttribute="top" secondItem="mdJ-D7-5aI" secondAttribute="bottom" constant="16" id="JAi-14-1du"/>
+                            <constraint firstItem="n0I-Kr-Xfv" firstAttribute="top" secondItem="CKX-ex-Z2R" secondAttribute="bottom" constant="24.5" id="L2T-Bz-eal"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="n0I-Kr-Xfv" secondAttribute="trailing" constant="82" id="OWq-RN-sVM"/>
                             <constraint firstItem="xUK-ui-ZNd" firstAttribute="top" secondItem="qDV-5a-KsE" secondAttribute="bottom" constant="6" id="PCt-aY-nh3"/>
                             <constraint firstAttribute="centerX" secondItem="CKX-ex-Z2R" secondAttribute="centerX" constant="-0.5" id="QFt-ff-5oO"/>
                             <constraint firstItem="qDV-5a-KsE" firstAttribute="leading" secondItem="Eu0-oS-dHC" secondAttribute="leadingMargin" id="RRx-Qz-gC6"/>
@@ -297,6 +319,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="emailTextField" destination="qDV-5a-KsE" id="uvS-86-1ra"/>
+                        <outlet property="submitButton" destination="n0I-Kr-Xfv" id="w1U-f4-ODB"/>
                         <segue destination="JEB-HQ-W4d" kind="unwind" identifier="unwindToLogin" unwindAction="unwindToLogin:" id="u6e-ht-hZD"/>
                     </connections>
                 </viewController>
@@ -372,6 +396,9 @@
                                 <state key="normal" title="SIGN UP">
                                     <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signupButtonHit:" destination="LdD-Oi-Ku2" eventType="touchUpInside" id="MJe-4W-J0B"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -405,6 +432,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="qzJ-4R-Xap" id="qAz-rv-78y"/>
                         <outlet property="passwordTextField" destination="G7O-yq-lu7" id="eLh-Sy-GRE"/>
+                        <outlet property="signupButton" destination="wzR-XT-ydq" id="wVq-5U-Zqu"/>
                         <outlet property="usernameTextField" destination="RIy-Pr-Scs" id="wiB-o5-2UL"/>
                         <segue destination="9md-cR-zxa" kind="unwind" identifier="unwindToWelcome" unwindAction="unwindToWelcome:" id="pei-qR-D5J"/>
                     </connections>

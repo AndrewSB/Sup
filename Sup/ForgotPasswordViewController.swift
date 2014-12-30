@@ -8,9 +8,23 @@
 
 import UIKit
 
-class ForgotPasswordViewController: UIViewController {
+class ForgotPasswordViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var submitButton: UIButton!
+    
+    override func viewDidLoad() {
+        emailTextField.delegate = self
+    }
+    
+    
     @IBAction func didHitCancel(sender: AnyObject) {
         performSegueWithIdentifier("unwindToLogin", sender: self)
+    }
+    
+    @IBAction func submitButtonHit(sender: AnyObject) {
+        //validate input
+        let user = PFUser()
+        user
     }
 }

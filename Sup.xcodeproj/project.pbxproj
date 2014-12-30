@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		461BA8A71A51440C0025C13B /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461BA8A51A51440C0025C13B /* TwitterKit.framework */; };
 		461BA8A81A51440C0025C13B /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 461BA8A61A51440C0025C13B /* TwitterKitResources.bundle */; };
+		465E51591A52B5F500C80EFB /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E51581A52B5F500C80EFB /* ForgotPasswordViewController.swift */; };
 		46A579B71A524F360031D1E9 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579B61A524F360031D1E9 /* InitialViewController.swift */; };
 		46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579B81A524F3F0031D1E9 /* LoginViewController.swift */; };
 		46A579BB1A524F480031D1E9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579BA1A524F480031D1E9 /* SignupViewController.swift */; };
@@ -37,9 +38,6 @@
 		46CDA0DC1A50FEE1001FCCB3 /* SupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDA0DB1A50FEE1001FCCB3 /* SupTests.swift */; };
 		46CDA0E81A50FFF3001FCCB3 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CDA0E61A50FFF3001FCCB3 /* Crashlytics.framework */; };
 		46CDA0E91A50FFF3001FCCB3 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CDA0E71A50FFF3001FCCB3 /* Fabric.framework */; };
-		46EAEB7E1A52A03000A5D38F /* WTReParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EAEB7B1A52A03000A5D38F /* WTReParser.m */; };
-		46EAEB7F1A52A03000A5D38F /* WTReTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EAEB7D1A52A03000A5D38F /* WTReTextField.m */; };
-		46EAEB811A52AC2000A5D38F /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EAEB801A52AC2000A5D38F /* ForgotPasswordViewController.swift */; };
 		46ED8C391A5283B000D1313A /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED8C381A5283B000D1313A /* MainNavigationController.swift */; };
 		46ED8C3B1A5284A300D1313A /* PopNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED8C3A1A5284A300D1313A /* PopNoAnimationSegue.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +55,7 @@
 /* Begin PBXFileReference section */
 		461BA8A51A51440C0025C13B /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
 		461BA8A61A51440C0025C13B /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
+		465E51581A52B5F500C80EFB /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		46A579B61A524F360031D1E9 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		46A579B81A524F3F0031D1E9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		46A579BA1A524F480031D1E9 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -90,11 +89,6 @@
 		46CDA0DB1A50FEE1001FCCB3 /* SupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupTests.swift; sourceTree = "<group>"; };
 		46CDA0E61A50FFF3001FCCB3 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		46CDA0E71A50FFF3001FCCB3 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
-		46EAEB7A1A52A03000A5D38F /* WTReParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTReParser.h; sourceTree = "<group>"; };
-		46EAEB7B1A52A03000A5D38F /* WTReParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTReParser.m; sourceTree = "<group>"; };
-		46EAEB7C1A52A03000A5D38F /* WTReTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTReTextField.h; sourceTree = "<group>"; };
-		46EAEB7D1A52A03000A5D38F /* WTReTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTReTextField.m; sourceTree = "<group>"; };
-		46EAEB801A52AC2000A5D38F /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		46ED8C381A5283B000D1313A /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		46ED8C3A1A5284A300D1313A /* PopNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopNoAnimationSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -255,7 +249,6 @@
 		46CDA0EF1A510121001FCCB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				46EAEB791A52A03000A5D38F /* WTReTextField */,
 				461BA8A51A51440C0025C13B /* TwitterKit.framework */,
 				461BA8A61A51440C0025C13B /* TwitterKitResources.bundle */,
 				46BF81001A512C3D00F46CA6 /* Parse */,
@@ -264,18 +257,6 @@
 			name = Frameworks;
 			path = Sup;
 			sourceTree = "<group>";
-		};
-		46EAEB791A52A03000A5D38F /* WTReTextField */ = {
-			isa = PBXGroup;
-			children = (
-				46EAEB7A1A52A03000A5D38F /* WTReParser.h */,
-				46EAEB7B1A52A03000A5D38F /* WTReParser.m */,
-				46EAEB7C1A52A03000A5D38F /* WTReTextField.h */,
-				46EAEB7D1A52A03000A5D38F /* WTReTextField.m */,
-			);
-			name = WTReTextField;
-			path = WTReTextField/WTReTextField;
-			sourceTree = SOURCE_ROOT;
 		};
 		46ED8C3C1A528A8A00D1313A /* Transitions */ = {
 			isa = PBXGroup;
@@ -300,7 +281,7 @@
 			children = (
 				46CDA0C71A50FEE1001FCCB3 /* WelcomeViewController.swift */,
 				46A579B81A524F3F0031D1E9 /* LoginViewController.swift */,
-				46EAEB801A52AC2000A5D38F /* ForgotPasswordViewController.swift */,
+				465E51581A52B5F500C80EFB /* ForgotPasswordViewController.swift */,
 				46A579BA1A524F480031D1E9 /* SignupViewController.swift */,
 			);
 			name = Onboarding;
@@ -441,15 +422,13 @@
 			files = (
 				46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */,
 				46ED8C3B1A5284A300D1313A /* PopNoAnimationSegue.swift in Sources */,
-				46EAEB811A52AC2000A5D38F /* ForgotPasswordViewController.swift in Sources */,
 				46A579B71A524F360031D1E9 /* InitialViewController.swift in Sources */,
 				46A579BB1A524F480031D1E9 /* SignupViewController.swift in Sources */,
 				46A579BD1A5253A00031D1E9 /* PushNoAnimationSegue.swift in Sources */,
-				46EAEB7E1A52A03000A5D38F /* WTReParser.m in Sources */,
 				46ED8C391A5283B000D1313A /* MainNavigationController.swift in Sources */,
+				465E51591A52B5F500C80EFB /* ForgotPasswordViewController.swift in Sources */,
 				46CDA0C81A50FEE1001FCCB3 /* WelcomeViewController.swift in Sources */,
 				46CDA0C61A50FEE1001FCCB3 /* AppDelegate.swift in Sources */,
-				46EAEB7F1A52A03000A5D38F /* WTReTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

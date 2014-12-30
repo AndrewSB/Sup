@@ -8,18 +8,16 @@
 
 import UIKit
 
-class SignupViewController: UIViewController {
-    @IBOutlet weak var emailTextField: WTReTextField!
-    @IBOutlet weak var usernameTextField: WTReTextField!
-    @IBOutlet weak var passwordTextField: WTReTextField!
+class SignupViewController: UIViewController, UITextFieldDelegate {
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var signupButton: UIButton!
     
     
     override func loadView() {
         setNavBarColor(UIColor(red: 1, green: 0.293, blue: 0.279, alpha: 1))
-        
         super.loadView()
-        
-        
     }
     
     override func viewDidLoad() {
@@ -31,15 +29,9 @@ class SignupViewController: UIViewController {
         self.navigationItem.setLeftBarButtonItem(backButton, animated: true)
         
         emailTextField.becomeFirstResponder()
-        
-        emailTextField.pattern = "^.*@.*$"
-        usernameTextField.pattern = "^(\\S|[a-z]|[A-Z]|[0-9])*$"
-    }
-    
-    override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {
-        println("custom unwinded")
-        let segue = PushNoAnimationSegue(identifier: identifier, source: fromViewController, destination: toViewController)
-        return segue
+        emailTextField.delegate = self
+        usernameTextField.delegate = self
+        passwordTextField.delegate = self
     }
     
     func unwind() {
@@ -52,6 +44,8 @@ class SignupViewController: UIViewController {
         CATransaction.setDisableActions(true)
         navigationController?.navigationBar.barTintColor = color
         CATransaction.commit()
-
+    }
+    
+    @IBAction func signupButtonHit(sender: AnyObject) {
     }
 }
