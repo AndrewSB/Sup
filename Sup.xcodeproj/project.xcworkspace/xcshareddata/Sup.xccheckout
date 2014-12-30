@@ -12,6 +12,8 @@
 	<dict>
 		<key>64DE5FE0FB45735A8F897C7A3C18049C0538797A</key>
 		<string>https://github.com/pieceofsummer/WTReTextField.git</string>
+		<key>88754164BFA0FB3BC9BCA5BAF2631654D317972D</key>
+		<string>https://github.com/yichizhang/YZSwipeBetweenViewController.git</string>
 		<key>C66B26F3514994C95D217BD5BE3D088634DEAFEC</key>
 		<string>https://github.com/AndrewSB/Sup.git</string>
 	</dict>
@@ -21,6 +23,8 @@
 	<dict>
 		<key>64DE5FE0FB45735A8F897C7A3C18049C0538797A</key>
 		<string>../../WTReTextField</string>
+		<key>88754164BFA0FB3BC9BCA5BAF2631654D317972D</key>
+		<string>../../YZSwipeBetweenViewController/</string>
 		<key>C66B26F3514994C95D217BD5BE3D088634DEAFEC</key>
 		<string>../..</string>
 	</dict>
@@ -47,6 +51,14 @@
 			<string>64DE5FE0FB45735A8F897C7A3C18049C0538797A</string>
 			<key>IDESourceControlWCCName</key>
 			<string>WTReTextField</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>88754164BFA0FB3BC9BCA5BAF2631654D317972D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>YZSwipeBetweenViewController</string>
 		</dict>
 	</array>
 </dict>
