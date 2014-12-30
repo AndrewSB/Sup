@@ -11,6 +11,9 @@
 		461BA8A81A51440C0025C13B /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 461BA8A61A51440C0025C13B /* TwitterKitResources.bundle */; };
 		465E51591A52B5F500C80EFB /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E51581A52B5F500C80EFB /* ForgotPasswordViewController.swift */; };
 		469CDB201A536A470033483C /* YZSwipeBetweenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469CDB1F1A536A470033483C /* YZSwipeBetweenViewController.m */; };
+		469CDB221A536C030033483C /* FriendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469CDB211A536C030033483C /* FriendListViewController.swift */; };
+		469CDB241A536C0B0033483C /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469CDB231A536C0B0033483C /* StatusViewController.swift */; };
+		469CDB261A536C130033483C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469CDB251A536C130033483C /* SettingsViewController.swift */; };
 		46A579B71A524F360031D1E9 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579B61A524F360031D1E9 /* InitialViewController.swift */; };
 		46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579B81A524F3F0031D1E9 /* LoginViewController.swift */; };
 		46A579BB1A524F480031D1E9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579BA1A524F480031D1E9 /* SignupViewController.swift */; };
@@ -59,6 +62,9 @@
 		465E51581A52B5F500C80EFB /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		469CDB1E1A536A470033483C /* YZSwipeBetweenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZSwipeBetweenViewController.h; sourceTree = "<group>"; };
 		469CDB1F1A536A470033483C /* YZSwipeBetweenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZSwipeBetweenViewController.m; sourceTree = "<group>"; };
+		469CDB211A536C030033483C /* FriendListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendListViewController.swift; sourceTree = "<group>"; };
+		469CDB231A536C0B0033483C /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		469CDB251A536C130033483C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		46A579B61A524F360031D1E9 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		46A579B81A524F3F0031D1E9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		46A579BA1A524F480031D1E9 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +149,16 @@
 			path = YZSwipeBetweenViewController/Source;
 			sourceTree = SOURCE_ROOT;
 		};
+		469CDB271A536C410033483C /* Page Based Main Feed */ = {
+			isa = PBXGroup;
+			children = (
+				469CDB211A536C030033483C /* FriendListViewController.swift */,
+				469CDB231A536C0B0033483C /* StatusViewController.swift */,
+				469CDB251A536C130033483C /* SettingsViewController.swift */,
+			);
+			name = "Page Based Main Feed";
+			sourceTree = "<group>";
+		};
 		46BF80D71A510B2B00F46CA6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +230,7 @@
 				46CDA0C51A50FEE1001FCCB3 /* AppDelegate.swift */,
 				46ED8C381A5283B000D1313A /* MainNavigationController.swift */,
 				46ED8C3D1A528A9700D1313A /* View Controllers */,
+				469CDB271A536C410033483C /* Page Based Main Feed */,
 				46ED8C3C1A528A8A00D1313A /* Transitions */,
 				46CDA0C91A50FEE1001FCCB3 /* Main.storyboard */,
 				46CDA0CC1A50FEE1001FCCB3 /* Images.xcassets */,
@@ -434,14 +451,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469CDB221A536C030033483C /* FriendListViewController.swift in Sources */,
 				469CDB201A536A470033483C /* YZSwipeBetweenViewController.m in Sources */,
 				46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */,
 				46ED8C3B1A5284A300D1313A /* PopNoAnimationSegue.swift in Sources */,
+				469CDB241A536C0B0033483C /* StatusViewController.swift in Sources */,
 				46A579B71A524F360031D1E9 /* InitialViewController.swift in Sources */,
 				46A579BB1A524F480031D1E9 /* SignupViewController.swift in Sources */,
 				46A579BD1A5253A00031D1E9 /* PushNoAnimationSegue.swift in Sources */,
 				46ED8C391A5283B000D1313A /* MainNavigationController.swift in Sources */,
 				465E51591A52B5F500C80EFB /* ForgotPasswordViewController.swift in Sources */,
+				469CDB261A536C130033483C /* SettingsViewController.swift in Sources */,
 				46CDA0C81A50FEE1001FCCB3 /* WelcomeViewController.swift in Sources */,
 				46CDA0C61A50FEE1001FCCB3 /* AppDelegate.swift in Sources */,
 			);

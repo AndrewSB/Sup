@@ -72,36 +72,28 @@
             </objects>
             <point key="canvasLocation" x="2208" y="327"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="KaF-kA-3Gp">
+        <!--Friend List View Controller-->
+        <scene sceneID="dH0-kN-8zg">
             <objects>
-                <tableViewController id="Q1i-7y-986" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gbX-YD-rOE">
+                <viewController id="hdP-hu-oas" customClass="FriendListViewController" customModule="Sup" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gal-U7-q4u"/>
+                        <viewControllerLayoutGuide type="bottom" id="M4i-4g-aQ4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zfG-0q-Hgu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="N18-uu-ecT">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N18-uu-ecT" id="8b9-Yj-hLf">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Q1i-7y-986" id="PAc-gH-Ru5"/>
-                            <outlet property="delegate" destination="Q1i-7y-986" id="w0H-Jy-mX4"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9rs-uZ-q4V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cj2-4M-OuM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2566" y="1643"/>
+            <point key="canvasLocation" x="2723" y="1661"/>
         </scene>
-        <!--View Controller-->
+        <!--Status View Controller-->
         <scene sceneID="GVT-yn-9Fe">
             <objects>
-                <viewController id="mef-V3-NQj" sceneMemberID="viewController">
+                <viewController id="mef-V3-NQj" customClass="StatusViewController" customModule="Sup" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lsv-6J-459"/>
                         <viewControllerLayoutGuide type="bottom" id="qwQ-xK-7KU"/>
@@ -116,10 +108,10 @@
             </objects>
             <point key="canvasLocation" x="3500" y="1643"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="eVQ-I3-pq2">
             <objects>
-                <viewController id="dYW-71-TEw" sceneMemberID="viewController">
+                <viewController id="dYW-71-TEw" customClass="SettingsViewController" customModule="Sup" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LTl-Zw-4fw"/>
                         <viewControllerLayoutGuide type="bottom" id="mGd-lM-XLw"/>
@@ -181,7 +173,7 @@
                                     <segue destination="7Nw-ec-Dqk" kind="custom" customClass="PushNoAnimationSegue" id="2uk-2A-8dt"/>
                                 </connections>
                             </button>
-                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVQ-Bc-Az4">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AVQ-Bc-Az4">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="132" placeholder="YES" id="7yu-g9-Vl6"/>
