@@ -10,7 +10,7 @@ import UIKit
 import TwitterKit
 
 
-class LoginViewController: UIViewController {
+class WelcomeViewController: UIViewController {
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
     
