@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Initial View Controller-->
         <scene sceneID="8hk-Tc-mfk">
             <objects>
-                <viewController id="AwU-7v-E39" sceneMemberID="viewController">
+                <viewController id="AwU-7v-E39" customClass="InitialViewController" customModule="Sup" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rXT-XB-94i"/>
                         <viewControllerLayoutGuide type="bottom" id="7Nb-yf-x3k"/>
@@ -107,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="326" y="327"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="mwB-7h-s0b">
             <objects>
-                <viewController id="7Nw-ec-Dqk" sceneMemberID="viewController">
+                <viewController id="7Nw-ec-Dqk" customClass="LoginViewController" customModule="Sup" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="riH-Rn-Fes"/>
                         <viewControllerLayoutGuide type="bottom" id="cJU-rv-vUe"/>
@@ -125,10 +125,10 @@
             </objects>
             <point key="canvasLocation" x="-40" y="1095"/>
         </scene>
-        <!--View Controller-->
+        <!--Signup View Controller-->
         <scene sceneID="Nke-Ga-gp3">
             <objects>
-                <viewController id="LdD-Oi-Ku2" sceneMemberID="viewController">
+                <viewController id="LdD-Oi-Ku2" customClass="SignupViewController" customModule="Sup" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IAO-mf-IdP"/>
                         <viewControllerLayoutGuide type="bottom" id="KFl-6u-iPB"/>
