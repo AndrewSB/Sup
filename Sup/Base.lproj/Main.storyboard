@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -15,12 +16,66 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" colorLabel="IBBuiltInLabel-Green">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUP?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZV-Sm-sCG">
+                                <rect key="frame" x="200.5" y="100" width="200.5" height="109.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="80"/>
+                                <color key="textColor" red="0.15686274509803921" green="0.85490196078431369" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="muf-gr-QJh">
+                                <rect key="frame" x="300" y="468" width="304" height="132"/>
+                                <color key="backgroundColor" red="1" green="0.19215686274509805" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="uEz-P7-ugs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="24"/>
+                                <state key="normal" title="SIGN UP">
+                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="aNw-6d-8bY">
+                                <rect key="frame" x="-4" y="468" width="304" height="132"/>
+                                <color key="backgroundColor" red="0.15686274509803921" green="0.85098039215686272" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="GcQ-tu-Hdc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="24"/>
+                                <state key="normal" title="LOG IN">
+                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVQ-Bc-Az4">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" placeholder="YES" id="7yu-g9-Vl6"/>
+                                    <constraint firstAttribute="width" id="DzN-fe-84j"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aNw-6d-8bY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-20" id="7ER-Fj-YfN"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="AVQ-Bc-Az4" secondAttribute="bottom" id="AmW-ZB-Etl"/>
+                            <constraint firstItem="muf-gr-QJh" firstAttribute="leading" secondItem="AVQ-Bc-Az4" secondAttribute="trailing" id="Cdd-0I-RgP"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="muf-gr-QJh" secondAttribute="bottom" id="HUe-H4-8U4"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="aNw-6d-8bY" secondAttribute="bottom" id="LiO-HO-fWE"/>
+                            <constraint firstAttribute="centerX" secondItem="CZV-Sm-sCG" secondAttribute="centerX" constant="-0.5" id="Qxr-CR-wWP"/>
+                            <constraint firstItem="CZV-Sm-sCG" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="80" id="Vx6-LH-5f5"/>
+                            <constraint firstItem="AVQ-Bc-Az4" firstAttribute="leading" secondItem="aNw-6d-8bY" secondAttribute="trailing" id="iuu-lN-dD8"/>
+                            <constraint firstAttribute="centerX" secondItem="AVQ-Bc-Az4" secondAttribute="centerX" id="oye-CW-7AT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="muf-gr-QJh" secondAttribute="trailing" constant="-20" id="s7A-70-l94"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="logInButton" destination="aNw-6d-8bY" id="F4d-VY-OnI"/>
+                        <outlet property="signUpButton" destination="muf-gr-QJh" id="uVd-9M-TF3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="236" y="296"/>
+            <point key="canvasLocation" x="326" y="327"/>
         </scene>
     </scenes>
 </document>

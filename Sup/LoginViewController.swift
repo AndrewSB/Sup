@@ -11,8 +11,15 @@ import TwitterKit
 
 
 class LoginViewController: UIViewController {
+    @IBOutlet weak var logInButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        logInButton.setTitle("LOG\nIN", forState: .Normal)
+        logInButton.titleLabel?.textAlignment = .Center
+        
+        signUpButton.setTitle("SIGN\nUP", forState: .Normal)
+        signUpButton.titleLabel?.textAlignment = .Center
     }
 }
