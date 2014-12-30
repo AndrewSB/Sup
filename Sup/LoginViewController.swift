@@ -9,8 +9,8 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    @IBOutlet weak var usernameTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var usernameTextField: WTReTextField!
+    @IBOutlet weak var passwordTextField: WTReTextField!
     
     override func viewDidLoad() {
         self.navigationController?.setNavigationBarHidden(false, animated: false)

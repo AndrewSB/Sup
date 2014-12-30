@@ -10,6 +10,8 @@
 	<string>Sup</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>64DE5FE0FB45735A8F897C7A3C18049C0538797A</key>
+		<string>https://github.com/pieceofsummer/WTReTextField.git</string>
 		<key>C66B26F3514994C95D217BD5BE3D088634DEAFEC</key>
 		<string>https://github.com/AndrewSB/Sup.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>Sup.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>64DE5FE0FB45735A8F897C7A3C18049C0538797A</key>
+		<string>../../WTReTextField/</string>
 		<key>C66B26F3514994C95D217BD5BE3D088634DEAFEC</key>
 		<string>../..</string>
 	</dict>
@@ -35,6 +39,14 @@
 			<string>C66B26F3514994C95D217BD5BE3D088634DEAFEC</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Sup</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>64DE5FE0FB45735A8F897C7A3C18049C0538797A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WTReTextField</string>
 		</dict>
 	</array>
 </dict>

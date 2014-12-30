@@ -9,21 +9,17 @@
 import UIKit
 
 class SignupViewController: UIViewController {
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var usernameTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var emailTextField: WTReTextField!
+    @IBOutlet weak var usernameTextField: WTReTextField!
+    @IBOutlet weak var passwordTextField: WTReTextField!
     
     
     override func loadView() {
-        CATransaction.begin()
-        CATransaction.setDisableActions(true)
-        
-        navigationController?.navigationBar.barTintColor = UIColor(red: 1, green: 0.293, blue: 0.279, alpha: 1)
-        self.navigationController?.navigationBar.translucent
-        println(self.navigationController?.navigationBar.translucent)
-        CATransaction.commit()
+        setNavBarColor(UIColor(red: 1, green: 0.293, blue: 0.279, alpha: 1))
         
         super.loadView()
+        
+        
     }
     
     override func viewDidLoad() {
@@ -46,11 +42,16 @@ class SignupViewController: UIViewController {
     func unwind() {
         println("unwinded")
         
-        CATransaction.begin()
-        CATransaction.setDisableActions(true)
-        navigationController?.navigationBar.barTintColor = UIColor(red: 0.136, green: 0.859, blue: 0.112, alpha: 1)
-        CATransaction.commit()
+        setNavBarColor(UIColor(red: 0.136, green: 0.859, blue: 0.112, alpha: 1))
         
         performSegueWithIdentifier("unwindToWelcome", sender: self)
+    }
+    
+    func setNavBarColor(color: UIColor) {
+        CATransaction.begin()
+        CATransaction.setDisableActions(true)
+        navigationController?.navigationBar.barTintColor = color
+        CATransaction.commit()
+
     }
 }
