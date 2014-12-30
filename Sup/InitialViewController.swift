@@ -14,9 +14,12 @@ class InitialViewController: UIViewController {
         let loggedIn = PFUser.currentUser() != nil
         
         if loggedIn {
-            println("segue to main")
+            performSegueWithIdentifier("segueToMain", sender: self)
         } else {
             performSegueWithIdentifier("segueToWelcome", sender: self)
         }
+    }
+    
+    @IBAction func unwindToInitial (sender: UIStoryboardSegue){
     }
 }

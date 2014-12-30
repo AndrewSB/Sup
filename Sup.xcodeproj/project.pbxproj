@@ -10,6 +10,7 @@
 		461BA8A71A51440C0025C13B /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461BA8A51A51440C0025C13B /* TwitterKit.framework */; };
 		461BA8A81A51440C0025C13B /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 461BA8A61A51440C0025C13B /* TwitterKitResources.bundle */; };
 		465E51591A52B5F500C80EFB /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E51581A52B5F500C80EFB /* ForgotPasswordViewController.swift */; };
+		469CDB161A52CF860033483C /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469CDB151A52CF860033483C /* MainPageViewController.swift */; };
 		46A579B71A524F360031D1E9 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579B61A524F360031D1E9 /* InitialViewController.swift */; };
 		46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579B81A524F3F0031D1E9 /* LoginViewController.swift */; };
 		46A579BB1A524F480031D1E9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579BA1A524F480031D1E9 /* SignupViewController.swift */; };
@@ -56,6 +57,7 @@
 		461BA8A51A51440C0025C13B /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
 		461BA8A61A51440C0025C13B /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
 		465E51581A52B5F500C80EFB /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		469CDB151A52CF860033483C /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		46A579B61A524F360031D1E9 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		46A579B81A524F3F0031D1E9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		46A579BA1A524F480031D1E9 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				46A579B61A524F360031D1E9 /* InitialViewController.swift */,
+				469CDB151A52CF860033483C /* MainPageViewController.swift */,
 				46ED8C3E1A528AA100D1313A /* Onboarding */,
 			);
 			name = "View Controllers";
@@ -420,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469CDB161A52CF860033483C /* MainPageViewController.swift in Sources */,
 				46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */,
 				46ED8C3B1A5284A300D1313A /* PopNoAnimationSegue.swift in Sources */,
 				46A579B71A524F360031D1E9 /* InitialViewController.swift in Sources */,

@@ -56,6 +56,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         user.signUpInBackgroundWithBlock({(succeeded, error) in
             if error == nil {
                 println("sign up successful, segue to main")
+                self.performSegueWithIdentifier("segueToMain", sender: self)
             } else {
                 let eString = error.userInfo?.indexForKey("error")
                 println(eString)

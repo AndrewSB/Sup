@@ -53,7 +53,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction func loginButtonHit(sender: AnyObject) {
         PFUser.logInWithUsernameInBackground(usernameTextField.text, password: passwordTextField.text, block: {(succeeded, error) in
             if error == nil {
-                println("logged in, segue to main")
+                println("segue to main")
+                self.performSegueWithIdentifier("segueToMain", sender: self)
             } else {
                 println(error)
             }

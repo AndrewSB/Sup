@@ -31,6 +31,5 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func unwindToWelcome (sender: UIStoryboardSegue){
-        println("ayy you unwinded")
     }
 }
