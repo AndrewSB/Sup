@@ -43,10 +43,7 @@ class SignupViewController: UIViewController {
     }
     
     func unwind() {
-        println("unwinded")
-        
         setNavBarColor(UIColor(red: 0.136, green: 0.859, blue: 0.112, alpha: 1))
-        
         performSegueWithIdentifier("unwindToWelcome", sender: self)
     }
     

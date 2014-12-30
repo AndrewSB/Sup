@@ -406,7 +406,7 @@
                         <outlet property="emailTextField" destination="qzJ-4R-Xap" id="qAz-rv-78y"/>
                         <outlet property="passwordTextField" destination="G7O-yq-lu7" id="eLh-Sy-GRE"/>
                         <outlet property="usernameTextField" destination="RIy-Pr-Scs" id="wiB-o5-2UL"/>
-                        <segue destination="9md-cR-zxa" kind="unwind" identifier="unwindToWelcome" unwindAction="unwindToViewController:" id="pei-qR-D5J"/>
+                        <segue destination="9md-cR-zxa" kind="unwind" identifier="unwindToWelcome" unwindAction="unwindToWelcome:" id="pei-qR-D5J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G9p-jW-bZo" userLabel="First Responder" sceneMemberID="firstResponder"/>

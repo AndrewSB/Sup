@@ -10,17 +10,18 @@ import UIKit
 
 class MainNavigationController: UINavigationController {
     override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {
+        
+        let defaultSegue = super.segueForUnwindingToViewController(toViewController, fromViewController: fromViewController, identifier: identifier)
+        let noAnimationSegue = PopNoAnimationSegue(identifier: identifier, source: fromViewController, destination: toViewController)
+        
         if let id = identifier {
             switch id {
             case "unwindToWelcome":
-                return PopNoAnimationSegue(identifier: identifier, source: fromViewController, destination: toViewController)
-            case "unwindToLogin":
-                return super.segueForUnwindingToViewController(toViewController, fromViewController: fromViewController, identifier: identifier)
+                return noAnimationSegue
             default:
-                return super.segueForUnwindingToViewController(toViewController, fromViewController: fromViewController, identifier: identifier)
+                return defaultSegue
             }
         }
-        println("\(identifier) delegated at navcon")
-        return PopNoAnimationSegue(identifier: identifier, source: fromViewController, destination: toViewController)
+        return defaultSegue
     }
 }
