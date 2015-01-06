@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		465E51591A52B5F500C80EFB /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E51581A52B5F500C80EFB /* ForgotPasswordViewController.swift */; };
+		466E2FD11A5B6E32001D87C4 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E2FD01A5B6E32001D87C4 /* SwipeViewController.swift */; };
 		469CDB201A536A470033483C /* YZSwipeBetweenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469CDB1F1A536A470033483C /* YZSwipeBetweenViewController.m */; };
 		469CDB221A536C030033483C /* FriendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469CDB211A536C030033483C /* FriendListViewController.swift */; };
 		469CDB261A536C130033483C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469CDB251A536C130033483C /* SettingsViewController.swift */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		465E51581A52B5F500C80EFB /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		466E2FD01A5B6E32001D87C4 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		469CDB1E1A536A470033483C /* YZSwipeBetweenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZSwipeBetweenViewController.h; sourceTree = "<group>"; };
 		469CDB1F1A536A470033483C /* YZSwipeBetweenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZSwipeBetweenViewController.m; sourceTree = "<group>"; };
 		469CDB211A536C030033483C /* FriendListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendListViewController.swift; sourceTree = "<group>"; };
@@ -132,19 +134,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		469CDB1D1A536A470033483C /* Source */ = {
+		469CDB1D1A536A470033483C /* YZSwipeBetweenViewController */ = {
 			isa = PBXGroup;
 			children = (
 				469CDB1E1A536A470033483C /* YZSwipeBetweenViewController.h */,
 				469CDB1F1A536A470033483C /* YZSwipeBetweenViewController.m */,
 			);
-			name = Source;
+			name = YZSwipeBetweenViewController;
 			path = YZSwipeBetweenViewController/Source;
 			sourceTree = SOURCE_ROOT;
 		};
 		469CDB271A536C410033483C /* Page Based Main Feed */ = {
 			isa = PBXGroup;
 			children = (
+				466E2FD01A5B6E32001D87C4 /* SwipeViewController.swift */,
 				469CDB211A536C030033483C /* FriendListViewController.swift */,
 				469CDB251A536C130033483C /* SettingsViewController.swift */,
 			);
@@ -271,7 +274,7 @@
 		46CDA0EF1A510121001FCCB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				469CDB1D1A536A470033483C /* Source */,
+				469CDB1D1A536A470033483C /* YZSwipeBetweenViewController */,
 				46BF81001A512C3D00F46CA6 /* Parse */,
 				46CDA0EE1A510114001FCCB3 /* Fabric */,
 			);
@@ -435,6 +438,7 @@
 				46ED8C391A5283B000D1313A /* MainNavigationController.swift in Sources */,
 				465E51591A52B5F500C80EFB /* ForgotPasswordViewController.swift in Sources */,
 				469CDB261A536C130033483C /* SettingsViewController.swift in Sources */,
+				466E2FD11A5B6E32001D87C4 /* SwipeViewController.swift in Sources */,
 				46CDA0C81A50FEE1001FCCB3 /* WelcomeViewController.swift in Sources */,
 				46CDA0C61A50FEE1001FCCB3 /* AppDelegate.swift in Sources */,
 			);

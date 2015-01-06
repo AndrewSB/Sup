@@ -58,25 +58,39 @@
                     <navigationItem key="navigationItem" id="jNJ-C2-xU0"/>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="custom" identifier="segueToWelcome" customClass="PushNoAnimationSegue" id="lKQ-sb-I7L"/>
-                        <segue destination="Rr2-Sc-UfF" kind="custom" identifier="segueToMain" customClass="PushNoAnimationSegue" id="hhd-iA-Wiv"/>
+                        <segue destination="O2m-Jb-9p1" kind="custom" identifier="segueToMain" customClass="PushNoAnimationSegue" id="GZ0-HK-bhB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IEY-oW-cvj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1296" y="-757"/>
         </scene>
-        <!--Page View Controller-->
-        <scene sceneID="4FX-yz-ECL">
+        <!--Swipe View Controller-->
+        <scene sceneID="0As-gF-lA8">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Rr2-Sc-UfF" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hzs-yt-mjd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="O2m-Jb-9p1" customClass="SwipeViewController" customModule="Sup" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h0L-Y8-067"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q4u-kh-b65"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AXZ-MB-lVn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="snQ-yB-0V2" kind="custom" id="T4X-c6-eMv"/>
+                        <segue destination="Hpm-aH-JRX" kind="custom" id="gyP-oa-ygC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FKf-Xh-Bhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2208" y="327"/>
+            <point key="canvasLocation" x="2939" y="261"/>
         </scene>
-        <!--Friend List View Controller-->
+        <!--Sup-->
         <scene sceneID="dH0-kN-8zg">
             <objects>
-                <viewController id="hdP-hu-oas" customClass="FriendListViewController" customModule="Sup" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="friendListVC" id="hdP-hu-oas" customClass="FriendListViewController" customModule="Sup" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gal-U7-q4u"/>
                         <viewControllerLayoutGuide type="bottom" id="M4i-4g-aQ4"/>
@@ -86,15 +100,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Sup" id="oKw-Fx-YcG">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="hEz-Tq-zXA"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cj2-4M-OuM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2723" y="1661"/>
+            <point key="canvasLocation" x="3305" y="1166"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="eVQ-I3-pq2">
             <objects>
-                <viewController id="dYW-71-TEw" customClass="SettingsViewController" customModule="Sup" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="settingsVC" id="dYW-71-TEw" customClass="SettingsViewController" customModule="Sup" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LTl-Zw-4fw"/>
                         <viewControllerLayoutGuide type="bottom" id="mGd-lM-XLw"/>
@@ -104,10 +121,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="a9q-UH-gJ9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jT-zX-a2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4384" y="1643"/>
+            <point key="canvasLocation" x="5044" y="1166"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -284,7 +302,7 @@
                         <outlet property="passwordTextField" destination="juw-BV-3gD" id="D2b-1D-fqq"/>
                         <outlet property="usernameTextField" destination="zVQ-jR-3Fq" id="iPE-LY-M34"/>
                         <segue destination="MLP-4L-6sJ" kind="unwind" identifier="unwindToWelcome" unwindAction="unwindToWelcome:" id="RA7-m2-nUX"/>
-                        <segue destination="Rr2-Sc-UfF" kind="custom" identifier="segueToMain" customClass="PushNoAnimationSegue" id="0BV-gs-BFc"/>
+                        <segue destination="O2m-Jb-9p1" kind="custom" identifier="segueToMain" customClass="PushNoAnimationSegue" id="A66-Zd-BdH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EZm-wS-ofl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -482,7 +500,7 @@
                         <outlet property="signupButton" destination="wzR-XT-ydq" id="wVq-5U-Zqu"/>
                         <outlet property="usernameTextField" destination="RIy-Pr-Scs" id="wiB-o5-2UL"/>
                         <segue destination="9md-cR-zxa" kind="unwind" identifier="unwindToWelcome" unwindAction="unwindToWelcome:" id="pei-qR-D5J"/>
-                        <segue destination="Rr2-Sc-UfF" kind="custom" identifier="segueToMain" customClass="PushNoAnimationSegue" id="YcQ-bj-0Us"/>
+                        <segue destination="O2m-Jb-9p1" kind="custom" identifier="segueToMain" customClass="PushNoAnimationSegue" id="MUx-Fn-h9p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G9p-jW-bZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -513,8 +531,47 @@
             </objects>
             <point key="canvasLocation" x="-645" y="1866"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kV3-cd-wLX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="snQ-yB-0V2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2q0-9E-6wx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="19"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hdP-hu-oas" kind="relationship" relationship="rootViewController" id="lPh-gC-emb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qnq-ZE-pKQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2493" y="1166"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wYa-gR-AhS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hpm-aH-JRX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MuR-sb-DFo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dYW-71-TEw" kind="relationship" relationship="rootViewController" id="MDB-Le-Cmq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JFP-Ac-F6m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4232" y="1166"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hhd-iA-Wiv"/>
+        <segue reference="GZ0-HK-bhB"/>
     </inferredMetricsTieBreakers>
 </document>
