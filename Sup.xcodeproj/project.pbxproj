@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		461BA8A71A51440C0025C13B /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461BA8A51A51440C0025C13B /* TwitterKit.framework */; };
-		461BA8A81A51440C0025C13B /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 461BA8A61A51440C0025C13B /* TwitterKitResources.bundle */; };
 		465E51591A52B5F500C80EFB /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E51581A52B5F500C80EFB /* ForgotPasswordViewController.swift */; };
 		469CDB201A536A470033483C /* YZSwipeBetweenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469CDB1F1A536A470033483C /* YZSwipeBetweenViewController.m */; };
 		469CDB221A536C030033483C /* FriendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469CDB211A536C030033483C /* FriendListViewController.swift */; };
-		469CDB241A536C0B0033483C /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469CDB231A536C0B0033483C /* StatusViewController.swift */; };
 		469CDB261A536C130033483C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469CDB251A536C130033483C /* SettingsViewController.swift */; };
 		46A579B71A524F360031D1E9 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579B61A524F360031D1E9 /* InitialViewController.swift */; };
 		46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579B81A524F3F0031D1E9 /* LoginViewController.swift */; };
@@ -57,13 +54,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		461BA8A51A51440C0025C13B /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
-		461BA8A61A51440C0025C13B /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
 		465E51581A52B5F500C80EFB /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		469CDB1E1A536A470033483C /* YZSwipeBetweenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZSwipeBetweenViewController.h; sourceTree = "<group>"; };
 		469CDB1F1A536A470033483C /* YZSwipeBetweenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZSwipeBetweenViewController.m; sourceTree = "<group>"; };
 		469CDB211A536C030033483C /* FriendListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendListViewController.swift; sourceTree = "<group>"; };
-		469CDB231A536C0B0033483C /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		469CDB251A536C130033483C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		46A579B61A524F360031D1E9 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		46A579B81A524F3F0031D1E9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -112,7 +106,6 @@
 				46BF80F41A512B8B00F46CA6 /* Security.framework in Frameworks */,
 				46BF80F51A512B8B00F46CA6 /* StoreKit.framework in Frameworks */,
 				46BF80F61A512B8B00F46CA6 /* SystemConfiguration.framework in Frameworks */,
-				461BA8A71A51440C0025C13B /* TwitterKit.framework in Frameworks */,
 				46BF80F01A512B7800F46CA6 /* QuartzCore.framework in Frameworks */,
 				46BF80EE1A512B7300F46CA6 /* MobileCoreServices.framework in Frameworks */,
 				46BF80EB1A512B6C00F46CA6 /* CoreGraphics.framework in Frameworks */,
@@ -153,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				469CDB211A536C030033483C /* FriendListViewController.swift */,
-				469CDB231A536C0B0033483C /* StatusViewController.swift */,
 				469CDB251A536C130033483C /* SettingsViewController.swift */,
 			);
 			name = "Page Based Main Feed";
@@ -280,8 +272,6 @@
 			isa = PBXGroup;
 			children = (
 				469CDB1D1A536A470033483C /* Source */,
-				461BA8A51A51440C0025C13B /* TwitterKit.framework */,
-				461BA8A61A51440C0025C13B /* TwitterKitResources.bundle */,
 				46BF81001A512C3D00F46CA6 /* Parse */,
 				46CDA0EE1A510114001FCCB3 /* Fabric */,
 			);
@@ -329,7 +319,6 @@
 				46CDA0BD1A50FEE1001FCCB3 /* Frameworks */,
 				46CDA0BE1A50FEE1001FCCB3 /* Resources */,
 				46CDA0E51A50FFDA001FCCB3 /* ShellScript */,
-				46BF80D91A511A2F00F46CA6 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -402,7 +391,6 @@
 			files = (
 				46CDA0CB1A50FEE1001FCCB3 /* Main.storyboard in Resources */,
 				46CDA0D01A50FEE1001FCCB3 /* LaunchScreen.xib in Resources */,
-				461BA8A81A51440C0025C13B /* TwitterKitResources.bundle in Resources */,
 				46CDA0CD1A50FEE1001FCCB3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,20 +405,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		46BF80D91A511A2F00F46CA6 /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "python \"$PROJECT_DIR/slice.py\" \"$PROJECT_DIR/Design.sketch\" \"$PROJECT_DIR/Sup/Images.xcassets\"";
-		};
 		46CDA0E51A50FFDA001FCCB3 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -455,7 +429,6 @@
 				469CDB201A536A470033483C /* YZSwipeBetweenViewController.m in Sources */,
 				46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */,
 				46ED8C3B1A5284A300D1313A /* PopNoAnimationSegue.swift in Sources */,
-				469CDB241A536C0B0033483C /* StatusViewController.swift in Sources */,
 				46A579B71A524F360031D1E9 /* InitialViewController.swift in Sources */,
 				46A579BB1A524F480031D1E9 /* SignupViewController.swift in Sources */,
 				46A579BD1A5253A00031D1E9 /* PushNoAnimationSegue.swift in Sources */,
@@ -593,7 +566,7 @@
 					"$(PROJECT_DIR)/Sup/parse-library-1.6.1",
 				);
 				INFOPLIST_FILE = Sup/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Sup/Sup-Bridging-Header.h";
@@ -612,7 +585,7 @@
 					"$(PROJECT_DIR)/Sup/parse-library-1.6.1",
 				);
 				INFOPLIST_FILE = Sup/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Sup/Sup-Bridging-Header.h";
