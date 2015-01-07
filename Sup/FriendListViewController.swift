@@ -9,4 +9,13 @@
 import UIKit
 
 class FriendListViewController: UIViewController {
+    @IBOutlet weak var friendListTableView: FriendListTableView!
+    var detailID: String = ""
+    
+    override func viewDidLoad() {
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    }
 }

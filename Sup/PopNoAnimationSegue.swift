@@ -12,7 +12,7 @@ class PopNoAnimationSegue: UIStoryboardSegue {
     override func perform() {
         let source = sourceViewController as UIViewController
         if let navigation = source.navigationController {
-            navigation.popToRootViewControllerAnimated(false)
+            navigation.popToViewController(destinationViewController as UIViewController, animated: false)
         } else {
             println("navigation is not source navigation controller")
         }

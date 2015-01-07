@@ -8,10 +8,11 @@
 
 import UIKit
 
-class SwipeViewController: YZSwipeBetweenViewController {
-    override func viewWillAppear(animated: Bool) {
+class SwipeViewController : YZSwipeBetweenViewController {
+    let settingsStoryboard = UIStoryboard(name: "Settings", bundle: NSBundle.mainBundle())
+    override func viewWillAppear(animated : Bool) {
         super.viewWillAppear(animated)
         
-        viewControllers = [storyboard?.instantiateViewControllerWithIdentifier("friendListVC") as UIViewController, storyboard?.instantiateViewControllerWithIdentifier("settingsVC") as UIViewController]
+        viewControllers = [storyboard?.instantiateViewControllerWithIdentifier("friendListNavCon") as UINavigationController, settingsStoryboard.instantiateViewControllerWithIdentifier("settingsNavCon") as UINavigationController]
     }
 }

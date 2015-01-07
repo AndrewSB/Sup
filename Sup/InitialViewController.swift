@@ -20,5 +20,6 @@ class InitialViewController: UIViewController {
     }
     
     @IBAction func unwindToInitial (sender: UIStoryboardSegue){
+        println("unwinded to initial")
     }
 }

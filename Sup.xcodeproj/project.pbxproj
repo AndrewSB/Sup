@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		460473231A5B953A00C238A6 /* API-Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 460473221A5B953A00C238A6 /* API-Keys.plist */; };
 		465E51591A52B5F500C80EFB /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E51581A52B5F500C80EFB /* ForgotPasswordViewController.swift */; };
+		466891011A5BBF5B006A3B87 /* FriendListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466891001A5BBF5B006A3B87 /* FriendListTableView.swift */; };
+		466891031A5BD3C2006A3B87 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466891021A5BD3C2006A3B87 /* Settings.storyboard */; };
 		466E2FD11A5B6E32001D87C4 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E2FD01A5B6E32001D87C4 /* SwipeViewController.swift */; };
 		469CDB201A536A470033483C /* YZSwipeBetweenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469CDB1F1A536A470033483C /* YZSwipeBetweenViewController.m */; };
 		469CDB221A536C030033483C /* FriendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469CDB211A536C030033483C /* FriendListViewController.swift */; };
-		469CDB261A536C130033483C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469CDB251A536C130033483C /* SettingsViewController.swift */; };
 		46A579B71A524F360031D1E9 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579B61A524F360031D1E9 /* InitialViewController.swift */; };
 		46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579B81A524F3F0031D1E9 /* LoginViewController.swift */; };
 		46A579BB1A524F480031D1E9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579BA1A524F480031D1E9 /* SignupViewController.swift */; };
@@ -33,6 +33,7 @@
 		46BF80F61A512B8B00F46CA6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BF80F31A512B8B00F46CA6 /* SystemConfiguration.framework */; };
 		46BF80F81A512B9A00F46CA6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BF80F71A512B9A00F46CA6 /* libz.dylib */; };
 		46BF80FA1A512BA200F46CA6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BF80F91A512BA200F46CA6 /* libsqlite3.dylib */; };
+		46CAFB5B1A5BE18100C7F66D /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CAFB5A1A5BE18100C7F66D /* SettingsTableViewController.swift */; };
 		46CDA0C61A50FEE1001FCCB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDA0C51A50FEE1001FCCB3 /* AppDelegate.swift */; };
 		46CDA0C81A50FEE1001FCCB3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDA0C71A50FEE1001FCCB3 /* WelcomeViewController.swift */; };
 		46CDA0CB1A50FEE1001FCCB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46CDA0C91A50FEE1001FCCB3 /* Main.storyboard */; };
@@ -58,11 +59,12 @@
 /* Begin PBXFileReference section */
 		460473221A5B953A00C238A6 /* API-Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "API-Keys.plist"; sourceTree = "<group>"; };
 		465E51581A52B5F500C80EFB /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		466891001A5BBF5B006A3B87 /* FriendListTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendListTableView.swift; sourceTree = "<group>"; };
+		466891021A5BD3C2006A3B87 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		466E2FD01A5B6E32001D87C4 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		469CDB1E1A536A470033483C /* YZSwipeBetweenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZSwipeBetweenViewController.h; sourceTree = "<group>"; };
 		469CDB1F1A536A470033483C /* YZSwipeBetweenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZSwipeBetweenViewController.m; sourceTree = "<group>"; };
 		469CDB211A536C030033483C /* FriendListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendListViewController.swift; sourceTree = "<group>"; };
-		469CDB251A536C130033483C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		46A579B61A524F360031D1E9 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		46A579B81A524F3F0031D1E9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		46A579BA1A524F480031D1E9 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		46BF80F71A512B9A00F46CA6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		46BF80F91A512BA200F46CA6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		46BF80FB1A512BB900F46CA6 /* Sup-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sup-Bridging-Header.h"; sourceTree = "<group>"; };
+		46CAFB5A1A5BE18100C7F66D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		46CDA0C01A50FEE1001FCCB3 /* Sup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CDA0C41A50FEE1001FCCB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46CDA0C51A50FEE1001FCCB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -151,16 +154,9 @@
 			children = (
 				466E2FD01A5B6E32001D87C4 /* SwipeViewController.swift */,
 				469CDB211A536C030033483C /* FriendListViewController.swift */,
-				469CDB251A536C130033483C /* SettingsViewController.swift */,
+				466891001A5BBF5B006A3B87 /* FriendListTableView.swift */,
 			);
 			name = "Page Based Main Feed";
-			sourceTree = "<group>";
-		};
-		46BF80D71A510B2B00F46CA6 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		46BF80DA1A512A6500F46CA6 /* parse-library-1.6.1 */ = {
@@ -227,12 +223,12 @@
 				46CDA0C51A50FEE1001FCCB3 /* AppDelegate.swift */,
 				46ED8C381A5283B000D1313A /* MainNavigationController.swift */,
 				46ED8C3D1A528A9700D1313A /* View Controllers */,
-				469CDB271A536C410033483C /* Page Based Main Feed */,
 				46ED8C3C1A528A8A00D1313A /* Transitions */,
 				46CDA0C91A50FEE1001FCCB3 /* Main.storyboard */,
+				46CAFB5A1A5BE18100C7F66D /* SettingsTableViewController.swift */,
+				466891021A5BD3C2006A3B87 /* Settings.storyboard */,
 				46CDA0CC1A50FEE1001FCCB3 /* Images.xcassets */,
 				46CDA0CE1A50FEE1001FCCB3 /* LaunchScreen.xib */,
-				46BF80D71A510B2B00F46CA6 /* Resources */,
 				46CDA0C31A50FEE1001FCCB3 /* Supporting Files */,
 			);
 			path = Sup;
@@ -299,6 +295,7 @@
 			children = (
 				46A579B61A524F360031D1E9 /* InitialViewController.swift */,
 				46ED8C3E1A528AA100D1313A /* Onboarding */,
+				469CDB271A536C410033483C /* Page Based Main Feed */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -398,7 +395,7 @@
 				46CDA0CB1A50FEE1001FCCB3 /* Main.storyboard in Resources */,
 				46CDA0D01A50FEE1001FCCB3 /* LaunchScreen.xib in Resources */,
 				46CDA0CD1A50FEE1001FCCB3 /* Images.xcassets in Resources */,
-				460473231A5B953A00C238A6 /* API-Keys.plist in Resources */,
+				466891031A5BD3C2006A3B87 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,13 +432,14 @@
 				469CDB221A536C030033483C /* FriendListViewController.swift in Sources */,
 				469CDB201A536A470033483C /* YZSwipeBetweenViewController.m in Sources */,
 				46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */,
+				466891011A5BBF5B006A3B87 /* FriendListTableView.swift in Sources */,
 				46ED8C3B1A5284A300D1313A /* PopNoAnimationSegue.swift in Sources */,
 				46A579B71A524F360031D1E9 /* InitialViewController.swift in Sources */,
+				46CAFB5B1A5BE18100C7F66D /* SettingsTableViewController.swift in Sources */,
 				46A579BB1A524F480031D1E9 /* SignupViewController.swift in Sources */,
 				46A579BD1A5253A00031D1E9 /* PushNoAnimationSegue.swift in Sources */,
 				46ED8C391A5283B000D1313A /* MainNavigationController.swift in Sources */,
 				465E51591A52B5F500C80EFB /* ForgotPasswordViewController.swift in Sources */,
-				469CDB261A536C130033483C /* SettingsViewController.swift in Sources */,
 				466E2FD11A5B6E32001D87C4 /* SwipeViewController.swift in Sources */,
 				46CDA0C81A50FEE1001FCCB3 /* WelcomeViewController.swift in Sources */,
 				46CDA0C61A50FEE1001FCCB3 /* AppDelegate.swift in Sources */,
