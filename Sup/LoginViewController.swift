@@ -54,7 +54,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         PFUser.logInWithUsernameInBackground(usernameTextField.text, password: passwordTextField.text, block: {(succeeded, error) in
             if error == nil {
                 println("segue to main")
-                self.performSegueWithIdentifier("unwindToWelcome", sender: self)
+                self.performSegueWithIdentifier("segueToMain", sender: self)
             } else {
                 println(error)
             }
@@ -62,6 +62,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        println(_stdlib_getTypeName(segue.destinationViewController))
+        if let d = segue.destinationViewController as? SwipeViewController {
+            navigationController?.setNavigationBarHidden(true, animated: false)
+        }
     }
 }

@@ -29,6 +29,22 @@ class SettingsTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println("did select \(indexPath)")
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        if indexPath.section == 0 {
+            switch indexPath.row {
+            case 1:
+                println()//self.performSegueWithIdentifier("segueToProfilePicture", sender: self)
+            case 2:
+                println()//self.performSegueWithIdentifier("segueToMobileNumber", sender: self)
+            case 3:
+                println()//self.performSegueWithIdentifier("segueToEmail", sender: self)
+            case 4:
+                println()//self.performSegueWithIdentifier("segueToPassword", sender: self)
+            default:
+                println("switch failed section 0 \(indexPath.row)")
+            }
+        }
         if indexPath.section == 1 {
             switch indexPath.row {
             case 0:
@@ -42,20 +58,19 @@ class SettingsTableViewController: UITableViewController {
                 appDel.logout()
                 
             default:
-                println("switch failed section 1")
+                println("switch failed section 1 \(indexPath.row)")
             }
         }
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if let d = segue.destinationViewController as? SettingsDetailTableViewController {
+//            
+//        }
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
     }
-    */
-    
+
     
 
 }

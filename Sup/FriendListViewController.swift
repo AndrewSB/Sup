@@ -8,8 +8,7 @@
 
 import UIKit
 
-class FriendListViewController: UIViewController {
-    @IBOutlet weak var friendListTableView: FriendListTableView!
+class FriendListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var detailID: String = ""
     
     override func viewDidLoad() {
@@ -18,4 +17,8 @@ class FriendListViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     }
+    
+    //Delegate
+    
+    //DataSource
 }

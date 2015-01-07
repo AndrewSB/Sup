@@ -9,6 +9,11 @@
 import UIKit
 
 class MainNavigationController: UINavigationController {
+    override func viewDidLoad() {
+        self.topViewController.loadView()
+        super.viewDidLoad()
+    }
+    
     override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {
         
         let defaultSegue = super.segueForUnwindingToViewController(toViewController, fromViewController: fromViewController, identifier: identifier)
