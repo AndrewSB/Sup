@@ -16,14 +16,14 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     
     
     override func loadView() {
-        setNavBarColor(UIColor(red: 1, green: 0.293, blue: 0.279, alpha: 1))
+        setNavBarColor(UIColor(red: 1, green: 0.293, blue: 0.279, alpha: 1), translucent: false)
         super.loadView()
     }
     
     override func viewDidLoad() {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         
-        let backButton = UIBarButtonItem(title: "<", style: .Plain, target: self, action: "unwind")
+        let backButton = UIBarButtonItem(image: UIImage(named: "back"), style: .Plain, target: self, action: "unwind")
         
         self.navigationItem.setHidesBackButton(true, animated: false)
         self.navigationItem.setLeftBarButtonItem(backButton, animated: true)
@@ -35,31 +35,35 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     }
     
     func unwind() {
-        setNavBarColor(UIColor(red: 0.136, green: 0.859, blue: 0.112, alpha: 1))
+        setNavBarColor(UIColor(red: 0.136, green: 0.859, blue: 0.112, alpha: 1), translucent: true)
         performSegueWithIdentifier("unwindToWelcome", sender: self)
     }
     
-    func setNavBarColor(color: UIColor) {
+    func setNavBarColor(color: UIColor, translucent: Bool) {
         CATransaction.begin()
         CATransaction.setDisableActions(true)
         navigationController?.navigationBar.barTintColor = color
+        navigationController?.navigationBar.translucent = translucent
         CATransaction.commit()
     }
     
     @IBAction func signupButtonHit(sender: AnyObject) {
         //validate
         let user = PFUser()
-        user.username = usernameTextField.text
-        user.email = emailTextField.text
-        user.password = passwordTextField.text
+        user.username = usernameTextField.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        user.email = emailTextField.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        user.password = passwordTextField.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
         
         user.signUpInBackgroundWithBlock({(succeeded, error) in
             if error == nil {
-                println("sign up successful, segue to main")
-                self.performSegueWithIdentifier("segueToMain", sender: self)
+                self.navigationController?.popToRootViewControllerAnimated(false)
             } else {
-                let eString = error.userInfo?.indexForKey("error")
-                println(eString)
+                let e = error.userInfo as Dictionary<NSObject, AnyObject>!//doesnt work, everyhting is nil
+                let Error = "[Error]"
+                println("error is \(e[Error])")
+//                let errorAlert = UIAlertController(title: "Uh oh!", message: eString, preferredStyle: .Alert)
+//                errorAlert.addAction(
+//                erorrAlert.show()
             }
         })
     }

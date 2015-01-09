@@ -17,7 +17,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         
-        let backButton = UIBarButtonItem(title: "<", style: .Plain, target: self, action: "unwind")
+        let backButton = UIBarButtonItem(image: UIImage(named: "back"), style: .Plain, target: self, action: "unwind")
         
         self.navigationItem.setHidesBackButton(true, animated: false)
         self.navigationItem.setLeftBarButtonItem(backButton, animated: true)
@@ -25,6 +25,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         usernameTextField.becomeFirstResponder()
         usernameTextField.delegate = self
         passwordTextField.delegate = self
+        
+        println(self.navigationItem)
     }
     
     func unwind() {
@@ -54,7 +56,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         PFUser.logInWithUsernameInBackground(usernameTextField.text, password: passwordTextField.text, block: {(succeeded, error) in
             if error == nil {
                 println("segue to main")
-                self.performSegueWithIdentifier("segueToMain", sender: self)
+                self.navigationController?.popToRootViewControllerAnimated(false)
             } else {
                 println(error)
             }

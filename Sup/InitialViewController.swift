@@ -10,6 +10,7 @@ import UIKit
 
 class InitialViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
+        println("initial did appear")
         let loggedIn = PFUser.currentUser() != nil
         
         if loggedIn {
