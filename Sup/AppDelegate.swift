@@ -17,8 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        startParse(launchOptions)
         Fabric.with([Crashlytics()])
         
+        let attributes = [NSFontAttributeName as NSObject: UIFont(name: "Avenir-Black", size: 15) as AnyObject!, NSForegroundColorAttributeName: UIColor.whiteColor()]
+        UIBarButtonItem.appearance().setTitleTextAttributes(attributes, forState: .Normal)
+                
+        return true
+    }
+    
+    func startParse(lo: [NSObject: AnyObject]?) {
         Parse.enableLocalDatastore()
         if let keys = NSBundle.mainBundle().pathForResource("API-Keys", ofType: "plist") {
             let rootDict = NSDictionary(contentsOfFile: keys)
@@ -27,17 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             fatalError("You don't have access to the API Keys")
         }
+        
+        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(lo, block: nil)
 
-        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
-        
-        let attributes = [NSFontAttributeName as NSObject: UIFont(name: "Avenir-Black", size: 15) as AnyObject!, NSForegroundColorAttributeName: UIColor.whiteColor()]
-        UIBarButtonItem.appearance().setTitleTextAttributes(attributes, forState: .Normal)
-        
-        println(self.window?.rootViewController)
-        
-        println()
-        
-        return true
     }
     
     func logout() {
