@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		463B01D81A6D552B003C90E3 /* API-Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 463B01D71A6D552B003C90E3 /* API-Keys.plist */; };
 		465E51591A52B5F500C80EFB /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E51581A52B5F500C80EFB /* ForgotPasswordViewController.swift */; };
 		466891031A5BD3C2006A3B87 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466891021A5BD3C2006A3B87 /* Settings.storyboard */; };
 		466E2FD11A5B6E32001D87C4 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E2FD01A5B6E32001D87C4 /* SwipeViewController.swift */; };
@@ -58,7 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		460473221A5B953A00C238A6 /* API-Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "API-Keys.plist"; sourceTree = "<group>"; };
+		463B01D71A6D552B003C90E3 /* API-Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "API-Keys.plist"; sourceTree = "<group>"; };
 		465E51581A52B5F500C80EFB /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		466891021A5BD3C2006A3B87 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		466E2FD01A5B6E32001D87C4 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
@@ -240,9 +241,9 @@
 		46CDA0C31A50FEE1001FCCB3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				463B01D71A6D552B003C90E3 /* API-Keys.plist */,
 				46BF80FB1A512BB900F46CA6 /* Sup-Bridging-Header.h */,
 				46CDA0C41A50FEE1001FCCB3 /* Info.plist */,
-				460473221A5B953A00C238A6 /* API-Keys.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -396,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46CDA0CB1A50FEE1001FCCB3 /* Main.storyboard in Resources */,
+				463B01D81A6D552B003C90E3 /* API-Keys.plist in Resources */,
 				46CDA0D01A50FEE1001FCCB3 /* LaunchScreen.xib in Resources */,
 				46CDA0CD1A50FEE1001FCCB3 /* Images.xcassets in Resources */,
 				4674F1BE1A6C98C300437584 /* Login.storyboard in Resources */,
@@ -576,7 +578,7 @@
 					"$(PROJECT_DIR)/Sup/parse-library-1.6.1",
 				);
 				INFOPLIST_FILE = Sup/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Sup/Sup-Bridging-Header.h";
@@ -595,7 +597,7 @@
 					"$(PROJECT_DIR)/Sup/parse-library-1.6.1",
 				);
 				INFOPLIST_FILE = Sup/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Sup/Sup-Bridging-Header.h";

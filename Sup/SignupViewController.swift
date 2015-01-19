@@ -58,12 +58,10 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
             if error == nil {
                 self.navigationController?.popToRootViewControllerAnimated(false)
             } else {
-                let e = error.userInfo as Dictionary<NSObject, AnyObject>!//doesnt work, everyhting is nil
-                let Error = "[Error]"
-                println("error is \(e[Error])")
-//                let errorAlert = UIAlertController(title: "Uh oh!", message: eString, preferredStyle: .Alert)
-//                errorAlert.addAction(
-//                erorrAlert.show()
+                let alert = UIAlertController(title: "Uh oh!", message: "\(error.userInfo)", preferredStyle: .Alert)
+                let ok = UIAlertAction(title: "Ok", style: .Cancel, handler: nil)
+                alert.addAction(ok)
+                self.presentViewController(alert, animated: true, completion: nil)
             }
         })
     }

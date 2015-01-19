@@ -58,7 +58,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 println("segue to main")
                 self.navigationController?.popToRootViewControllerAnimated(false)
             } else {
-                println(error)
+                let alert = UIAlertController(title: "Uh oh!", message: "\(error.userInfo)", preferredStyle: .Alert)
+                let ok = UIAlertAction(title: "Ok", style: .Cancel, handler: nil)
+                alert.addAction(ok)
+                self.presentViewController(alert, animated: true, completion: nil)
             }
         })
     }
