@@ -18,11 +18,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         startParse(launchOptions)
+        PFUser.logOut()
+        let loggedIn = PFUser.currentUser() != nil
+        
         Fabric.with([Crashlytics()])
         
-        let attributes = [NSFontAttributeName as NSObject: UIFont(name: "Avenir-Black", size: 15) as AnyObject!, NSForegroundColorAttributeName: UIColor.whiteColor()]
-        UIBarButtonItem.appearance().setTitleTextAttributes(attributes, forState: .Normal)
-                
+        applyFormatting()
+        
+        let storyboard = loggedIn ? "Main" : "Login"
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.rootViewController = (UIStoryboard(name: storyboard, bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UIViewController)
+        window?.makeKeyAndVisible()
+        
         return true
     }
     
@@ -35,10 +43,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             fatalError("You don't have access to the API Keys")
         }
-        
         PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(lo, block: nil)
-
     }
+    
+    func applyFormatting() {
+        let attributes = [NSFontAttributeName as NSObject: UIFont(name: "Avenir-Black", size: 15) as AnyObject!, NSForegroundColorAttributeName: UIColor.whiteColor()]
+        UIBarButtonItem.appearance().setTitleTextAttributes(attributes, forState: .Normal)
+    }
+    
+    func switchToMain() {
+        
+    }
+    
+    func switchToLogin() {
+        
+    }
+    
     
     func logout() {
         PFUser.logOut()

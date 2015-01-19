@@ -10,6 +10,7 @@
 		465E51591A52B5F500C80EFB /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E51581A52B5F500C80EFB /* ForgotPasswordViewController.swift */; };
 		466891031A5BD3C2006A3B87 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466891021A5BD3C2006A3B87 /* Settings.storyboard */; };
 		466E2FD11A5B6E32001D87C4 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E2FD01A5B6E32001D87C4 /* SwipeViewController.swift */; };
+		4674F1BE1A6C98C300437584 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4674F1BD1A6C98C300437584 /* Login.storyboard */; };
 		469CDB201A536A470033483C /* YZSwipeBetweenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469CDB1F1A536A470033483C /* YZSwipeBetweenViewController.m */; };
 		469CDB221A536C030033483C /* FriendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469CDB211A536C030033483C /* FriendListViewController.swift */; };
 		46A579B71A524F360031D1E9 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579B61A524F360031D1E9 /* InitialViewController.swift */; };
@@ -61,6 +62,7 @@
 		465E51581A52B5F500C80EFB /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		466891021A5BD3C2006A3B87 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		466E2FD01A5B6E32001D87C4 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
+		4674F1BD1A6C98C300437584 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		469CDB1E1A536A470033483C /* YZSwipeBetweenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZSwipeBetweenViewController.h; sourceTree = "<group>"; };
 		469CDB1F1A536A470033483C /* YZSwipeBetweenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZSwipeBetweenViewController.m; sourceTree = "<group>"; };
 		469CDB211A536C030033483C /* FriendListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendListViewController.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				46ED8C381A5283B000D1313A /* MainNavigationController.swift */,
 				46ED8C3D1A528A9700D1313A /* View Controllers */,
 				46ED8C3C1A528A8A00D1313A /* Transitions */,
+				4674F1BD1A6C98C300437584 /* Login.storyboard */,
 				46CDA0C91A50FEE1001FCCB3 /* Main.storyboard */,
 				46CAFB5A1A5BE18100C7F66D /* SettingsTableViewController.swift */,
 				466891021A5BD3C2006A3B87 /* Settings.storyboard */,
@@ -395,6 +398,7 @@
 				46CDA0CB1A50FEE1001FCCB3 /* Main.storyboard in Resources */,
 				46CDA0D01A50FEE1001FCCB3 /* LaunchScreen.xib in Resources */,
 				46CDA0CD1A50FEE1001FCCB3 /* Images.xcassets in Resources */,
+				4674F1BE1A6C98C300437584 /* Login.storyboard in Resources */,
 				466891031A5BD3C2006A3B87 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
