@@ -18,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         startParse(launchOptions)
-        PFUser.logOut()
         let loggedIn = PFUser.currentUser() != nil
         
         Fabric.with([Crashlytics()])
@@ -52,11 +51,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func switchToMain() {
-        
+        window?.rootViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateInitialViewController() as? UIViewController
     }
     
     func switchToLogin() {
-        
+        window?.rootViewController = UIStoryboard(name: "Login", bundle: NSBundle.mainBundle()).instantiateInitialViewController() as? UIViewController
     }
     
     

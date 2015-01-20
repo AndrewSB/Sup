@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O2m-Jb-9p1">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Swipe View Controller-->
@@ -49,43 +46,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellID" rowHeight="59" id="UB0-i6-VOp" customClass="FriendListTableViewCell" customModule="Sup" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellID" textLabel="daU-cL-a6V" detailTextLabel="049-6A-Pek" rowHeight="59" style="IBUITableViewCellStyleSubtitle" id="UB0-i6-VOp">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UB0-i6-VOp" id="jRM-hT-PPB">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kuM-GD-ICv">
-                                                    <rect key="frame" x="14" y="8" width="44" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="kuM-GD-ICv" secondAttribute="height" multiplier="1:1" id="Vy3-sC-8XQ"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uxy-Nt-RmU">
-                                                    <rect key="frame" x="526" y="8" width="44" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="Uxy-Nt-RmU" secondAttribute="height" multiplier="1:1" id="gcw-QA-mtn"/>
-                                                    </constraints>
-                                                </imageView>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="daU-cL-a6V">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="049-6A-Pek">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="kuM-GD-ICv" secondAttribute="bottom" constant="-1.5" id="9Cv-F1-7g4"/>
-                                                <constraint firstItem="Uxy-Nt-RmU" firstAttribute="top" secondItem="jRM-hT-PPB" secondAttribute="topMargin" id="DDb-1i-ndn"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Uxy-Nt-RmU" secondAttribute="bottom" constant="-1.5" id="MJR-LL-K2k"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Uxy-Nt-RmU" secondAttribute="trailing" constant="22" id="Qpk-kR-Lkz"/>
-                                                <constraint firstItem="kuM-GD-ICv" firstAttribute="top" secondItem="jRM-hT-PPB" secondAttribute="topMargin" id="ePQ-SZ-cY1"/>
-                                                <constraint firstItem="Uxy-Nt-RmU" firstAttribute="width" secondItem="Uxy-Nt-RmU" secondAttribute="height" multiplier="1:1" id="eVN-Uy-cdG"/>
-                                                <constraint firstItem="kuM-GD-ICv" firstAttribute="leading" secondItem="jRM-hT-PPB" secondAttribute="leadingMargin" constant="6" id="hBy-5B-E0E"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="eVN-Uy-cdG"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="profilePictureImageView" destination="kuM-GD-ICv" id="zhC-iF-0mz"/>
-                                            <outlet property="statusImageView" destination="Uxy-Nt-RmU" id="Z6r-lf-pNq"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

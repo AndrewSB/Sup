@@ -32,10 +32,16 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cellID") as FriendListTableViewCell?
+        var cell = tableView.dequeueReusableCellWithIdentifier("cellID") as? UITableViewCell
         if cell == nil {
-            cell = FriendListTableViewCell()
+            println("created at \(indexPath.row)")
+            cell = UITableViewCell(style: .Default, reuseIdentifier: "cellID")
         }
+        let image = UIImage(named: "A-10")
+        cell?.imageView?.image = UIImage(
+        cell?.textLabel?.text = "Donald Glover"
+        cell?.detailTextLabel?.text = "Chilling with Jhene"
+        
         return cell!
     }
 }

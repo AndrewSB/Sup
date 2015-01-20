@@ -14,6 +14,8 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signupButton: UIButton!
     
+    let appDel = UIApplication.sharedApplication().delegate as AppDelegate
+    
     
     override func loadView() {
         setNavBarColor(UIColor(red: 1, green: 0.293, blue: 0.279, alpha: 1), translucent: false)
@@ -56,7 +58,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         
         user.signUpInBackgroundWithBlock({(succeeded, error) in
             if error == nil {
-                self.navigationController?.popToRootViewControllerAnimated(false)
+                self.appDel.switchToMain()
             } else {
                 let alert = UIAlertController(title: "Uh oh!", message: "\(error.userInfo)", preferredStyle: .Alert)
                 let ok = UIAlertAction(title: "Ok", style: .Cancel, handler: nil)

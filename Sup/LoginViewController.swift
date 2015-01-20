@@ -13,6 +13,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var logInButton: UIButton!
     
+    let appDel = UIApplication.sharedApplication().delegate as AppDelegate
+    
     
     override func viewDidLoad() {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
@@ -55,8 +57,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction func loginButtonHit(sender: AnyObject) {
         PFUser.logInWithUsernameInBackground(usernameTextField.text, password: passwordTextField.text, block: {(succeeded, error) in
             if error == nil {
-                println("segue to main")
-                self.navigationController?.popToRootViewControllerAnimated(false)
+                self.appDel.switchToMain()
             } else {
                 let alert = UIAlertController(title: "Uh oh!", message: "\(error.userInfo)", preferredStyle: .Alert)
                 let ok = UIAlertAction(title: "Ok", style: .Cancel, handler: nil)
