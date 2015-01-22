@@ -11,6 +11,11 @@ import UIKit
 class FriendListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableV: UITableView!
     
+    override func loadView() {
+        super.loadView()
+        
+        
+    }
     
     override func viewDidLoad() {
         tableV.delegate = self
