@@ -15,10 +15,6 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         tableV.delegate = self
         tableV.dataSource = self
-        
-        if self.tableV.respondsToSelector("layoutMargins") {
-            self.tableV.layoutMargins = UIEdgeInsetsZero
-        }
     
         super.viewDidLoad()
     }
@@ -40,10 +36,6 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
         if cell == nil {
             println("created at \(indexPath.row)")
             cell = UITableViewCell(style: .Default, reuseIdentifier: "cellID")
-        }
-        
-        if cell!.respondsToSelector("layoutMargins") {
-            cell!.layoutMargins = UIEdgeInsetsZero
         }
         
         switch indexPath.row {
