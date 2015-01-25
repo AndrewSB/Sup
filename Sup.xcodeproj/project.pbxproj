@@ -17,8 +17,7 @@
 		46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579B81A524F3F0031D1E9 /* LoginViewController.swift */; };
 		46A579BB1A524F480031D1E9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579BA1A524F480031D1E9 /* SignupViewController.swift */; };
 		46A579BD1A5253A00031D1E9 /* PushNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579BC1A5253A00031D1E9 /* PushNoAnimationSegue.swift */; };
-		46B8D18F1A7077E7002C1059 /* ABLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B8D18E1A7077E7002C1059 /* ABLoadingView.swift */; };
-		46B8D1911A707B8A002C1059 /* UIRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B8D1901A707B8A002C1059 /* UIRectExtension.swift */; };
+		46B8D1911A707B8A002C1059 /* UIRectHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B8D1901A707B8A002C1059 /* UIRectHelper.swift */; };
 		46BF80E01A512A6500F46CA6 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BF80DB1A512A6500F46CA6 /* Bolts.framework */; };
 		46BF80E11A512A6500F46CA6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BF80DC1A512A6500F46CA6 /* Parse.framework */; };
 		46BF80E21A512A6500F46CA6 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BF80DD1A512A6500F46CA6 /* ParseCrashReporting.framework */; };
@@ -70,8 +69,7 @@
 		46A579B81A524F3F0031D1E9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		46A579BA1A524F480031D1E9 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		46A579BC1A5253A00031D1E9 /* PushNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNoAnimationSegue.swift; sourceTree = "<group>"; };
-		46B8D18E1A7077E7002C1059 /* ABLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABLoadingView.swift; sourceTree = "<group>"; };
-		46B8D1901A707B8A002C1059 /* UIRectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIRectExtension.swift; sourceTree = "<group>"; };
+		46B8D1901A707B8A002C1059 /* UIRectHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIRectHelper.swift; sourceTree = "<group>"; };
 		46BF80DB1A512A6500F46CA6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		46BF80DC1A512A6500F46CA6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		46BF80DD1A512A6500F46CA6 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
@@ -235,7 +233,7 @@
 			children = (
 				46CDA0C51A50FEE1001FCCB3 /* AppDelegate.swift */,
 				46ED8C381A5283B000D1313A /* MainNavigationController.swift */,
-				46B8D1901A707B8A002C1059 /* UIRectExtension.swift */,
+				46B8D1901A707B8A002C1059 /* UIRectHelper.swift */,
 				46ED8C3D1A528A9700D1313A /* Views */,
 				46ED8C3C1A528A8A00D1313A /* Transitions */,
 				46CDA0CC1A50FEE1001FCCB3 /* Images.xcassets */,
@@ -306,7 +304,6 @@
 			children = (
 				46ED8C3E1A528AA100D1313A /* Onboarding */,
 				469CDB271A536C410033483C /* Page Based Main Feed */,
-				46B8D18E1A7077E7002C1059 /* ABLoadingView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -444,7 +441,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				469CDB221A536C030033483C /* FriendListViewController.swift in Sources */,
-				46B8D18F1A7077E7002C1059 /* ABLoadingView.swift in Sources */,
 				469CDB201A536A470033483C /* YZSwipeBetweenViewController.m in Sources */,
 				46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */,
 				46ED8C3B1A5284A300D1313A /* PopNoAnimationSegue.swift in Sources */,
@@ -456,7 +452,7 @@
 				466E2FD11A5B6E32001D87C4 /* SwipeViewController.swift in Sources */,
 				46CDA0C81A50FEE1001FCCB3 /* WelcomeViewController.swift in Sources */,
 				46CDA0C61A50FEE1001FCCB3 /* AppDelegate.swift in Sources */,
-				46B8D1911A707B8A002C1059 /* UIRectExtension.swift in Sources */,
+				46B8D1911A707B8A002C1059 /* UIRectHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
