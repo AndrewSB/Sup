@@ -12,6 +12,42 @@
 		466891031A5BD3C2006A3B87 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466891021A5BD3C2006A3B87 /* Settings.storyboard */; };
 		466E2FD11A5B6E32001D87C4 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E2FD01A5B6E32001D87C4 /* SwipeViewController.swift */; };
 		4674F1BE1A6C98C300437584 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4674F1BD1A6C98C300437584 /* Login.storyboard */; };
+		469614B01A74CFA000EA71A9 /* PFCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 469614621A74CFA000EA71A9 /* PFCollectionViewCell.m */; };
+		469614B11A74CFA000EA71A9 /* PFPurchaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 469614641A74CFA000EA71A9 /* PFPurchaseTableViewCell.m */; };
+		469614B21A74CFA000EA71A9 /* PFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 469614661A74CFA000EA71A9 /* PFTableViewCell.m */; };
+		469614B31A74CFA000EA71A9 /* PFActivityIndicatorCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4696146A1A74CFA000EA71A9 /* PFActivityIndicatorCollectionReusableView.m */; };
+		469614B41A74CFA000EA71A9 /* PFActivityIndicatorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4696146C1A74CFA000EA71A9 /* PFActivityIndicatorTableViewCell.m */; };
+		469614B51A74CFA000EA71A9 /* PFAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4696146F1A74CFA000EA71A9 /* PFAlertView.m */; };
+		469614B61A74CFA000EA71A9 /* PFColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 469614711A74CFA000EA71A9 /* PFColor.m */; };
+		469614B71A74CFA000EA71A9 /* PFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 469614731A74CFA000EA71A9 /* PFImage.m */; };
+		469614B81A74CFA000EA71A9 /* PFRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 469614751A74CFA000EA71A9 /* PFRect.m */; };
+		469614B91A74CFA000EA71A9 /* PFImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 469614771A74CFA000EA71A9 /* PFImageCache.m */; };
+		469614BA1A74CFA000EA71A9 /* PFActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4696147B1A74CFA000EA71A9 /* PFActionButton.m */; };
+		469614BB1A74CFA000EA71A9 /* PFDismissButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4696147D1A74CFA000EA71A9 /* PFDismissButton.m */; };
+		469614BC1A74CFA000EA71A9 /* PFPrimaryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4696147F1A74CFA000EA71A9 /* PFPrimaryButton.m */; };
+		469614BD1A74CFA000EA71A9 /* PFTextButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 469614811A74CFA000EA71A9 /* PFTextButton.m */; };
+		469614BE1A74CFA000EA71A9 /* PFLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 469614831A74CFA000EA71A9 /* PFLoadingView.m */; };
+		469614BF1A74CFA000EA71A9 /* PFLogInView.m in Sources */ = {isa = PBXBuildFile; fileRef = 469614861A74CFA000EA71A9 /* PFLogInView.m */; };
+		469614C01A74CFA000EA71A9 /* PFLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469614881A74CFA000EA71A9 /* PFLogInViewController.m */; };
+		469614C11A74CFA000EA71A9 /* PFProductTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4696148B1A74CFA000EA71A9 /* PFProductTableViewController.m */; };
+		469614C21A74CFA000EA71A9 /* PFQueryCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4696148E1A74CFA000EA71A9 /* PFQueryCollectionViewController.m */; };
+		469614C31A74CFA000EA71A9 /* PFQueryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469614911A74CFA000EA71A9 /* PFQueryTableViewController.m */; };
+		469614C41A74CFA000EA71A9 /* PFSignUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 469614941A74CFA000EA71A9 /* PFSignUpView.m */; };
+		469614C51A74CFA000EA71A9 /* PFSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469614961A74CFA000EA71A9 /* PFSignUpViewController.m */; };
+		469614C61A74CFA000EA71A9 /* PFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 469614991A74CFA000EA71A9 /* PFImageView.m */; };
+		469614C71A74CFA000EA71A9 /* PFTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4696149B1A74CFA000EA71A9 /* PFTextField.m */; };
+		469614C81A74CFA000EA71A9 /* PFResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 4696149E1A74CFA000EA71A9 /* PFResources.m */; };
+		469614C91A74CFA000EA71A9 /* facebook_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 469614A41A74CFA000EA71A9 /* facebook_icon.png */; };
+		469614CA1A74CFA000EA71A9 /* facebook_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 469614A51A74CFA000EA71A9 /* facebook_icon@2x.png */; };
+		469614CB1A74CFA000EA71A9 /* facebook_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 469614A61A74CFA000EA71A9 /* facebook_icon@3x.png */; };
+		469614CC1A74CFA000EA71A9 /* parse_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 469614A71A74CFA000EA71A9 /* parse_logo.png */; };
+		469614CD1A74CFA000EA71A9 /* parse_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 469614A81A74CFA000EA71A9 /* parse_logo@2x.png */; };
+		469614CE1A74CFA000EA71A9 /* parse_logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 469614A91A74CFA000EA71A9 /* parse_logo@3x.png */; };
+		469614CF1A74CFA000EA71A9 /* twitter_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 469614AA1A74CFA000EA71A9 /* twitter_icon.png */; };
+		469614D01A74CFA000EA71A9 /* twitter_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 469614AB1A74CFA000EA71A9 /* twitter_icon@2x.png */; };
+		469614D11A74CFA000EA71A9 /* twitter_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 469614AC1A74CFA000EA71A9 /* twitter_icon@3x.png */; };
+		469614D21A74CFA000EA71A9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 469614AD1A74CFA000EA71A9 /* Info.plist */; };
+		469614D31A74CFA000EA71A9 /* convert_images.rb in Resources */ = {isa = PBXBuildFile; fileRef = 469614AF1A74CFA000EA71A9 /* convert_images.rb */; };
 		469CDB201A536A470033483C /* YZSwipeBetweenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469CDB1F1A536A470033483C /* YZSwipeBetweenViewController.m */; };
 		469CDB221A536C030033483C /* FriendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469CDB211A536C030033483C /* FriendListViewController.swift */; };
 		46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579B81A524F3F0031D1E9 /* LoginViewController.swift */; };
@@ -63,6 +99,69 @@
 		466891021A5BD3C2006A3B87 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		466E2FD01A5B6E32001D87C4 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		4674F1BD1A6C98C300437584 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		469614611A74CFA000EA71A9 /* PFCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCollectionViewCell.h; sourceTree = "<group>"; };
+		469614621A74CFA000EA71A9 /* PFCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCollectionViewCell.m; sourceTree = "<group>"; };
+		469614631A74CFA000EA71A9 /* PFPurchaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFPurchaseTableViewCell.h; sourceTree = "<group>"; };
+		469614641A74CFA000EA71A9 /* PFPurchaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFPurchaseTableViewCell.m; sourceTree = "<group>"; };
+		469614651A74CFA000EA71A9 /* PFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTableViewCell.h; sourceTree = "<group>"; };
+		469614661A74CFA000EA71A9 /* PFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTableViewCell.m; sourceTree = "<group>"; };
+		469614691A74CFA000EA71A9 /* PFActivityIndicatorCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFActivityIndicatorCollectionReusableView.h; sourceTree = "<group>"; };
+		4696146A1A74CFA000EA71A9 /* PFActivityIndicatorCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFActivityIndicatorCollectionReusableView.m; sourceTree = "<group>"; };
+		4696146B1A74CFA000EA71A9 /* PFActivityIndicatorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFActivityIndicatorTableViewCell.h; sourceTree = "<group>"; };
+		4696146C1A74CFA000EA71A9 /* PFActivityIndicatorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFActivityIndicatorTableViewCell.m; sourceTree = "<group>"; };
+		4696146E1A74CFA000EA71A9 /* PFAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFAlertView.h; sourceTree = "<group>"; };
+		4696146F1A74CFA000EA71A9 /* PFAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFAlertView.m; sourceTree = "<group>"; };
+		469614701A74CFA000EA71A9 /* PFColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFColor.h; sourceTree = "<group>"; };
+		469614711A74CFA000EA71A9 /* PFColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFColor.m; sourceTree = "<group>"; };
+		469614721A74CFA000EA71A9 /* PFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFImage.h; sourceTree = "<group>"; };
+		469614731A74CFA000EA71A9 /* PFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFImage.m; sourceTree = "<group>"; };
+		469614741A74CFA000EA71A9 /* PFRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFRect.h; sourceTree = "<group>"; };
+		469614751A74CFA000EA71A9 /* PFRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFRect.m; sourceTree = "<group>"; };
+		469614761A74CFA000EA71A9 /* PFImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFImageCache.h; sourceTree = "<group>"; };
+		469614771A74CFA000EA71A9 /* PFImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFImageCache.m; sourceTree = "<group>"; };
+		4696147A1A74CFA000EA71A9 /* PFActionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFActionButton.h; sourceTree = "<group>"; };
+		4696147B1A74CFA000EA71A9 /* PFActionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFActionButton.m; sourceTree = "<group>"; };
+		4696147C1A74CFA000EA71A9 /* PFDismissButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFDismissButton.h; sourceTree = "<group>"; };
+		4696147D1A74CFA000EA71A9 /* PFDismissButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFDismissButton.m; sourceTree = "<group>"; };
+		4696147E1A74CFA000EA71A9 /* PFPrimaryButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFPrimaryButton.h; sourceTree = "<group>"; };
+		4696147F1A74CFA000EA71A9 /* PFPrimaryButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFPrimaryButton.m; sourceTree = "<group>"; };
+		469614801A74CFA000EA71A9 /* PFTextButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTextButton.h; sourceTree = "<group>"; };
+		469614811A74CFA000EA71A9 /* PFTextButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTextButton.m; sourceTree = "<group>"; };
+		469614821A74CFA000EA71A9 /* PFLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFLoadingView.h; sourceTree = "<group>"; };
+		469614831A74CFA000EA71A9 /* PFLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFLoadingView.m; sourceTree = "<group>"; };
+		469614851A74CFA000EA71A9 /* PFLogInView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFLogInView.h; sourceTree = "<group>"; };
+		469614861A74CFA000EA71A9 /* PFLogInView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFLogInView.m; sourceTree = "<group>"; };
+		469614871A74CFA000EA71A9 /* PFLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFLogInViewController.h; sourceTree = "<group>"; };
+		469614881A74CFA000EA71A9 /* PFLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFLogInViewController.m; sourceTree = "<group>"; };
+		4696148A1A74CFA000EA71A9 /* PFProductTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFProductTableViewController.h; sourceTree = "<group>"; };
+		4696148B1A74CFA000EA71A9 /* PFProductTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFProductTableViewController.m; sourceTree = "<group>"; };
+		4696148D1A74CFA000EA71A9 /* PFQueryCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFQueryCollectionViewController.h; sourceTree = "<group>"; };
+		4696148E1A74CFA000EA71A9 /* PFQueryCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFQueryCollectionViewController.m; sourceTree = "<group>"; };
+		469614901A74CFA000EA71A9 /* PFQueryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFQueryTableViewController.h; sourceTree = "<group>"; };
+		469614911A74CFA000EA71A9 /* PFQueryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFQueryTableViewController.m; sourceTree = "<group>"; };
+		469614931A74CFA000EA71A9 /* PFSignUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFSignUpView.h; sourceTree = "<group>"; };
+		469614941A74CFA000EA71A9 /* PFSignUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFSignUpView.m; sourceTree = "<group>"; };
+		469614951A74CFA000EA71A9 /* PFSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFSignUpViewController.h; sourceTree = "<group>"; };
+		469614961A74CFA000EA71A9 /* PFSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFSignUpViewController.m; sourceTree = "<group>"; };
+		469614981A74CFA000EA71A9 /* PFImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFImageView.h; sourceTree = "<group>"; };
+		469614991A74CFA000EA71A9 /* PFImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFImageView.m; sourceTree = "<group>"; };
+		4696149A1A74CFA000EA71A9 /* PFTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTextField.h; sourceTree = "<group>"; };
+		4696149B1A74CFA000EA71A9 /* PFTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTextField.m; sourceTree = "<group>"; };
+		4696149D1A74CFA000EA71A9 /* PFResources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFResources.h; sourceTree = "<group>"; };
+		4696149E1A74CFA000EA71A9 /* PFResources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFResources.m; sourceTree = "<group>"; };
+		469614A01A74CFA000EA71A9 /* ParseUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseUI.h; sourceTree = "<group>"; };
+		469614A11A74CFA000EA71A9 /* ParseUIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseUIConstants.h; sourceTree = "<group>"; };
+		469614A41A74CFA000EA71A9 /* facebook_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_icon.png; sourceTree = "<group>"; };
+		469614A51A74CFA000EA71A9 /* facebook_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook_icon@2x.png"; sourceTree = "<group>"; };
+		469614A61A74CFA000EA71A9 /* facebook_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook_icon@3x.png"; sourceTree = "<group>"; };
+		469614A71A74CFA000EA71A9 /* parse_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parse_logo.png; sourceTree = "<group>"; };
+		469614A81A74CFA000EA71A9 /* parse_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parse_logo@2x.png"; sourceTree = "<group>"; };
+		469614A91A74CFA000EA71A9 /* parse_logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parse_logo@3x.png"; sourceTree = "<group>"; };
+		469614AA1A74CFA000EA71A9 /* twitter_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_icon.png; sourceTree = "<group>"; };
+		469614AB1A74CFA000EA71A9 /* twitter_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter_icon@2x.png"; sourceTree = "<group>"; };
+		469614AC1A74CFA000EA71A9 /* twitter_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter_icon@3x.png"; sourceTree = "<group>"; };
+		469614AD1A74CFA000EA71A9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		469614AF1A74CFA000EA71A9 /* convert_images.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = convert_images.rb; sourceTree = "<group>"; };
 		469CDB1E1A536A470033483C /* YZSwipeBetweenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZSwipeBetweenViewController.h; sourceTree = "<group>"; };
 		469CDB1F1A536A470033483C /* YZSwipeBetweenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZSwipeBetweenViewController.m; sourceTree = "<group>"; };
 		469CDB211A536C030033483C /* FriendListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendListViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +239,220 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4696145E1A74CFA000EA71A9 /* ParseUI */ = {
+			isa = PBXGroup;
+			children = (
+				4696145F1A74CFA000EA71A9 /* Classes */,
+				4696149C1A74CFA000EA71A9 /* Generated */,
+				4696149F1A74CFA000EA71A9 /* Other */,
+				469614A21A74CFA000EA71A9 /* Resources */,
+				469614AE1A74CFA000EA71A9 /* Scripts */,
+			);
+			path = ParseUI;
+			sourceTree = "<group>";
+		};
+		4696145F1A74CFA000EA71A9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				469614601A74CFA000EA71A9 /* Cells */,
+				469614671A74CFA000EA71A9 /* Internal */,
+				469614841A74CFA000EA71A9 /* LogInViewController */,
+				469614891A74CFA000EA71A9 /* ProductTableViewController */,
+				4696148C1A74CFA000EA71A9 /* QueryCollectionViewController */,
+				4696148F1A74CFA000EA71A9 /* QueryTableViewController */,
+				469614921A74CFA000EA71A9 /* SignUpViewController */,
+				469614971A74CFA000EA71A9 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		469614601A74CFA000EA71A9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				469614611A74CFA000EA71A9 /* PFCollectionViewCell.h */,
+				469614621A74CFA000EA71A9 /* PFCollectionViewCell.m */,
+				469614631A74CFA000EA71A9 /* PFPurchaseTableViewCell.h */,
+				469614641A74CFA000EA71A9 /* PFPurchaseTableViewCell.m */,
+				469614651A74CFA000EA71A9 /* PFTableViewCell.h */,
+				469614661A74CFA000EA71A9 /* PFTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		469614671A74CFA000EA71A9 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				469614681A74CFA000EA71A9 /* Cells */,
+				4696146D1A74CFA000EA71A9 /* Extensions */,
+				469614761A74CFA000EA71A9 /* PFImageCache.h */,
+				469614771A74CFA000EA71A9 /* PFImageCache.m */,
+				469614781A74CFA000EA71A9 /* Views */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		469614681A74CFA000EA71A9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				469614691A74CFA000EA71A9 /* PFActivityIndicatorCollectionReusableView.h */,
+				4696146A1A74CFA000EA71A9 /* PFActivityIndicatorCollectionReusableView.m */,
+				4696146B1A74CFA000EA71A9 /* PFActivityIndicatorTableViewCell.h */,
+				4696146C1A74CFA000EA71A9 /* PFActivityIndicatorTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4696146D1A74CFA000EA71A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4696146E1A74CFA000EA71A9 /* PFAlertView.h */,
+				4696146F1A74CFA000EA71A9 /* PFAlertView.m */,
+				469614701A74CFA000EA71A9 /* PFColor.h */,
+				469614711A74CFA000EA71A9 /* PFColor.m */,
+				469614721A74CFA000EA71A9 /* PFImage.h */,
+				469614731A74CFA000EA71A9 /* PFImage.m */,
+				469614741A74CFA000EA71A9 /* PFRect.h */,
+				469614751A74CFA000EA71A9 /* PFRect.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		469614781A74CFA000EA71A9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				469614791A74CFA000EA71A9 /* Buttons */,
+				469614821A74CFA000EA71A9 /* PFLoadingView.h */,
+				469614831A74CFA000EA71A9 /* PFLoadingView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		469614791A74CFA000EA71A9 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				4696147A1A74CFA000EA71A9 /* PFActionButton.h */,
+				4696147B1A74CFA000EA71A9 /* PFActionButton.m */,
+				4696147C1A74CFA000EA71A9 /* PFDismissButton.h */,
+				4696147D1A74CFA000EA71A9 /* PFDismissButton.m */,
+				4696147E1A74CFA000EA71A9 /* PFPrimaryButton.h */,
+				4696147F1A74CFA000EA71A9 /* PFPrimaryButton.m */,
+				469614801A74CFA000EA71A9 /* PFTextButton.h */,
+				469614811A74CFA000EA71A9 /* PFTextButton.m */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		469614841A74CFA000EA71A9 /* LogInViewController */ = {
+			isa = PBXGroup;
+			children = (
+				469614851A74CFA000EA71A9 /* PFLogInView.h */,
+				469614861A74CFA000EA71A9 /* PFLogInView.m */,
+				469614871A74CFA000EA71A9 /* PFLogInViewController.h */,
+				469614881A74CFA000EA71A9 /* PFLogInViewController.m */,
+			);
+			path = LogInViewController;
+			sourceTree = "<group>";
+		};
+		469614891A74CFA000EA71A9 /* ProductTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4696148A1A74CFA000EA71A9 /* PFProductTableViewController.h */,
+				4696148B1A74CFA000EA71A9 /* PFProductTableViewController.m */,
+			);
+			path = ProductTableViewController;
+			sourceTree = "<group>";
+		};
+		4696148C1A74CFA000EA71A9 /* QueryCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4696148D1A74CFA000EA71A9 /* PFQueryCollectionViewController.h */,
+				4696148E1A74CFA000EA71A9 /* PFQueryCollectionViewController.m */,
+			);
+			path = QueryCollectionViewController;
+			sourceTree = "<group>";
+		};
+		4696148F1A74CFA000EA71A9 /* QueryTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				469614901A74CFA000EA71A9 /* PFQueryTableViewController.h */,
+				469614911A74CFA000EA71A9 /* PFQueryTableViewController.m */,
+			);
+			path = QueryTableViewController;
+			sourceTree = "<group>";
+		};
+		469614921A74CFA000EA71A9 /* SignUpViewController */ = {
+			isa = PBXGroup;
+			children = (
+				469614931A74CFA000EA71A9 /* PFSignUpView.h */,
+				469614941A74CFA000EA71A9 /* PFSignUpView.m */,
+				469614951A74CFA000EA71A9 /* PFSignUpViewController.h */,
+				469614961A74CFA000EA71A9 /* PFSignUpViewController.m */,
+			);
+			path = SignUpViewController;
+			sourceTree = "<group>";
+		};
+		469614971A74CFA000EA71A9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				469614981A74CFA000EA71A9 /* PFImageView.h */,
+				469614991A74CFA000EA71A9 /* PFImageView.m */,
+				4696149A1A74CFA000EA71A9 /* PFTextField.h */,
+				4696149B1A74CFA000EA71A9 /* PFTextField.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4696149C1A74CFA000EA71A9 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				4696149D1A74CFA000EA71A9 /* PFResources.h */,
+				4696149E1A74CFA000EA71A9 /* PFResources.m */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		4696149F1A74CFA000EA71A9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				469614A01A74CFA000EA71A9 /* ParseUI.h */,
+				469614A11A74CFA000EA71A9 /* ParseUIConstants.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		469614A21A74CFA000EA71A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				469614A31A74CFA000EA71A9 /* Images */,
+				469614AD1A74CFA000EA71A9 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		469614A31A74CFA000EA71A9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				469614A41A74CFA000EA71A9 /* facebook_icon.png */,
+				469614A51A74CFA000EA71A9 /* facebook_icon@2x.png */,
+				469614A61A74CFA000EA71A9 /* facebook_icon@3x.png */,
+				469614A71A74CFA000EA71A9 /* parse_logo.png */,
+				469614A81A74CFA000EA71A9 /* parse_logo@2x.png */,
+				469614A91A74CFA000EA71A9 /* parse_logo@3x.png */,
+				469614AA1A74CFA000EA71A9 /* twitter_icon.png */,
+				469614AB1A74CFA000EA71A9 /* twitter_icon@2x.png */,
+				469614AC1A74CFA000EA71A9 /* twitter_icon@3x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		469614AE1A74CFA000EA71A9 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				469614AF1A74CFA000EA71A9 /* convert_images.rb */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		469CDB1D1A536A470033483C /* YZSwipeBetweenViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +595,7 @@
 		46CDA0EF1A510121001FCCB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4696145E1A74CFA000EA71A9 /* ParseUI */,
 				469CDB1D1A536A470033483C /* YZSwipeBetweenViewController */,
 				46BF81001A512C3D00F46CA6 /* Parse */,
 				46CDA0EE1A510114001FCCB3 /* Fabric */,
@@ -401,12 +715,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469614D21A74CFA000EA71A9 /* Info.plist in Resources */,
 				46CDA0CB1A50FEE1001FCCB3 /* Main.storyboard in Resources */,
+				469614C91A74CFA000EA71A9 /* facebook_icon.png in Resources */,
+				469614CE1A74CFA000EA71A9 /* parse_logo@3x.png in Resources */,
 				463B01D81A6D552B003C90E3 /* API-Keys.plist in Resources */,
+				469614CA1A74CFA000EA71A9 /* facebook_icon@2x.png in Resources */,
+				469614CC1A74CFA000EA71A9 /* parse_logo.png in Resources */,
+				469614D31A74CFA000EA71A9 /* convert_images.rb in Resources */,
+				469614CF1A74CFA000EA71A9 /* twitter_icon.png in Resources */,
 				46CDA0D01A50FEE1001FCCB3 /* LaunchScreen.xib in Resources */,
+				469614CB1A74CFA000EA71A9 /* facebook_icon@3x.png in Resources */,
 				46CDA0CD1A50FEE1001FCCB3 /* Images.xcassets in Resources */,
 				4674F1BE1A6C98C300437584 /* Login.storyboard in Resources */,
+				469614CD1A74CFA000EA71A9 /* parse_logo@2x.png in Resources */,
+				469614D11A74CFA000EA71A9 /* twitter_icon@3x.png in Resources */,
 				466891031A5BD3C2006A3B87 /* Settings.storyboard in Resources */,
+				469614D01A74CFA000EA71A9 /* twitter_icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,17 +767,42 @@
 			files = (
 				469CDB221A536C030033483C /* FriendListViewController.swift in Sources */,
 				469CDB201A536A470033483C /* YZSwipeBetweenViewController.m in Sources */,
+				469614C41A74CFA000EA71A9 /* PFSignUpView.m in Sources */,
+				469614C01A74CFA000EA71A9 /* PFLogInViewController.m in Sources */,
 				46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */,
+				469614C81A74CFA000EA71A9 /* PFResources.m in Sources */,
+				469614B51A74CFA000EA71A9 /* PFAlertView.m in Sources */,
+				469614B71A74CFA000EA71A9 /* PFImage.m in Sources */,
+				469614B11A74CFA000EA71A9 /* PFPurchaseTableViewCell.m in Sources */,
 				46ED8C3B1A5284A300D1313A /* PopNoAnimationSegue.swift in Sources */,
+				469614B21A74CFA000EA71A9 /* PFTableViewCell.m in Sources */,
+				469614B41A74CFA000EA71A9 /* PFActivityIndicatorTableViewCell.m in Sources */,
+				469614B81A74CFA000EA71A9 /* PFRect.m in Sources */,
 				46CAFB5B1A5BE18100C7F66D /* SettingsTableViewController.swift in Sources */,
+				469614BA1A74CFA000EA71A9 /* PFActionButton.m in Sources */,
+				469614C71A74CFA000EA71A9 /* PFTextField.m in Sources */,
+				469614B61A74CFA000EA71A9 /* PFColor.m in Sources */,
 				46A579BB1A524F480031D1E9 /* SignupViewController.swift in Sources */,
+				469614C61A74CFA000EA71A9 /* PFImageView.m in Sources */,
+				469614BC1A74CFA000EA71A9 /* PFPrimaryButton.m in Sources */,
 				46A579BD1A5253A00031D1E9 /* PushNoAnimationSegue.swift in Sources */,
 				46ED8C391A5283B000D1313A /* MainNavigationController.swift in Sources */,
+				469614B31A74CFA000EA71A9 /* PFActivityIndicatorCollectionReusableView.m in Sources */,
 				465E51591A52B5F500C80EFB /* ForgotPasswordViewController.swift in Sources */,
+				469614BD1A74CFA000EA71A9 /* PFTextButton.m in Sources */,
+				469614B91A74CFA000EA71A9 /* PFImageCache.m in Sources */,
+				469614BE1A74CFA000EA71A9 /* PFLoadingView.m in Sources */,
+				469614C51A74CFA000EA71A9 /* PFSignUpViewController.m in Sources */,
 				466E2FD11A5B6E32001D87C4 /* SwipeViewController.swift in Sources */,
+				469614B01A74CFA000EA71A9 /* PFCollectionViewCell.m in Sources */,
+				469614C21A74CFA000EA71A9 /* PFQueryCollectionViewController.m in Sources */,
 				46CDA0C81A50FEE1001FCCB3 /* WelcomeViewController.swift in Sources */,
+				469614BB1A74CFA000EA71A9 /* PFDismissButton.m in Sources */,
+				469614C11A74CFA000EA71A9 /* PFProductTableViewController.m in Sources */,
+				469614C31A74CFA000EA71A9 /* PFQueryTableViewController.m in Sources */,
 				46CDA0C61A50FEE1001FCCB3 /* AppDelegate.swift in Sources */,
 				46B8D1911A707B8A002C1059 /* UIRectHelper.swift in Sources */,
+				469614BF1A74CFA000EA71A9 /* PFLogInView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

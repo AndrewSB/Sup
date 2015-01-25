@@ -1,3 +1,6 @@
 [submodule "YZSwipeBetweenViewController"]
 	path = YZSwipeBetweenViewController
 	url = https://github.com/yichizhang/YZSwipeBetweenViewController.git
+[submodule "ParseUI-iOS"]
+	path = ParseUI-iOS
+	url = https://github.com/ParsePlatform/ParseUI-iOS.git
