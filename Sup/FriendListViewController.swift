@@ -10,16 +10,9 @@ import UIKit
 
 class FriendListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableV: UITableView!
-
-    let loadingView = PFLoadingView(frame: CGRectZero)
     
     override func loadView() {
         super.loadView()
-        
-        tableV.addSubview(loadingView)
-        
-        
-        
     }
     
     override func viewDidLoad() {
