@@ -35,13 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func startParse(lo: [NSObject: AnyObject]?) {
         Parse.enableLocalDatastore()
-        if let keys = NSBundle.mainBundle().pathForResource("API-Keys", ofType: "plist") {
-            let rootDict = NSDictionary(contentsOfFile: keys)
-            let p = rootDict!["Parse"] as Dictionary<String, String>
-            Parse.setApplicationId(p["ApplicationID"], clientKey: p["ClientKey"])
-        } else {
-            fatalError("You don't have access to the API Keys")
-        }
+        Parse.setApplicationId("fCots4c5CyFuKxLchx8JvYrC9NgmUoWqZVmbzBPj", clientKey: "qcMWYJoWmgqcLaks8Tq6I5btKTB25elTH1bzh3Ik")
         PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(lo, block: nil)
     }
     
