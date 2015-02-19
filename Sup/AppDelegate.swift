@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         applyFormatting()
         
-        let storyboard = "FirstLaunch" //loggedIn ? "Main" : "Login"
+        let storyboard = loggedIn ? "Main" : "Login"
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.rootViewController = (UIStoryboard(name: storyboard, bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UIViewController)
