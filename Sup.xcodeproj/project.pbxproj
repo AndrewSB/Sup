@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		461D2DA21A75D4E900FF9A7D /* YZSwipeBetweenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 461D2DA11A75D4E900FF9A7D /* YZSwipeBetweenViewController.m */; };
 		461D2DA41A75D52700FF9A7D /* FirstLaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461D2DA31A75D52700FF9A7D /* FirstLaunch.storyboard */; };
-		463B01D81A6D552B003C90E3 /* API-Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 463B01D71A6D552B003C90E3 /* API-Keys.plist */; };
 		465E51591A52B5F500C80EFB /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E51581A52B5F500C80EFB /* ForgotPasswordViewController.swift */; };
 		466891031A5BD3C2006A3B87 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466891021A5BD3C2006A3B87 /* Settings.storyboard */; };
 		466E2FD11A5B6E32001D87C4 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E2FD01A5B6E32001D87C4 /* SwipeViewController.swift */; };
@@ -46,6 +44,7 @@
 		46CDA0E91A50FFF3001FCCB3 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CDA0E71A50FFF3001FCCB3 /* Fabric.framework */; };
 		46ED8C391A5283B000D1313A /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED8C381A5283B000D1313A /* MainNavigationController.swift */; };
 		46ED8C3B1A5284A300D1313A /* PopNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED8C3A1A5284A300D1313A /* PopNoAnimationSegue.swift */; };
+		46EDFFF91A955E840079C40C /* YZSwipeBetweenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EDFFF81A955E840079C40C /* YZSwipeBetweenViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,10 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		461D2DA01A75D4E900FF9A7D /* YZSwipeBetweenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YZSwipeBetweenViewController.h; path = YZSwipeBetweenViewController/YZSwipeBetweenViewController.h; sourceTree = SOURCE_ROOT; };
-		461D2DA11A75D4E900FF9A7D /* YZSwipeBetweenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YZSwipeBetweenViewController.m; path = YZSwipeBetweenViewController/YZSwipeBetweenViewController.m; sourceTree = SOURCE_ROOT; };
 		461D2DA31A75D52700FF9A7D /* FirstLaunch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FirstLaunch.storyboard; sourceTree = "<group>"; };
-		463B01D71A6D552B003C90E3 /* API-Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "API-Keys.plist"; sourceTree = "<group>"; };
 		465E51581A52B5F500C80EFB /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		466891021A5BD3C2006A3B87 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		466E2FD01A5B6E32001D87C4 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +100,8 @@
 		46CDA0E71A50FFF3001FCCB3 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
 		46ED8C381A5283B000D1313A /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		46ED8C3A1A5284A300D1313A /* PopNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopNoAnimationSegue.swift; sourceTree = "<group>"; };
+		46EDFFF71A955E840079C40C /* YZSwipeBetweenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZSwipeBetweenViewController.h; sourceTree = "<group>"; };
+		46EDFFF81A955E840079C40C /* YZSwipeBetweenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZSwipeBetweenViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,8 +151,8 @@
 		469CDB1D1A536A470033483C /* YZSwipeBetweenViewController */ = {
 			isa = PBXGroup;
 			children = (
-				461D2DA01A75D4E900FF9A7D /* YZSwipeBetweenViewController.h */,
-				461D2DA11A75D4E900FF9A7D /* YZSwipeBetweenViewController.m */,
+				46EDFFF71A955E840079C40C /* YZSwipeBetweenViewController.h */,
+				46EDFFF81A955E840079C40C /* YZSwipeBetweenViewController.m */,
 			);
 			name = YZSwipeBetweenViewController;
 			path = YZSwipeBetweenViewController/Source;
@@ -256,7 +254,6 @@
 		46CDA0C31A50FEE1001FCCB3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				463B01D71A6D552B003C90E3 /* API-Keys.plist */,
 				46BF80FB1A512BB900F46CA6 /* Sup-Bridging-Header.h */,
 				46CDA0C41A50FEE1001FCCB3 /* Info.plist */,
 			);
@@ -414,7 +411,6 @@
 			files = (
 				46CDA0CB1A50FEE1001FCCB3 /* Main.storyboard in Resources */,
 				461D2DA41A75D52700FF9A7D /* FirstLaunch.storyboard in Resources */,
-				463B01D81A6D552B003C90E3 /* API-Keys.plist in Resources */,
 				46CDA0D01A50FEE1001FCCB3 /* LaunchScreen.xib in Resources */,
 				46CDA0CD1A50FEE1001FCCB3 /* Images.xcassets in Resources */,
 				4674F1BE1A6C98C300437584 /* Login.storyboard in Resources */,
@@ -460,7 +456,7 @@
 				46A579BD1A5253A00031D1E9 /* PushNoAnimationSegue.swift in Sources */,
 				46ED8C391A5283B000D1313A /* MainNavigationController.swift in Sources */,
 				465E51591A52B5F500C80EFB /* ForgotPasswordViewController.swift in Sources */,
-				461D2DA21A75D4E900FF9A7D /* YZSwipeBetweenViewController.m in Sources */,
+				46EDFFF91A955E840079C40C /* YZSwipeBetweenViewController.m in Sources */,
 				466E2FD11A5B6E32001D87C4 /* SwipeViewController.swift in Sources */,
 				46CDA0C81A50FEE1001FCCB3 /* WelcomeViewController.swift in Sources */,
 				46CDA0C61A50FEE1001FCCB3 /* AppDelegate.swift in Sources */,
