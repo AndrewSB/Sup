@@ -56,6 +56,7 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBAction func status(sender: AnyObject) {
 
     }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("cellID") as? UITableViewCell
         if cell == nil {
@@ -72,8 +73,6 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
         switch indexPath.row {
         case 0:
             println("config for self")
-        case 1...3:
-            println("config for favorite")
         default:
             println("config for rest")
         }
