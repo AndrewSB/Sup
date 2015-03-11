@@ -12,6 +12,7 @@
 		466891031A5BD3C2006A3B87 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466891021A5BD3C2006A3B87 /* Settings.storyboard */; };
 		466E2FD11A5B6E32001D87C4 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E2FD01A5B6E32001D87C4 /* SwipeViewController.swift */; };
 		4674F1BE1A6C98C300437584 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4674F1BD1A6C98C300437584 /* Login.storyboard */; };
+		469193CC1AAFD6A700D201EE /* YZSwipeBetweenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469193CB1AAFD6A700D201EE /* YZSwipeBetweenViewController.m */; };
 		469CDB221A536C030033483C /* FriendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469CDB211A536C030033483C /* FriendListViewController.swift */; };
 		46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579B81A524F3F0031D1E9 /* LoginViewController.swift */; };
 		46A579BB1A524F480031D1E9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579BA1A524F480031D1E9 /* SignupViewController.swift */; };
@@ -44,7 +45,6 @@
 		46CDA0E91A50FFF3001FCCB3 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CDA0E71A50FFF3001FCCB3 /* Fabric.framework */; };
 		46ED8C391A5283B000D1313A /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED8C381A5283B000D1313A /* MainNavigationController.swift */; };
 		46ED8C3B1A5284A300D1313A /* PopNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED8C3A1A5284A300D1313A /* PopNoAnimationSegue.swift */; };
-		46EDFFF91A955E840079C40C /* YZSwipeBetweenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EDFFF81A955E840079C40C /* YZSwipeBetweenViewController.m */; };
 		F94F6BB41AA7E77B00313A20 /* PhoneNumberSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F6BB31AA7E77B00313A20 /* PhoneNumberSettingsTableViewController.swift */; };
 		F94F6BB61AA7EA2300313A20 /* ProfilePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F6BB51AA7EA2300313A20 /* ProfilePictureViewController.swift */; };
 		F94F6BB81AAA881E00313A20 /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F6BB71AAA881E00313A20 /* NewPasswordViewController.swift */; };
@@ -67,6 +67,8 @@
 		466891021A5BD3C2006A3B87 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		466E2FD01A5B6E32001D87C4 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		4674F1BD1A6C98C300437584 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		469193CA1AAFD6A700D201EE /* YZSwipeBetweenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZSwipeBetweenViewController.h; sourceTree = "<group>"; };
+		469193CB1AAFD6A700D201EE /* YZSwipeBetweenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZSwipeBetweenViewController.m; sourceTree = "<group>"; };
 		469CDB211A536C030033483C /* FriendListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendListViewController.swift; sourceTree = "<group>"; };
 		46A579B81A524F3F0031D1E9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		46A579BA1A524F480031D1E9 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -104,8 +106,6 @@
 		46CDA0E71A50FFF3001FCCB3 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
 		46ED8C381A5283B000D1313A /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		46ED8C3A1A5284A300D1313A /* PopNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopNoAnimationSegue.swift; sourceTree = "<group>"; };
-		46EDFFF71A955E840079C40C /* YZSwipeBetweenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZSwipeBetweenViewController.h; sourceTree = "<group>"; };
-		46EDFFF81A955E840079C40C /* YZSwipeBetweenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZSwipeBetweenViewController.m; sourceTree = "<group>"; };
 		F94F6BB31AA7E77B00313A20 /* PhoneNumberSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberSettingsTableViewController.swift; sourceTree = "<group>"; };
 		F94F6BB51AA7EA2300313A20 /* ProfilePictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePictureViewController.swift; sourceTree = "<group>"; };
 		F94F6BB71AAA881E00313A20 /* NewPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
@@ -156,14 +156,13 @@
 			name = FirstLaunch;
 			sourceTree = "<group>";
 		};
-		469CDB1D1A536A470033483C /* YZSwipeBetweenViewController */ = {
+		469193C91AAFD6A700D201EE /* YZSwipeBetweenViewController */ = {
 			isa = PBXGroup;
 			children = (
-				46EDFFF71A955E840079C40C /* YZSwipeBetweenViewController.h */,
-				46EDFFF81A955E840079C40C /* YZSwipeBetweenViewController.m */,
+				469193CA1AAFD6A700D201EE /* YZSwipeBetweenViewController.h */,
+				469193CB1AAFD6A700D201EE /* YZSwipeBetweenViewController.m */,
 			);
-			name = YZSwipeBetweenViewController;
-			path = YZSwipeBetweenViewController/Source;
+			path = YZSwipeBetweenViewController;
 			sourceTree = SOURCE_ROOT;
 		};
 		469CDB271A536C410033483C /* Page Based Main Feed */ = {
@@ -301,7 +300,7 @@
 		46CDA0EF1A510121001FCCB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				469CDB1D1A536A470033483C /* YZSwipeBetweenViewController */,
+				469193C91AAFD6A700D201EE /* YZSwipeBetweenViewController */,
 				46BF81001A512C3D00F46CA6 /* Parse */,
 				46CDA0EE1A510114001FCCB3 /* Fabric */,
 			);
@@ -465,6 +464,7 @@
 				F94F6BBA1AAAB19000313A20 /* BioViewController.swift in Sources */,
 				46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */,
 				46ED8C3B1A5284A300D1313A /* PopNoAnimationSegue.swift in Sources */,
+				469193CC1AAFD6A700D201EE /* YZSwipeBetweenViewController.m in Sources */,
 				46CAFB5B1A5BE18100C7F66D /* SettingsTableViewController.swift in Sources */,
 				46A579BB1A524F480031D1E9 /* SignupViewController.swift in Sources */,
 				F94F6BB81AAA881E00313A20 /* NewPasswordViewController.swift in Sources */,
@@ -472,7 +472,6 @@
 				46ED8C391A5283B000D1313A /* MainNavigationController.swift in Sources */,
 				465E51591A52B5F500C80EFB /* ForgotPasswordViewController.swift in Sources */,
 				F94F6BB41AA7E77B00313A20 /* PhoneNumberSettingsTableViewController.swift in Sources */,
-				46EDFFF91A955E840079C40C /* YZSwipeBetweenViewController.m in Sources */,
 				466E2FD11A5B6E32001D87C4 /* SwipeViewController.swift in Sources */,
 				46CDA0C81A50FEE1001FCCB3 /* WelcomeViewController.swift in Sources */,
 				46CDA0C61A50FEE1001FCCB3 /* AppDelegate.swift in Sources */,
