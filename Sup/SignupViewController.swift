@@ -59,8 +59,25 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         
         user.signUpInBackgroundWithBlock({(succeeded, error) in
             if error == nil {
-                let user = PFUser()
-                user["friends"] = user.username
+                var user = PFUser.currentUser()
+                println("1")
+                var username: AnyObject = user.username
+                println("\(username)")
+                user["friends"] = ["\(username)"];
+                user["status"] = true;
+                user["bio"] = "I dont have A bio yet!";
+                let url = NSURL(string: "http://www.icao.int/Meetings/SIAS/PublishingImages/Blank%20profile%20pic.png?Mobile=1&Source=%2FMeetings%2FSIAS%2F_layouts%2Fmobile%2Fdispform.aspx%3FList%3Dcf2ac419-73a3-4217-b85c-578251f49478%26View%3D529f1e34-9369-49db-bd14-1134ad40abf7%26ID%3D27%26CurrentPage%3D1")
+                let data = NSData(contentsOfURL: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check
+                var image = UIImage(data: data!)
+                println("2")
+                let imageData = UIImageJPEGRepresentation(image, 0.05)
+                println("3")
+                let imageFile = PFFile(name:"image.jpg", data:imageData)
+                println("4")
+                user["profilePicture"] = imageFile;
+                user.saveInBackgroundWithBlock(nil)
+                println("5")
+                self.appDel.switchToMain()
             } else {
                 let alert = UIAlertController(title: "Uh oh!", message: "\(error.userInfo)", preferredStyle: .Alert)
                 let ok = UIAlertAction(title: "Ok", style: .Cancel, handler: nil)

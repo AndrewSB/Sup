@@ -11,7 +11,7 @@ import UIKit
 class FriendListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableV: UITableView!
     @IBOutlet weak var statusSwitch: UISwitch!
-    
+
     override func loadView() {
         super.loadView()
     }
@@ -41,7 +41,7 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
             var username: AnyObject = user.username
             println("\(username)")
             user["friends"] = ["\(username)"];
-            user.save();
+            user.saveInBackgroundWithBlock(nil);
         }
         var x = friends.count;
         println(friends)
@@ -54,39 +54,32 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     @IBAction func status(sender: AnyObject) {
-
+        var user = PFUser.currentUser()
+        var x: AnyObject! = user["status"]
+        if(statusSwitch.on){
+            user["status"] = true;
+            
+        }else{
+            user["status"] = false;
+        }
+        user.saveInBackgroundWithBlock(nil)
+        
     }
-    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("cellID") as? UITableViewCell
         if cell == nil {
             println("created at \(indexPath.row)")
             cell = UITableViewCell(style: .Default, reuseIdentifier: "cellID")
         }
-        var status: UILabel = UILabel (frame:CGRectMake(253, 84, 42, 21));
-        cell?.contentView.addSubview(status)
-        status.userInteractionEnabled = true;
-        status.multipleTouchEnabled = true;
-        status.highlighted = true;
-        
+        var statusLabel: UILabel = UILabel (frame:CGRectMake(253, 20, 42, 21));
+        cell?.contentView.addSubview(statusLabel)
+        statusLabel.userInteractionEnabled = true;
+        statusLabel.multipleTouchEnabled = true;
+        statusLabel.highlighted = true;
+        if((cell?.selected) != nil){
+        cell?.backgroundColor = UIColor.whiteColor()
+        }
         var user = PFUser.currentUser()
-        switch indexPath.row {
-        case 0:
-            println("config for self")
-        default:
-            println("config for rest")
-        }
-        if let userImageFile = user["profileImage"] as? PFFile {
-            userImageFile.getDataInBackgroundWithBlock {
-                (imageData: NSData!, error: NSError!) -> Void in
-                if error == nil {
-                    if imageData != nil{
-                        let image = UIImage(data:imageData)
-                        cell!.imageView?.image = image;
-                    }
-                }
-            }
-        }
         if(user["bio"] == nil){
             user["bio"] = "I dont have a bio yet!"
         }
@@ -94,41 +87,68 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
         configureAvatarImage(cell!)
         var friends: [AnyObject] = user["friends"] as Array
         var bioArray = [""]
-        var statusArray = [""] as Array
+        var statusArray = [""]
+        var pictureArray = [] as NSMutableArray
+        var pictureUrl = [""]
         for(var i = 0; i < friends.count; i++){
             var query = PFUser.query()
             query.whereKey("username", equalTo:friends[i])
             var friendsArray = query.findObjects()
             var bios : AnyObject = friendsArray[0]["bio"] as String
             var status : AnyObject = friendsArray[0]["status"] as NSObject
+            var profilePicture: AnyObject = friendsArray[0]["profilePicture"] as PFFile
             bioArray.insert("\(bios)", atIndex: bioArray.count-1)
             statusArray.insert("\(status)", atIndex: statusArray.count-1)
+            pictureArray.addObject(profilePicture)
+            pictureUrl.insert(pictureArray[0].url, atIndex: pictureUrl.count-1)
+        }
+        
+        for(var i = 0; i < friends.count-1; i++){
             
         }
-        statusArray.removeAtIndex(statusArray.count-1)
         println(friends)
-        println(friends[0])
         println(bioArray)
         println(statusArray)
-        println(friends.count)
+        println(pictureArray)
+        println(pictureUrl)
         for(var i = 0; i < friends.count; i++){
+            
             var friendsLabel: AnyObject = friends[indexPath.row]
             cell!.textLabel?.text = "\(friendsLabel)"
             var eachBio : AnyObject = bioArray[indexPath.row]
             var stringRepresentation = "\(eachBio)"
             cell!.detailTextLabel?.text = stringRepresentation;
             var statuses = statusArray[indexPath.row]
-            status.text = "\(statuses)"
+            statusLabel.text = "\(statuses)"
+            var profilePictures: AnyObject = pictureUrl[indexPath.row]
+            let url = NSURL(string: "\(profilePictures)")
+            let data = NSData(contentsOfURL: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check
+            cell!.imageView?.image = UIImage(data: data!)
             if("\(statuses)" == "1"){
-                status.backgroundColor = UIColor.greenColor()
+                statusLabel.backgroundColor = UIColor.greenColor()
             }else{
-                status.backgroundColor = UIColor.redColor()
+                statusLabel.backgroundColor = UIColor.redColor()
             }
         }
         
         
         // Make a new post
-        
+        switch indexPath.row {
+        case 0:
+            var bio: AnyObject! = user["bio"]
+            var statuses: AnyObject! = user["status"]
+            if("\(statuses)" == "1"){
+                statusLabel.backgroundColor = UIColor.greenColor()
+            }else{
+                statusLabel.backgroundColor = UIColor.redColor()
+            }
+            cell!.textLabel?.text = user.username
+            cell!.detailTextLabel?.text = "\(bio)";
+            statusLabel.text = "\(statuses)"
+            
+        default:
+            println("config for rest")
+        }
         return cell!
     }
     
