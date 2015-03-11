@@ -56,9 +56,11 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         user.email = emailTextField.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
         user.password = passwordTextField.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
         
+        
         user.signUpInBackgroundWithBlock({(succeeded, error) in
             if error == nil {
-                self.appDel.switchToMain()
+                let user = PFUser()
+                user["friends"] = user.username
             } else {
                 let alert = UIAlertController(title: "Uh oh!", message: "\(error.userInfo)", preferredStyle: .Alert)
                 let ok = UIAlertAction(title: "Ok", style: .Cancel, handler: nil)

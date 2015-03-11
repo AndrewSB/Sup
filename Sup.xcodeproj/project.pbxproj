@@ -16,7 +16,6 @@
 		46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579B81A524F3F0031D1E9 /* LoginViewController.swift */; };
 		46A579BB1A524F480031D1E9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579BA1A524F480031D1E9 /* SignupViewController.swift */; };
 		46A579BD1A5253A00031D1E9 /* PushNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A579BC1A5253A00031D1E9 /* PushNoAnimationSegue.swift */; };
-		46B76A5F1AA7E6C4002DBCA5 /* PhoneNumberSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B76A5E1AA7E6C4002DBCA5 /* PhoneNumberSettingsTableViewController.swift */; };
 		46B8D1911A707B8A002C1059 /* UIRectHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B8D1901A707B8A002C1059 /* UIRectHelper.swift */; };
 		46BF80E01A512A6500F46CA6 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BF80DB1A512A6500F46CA6 /* Bolts.framework */; };
 		46BF80E11A512A6500F46CA6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BF80DC1A512A6500F46CA6 /* Parse.framework */; };
@@ -46,6 +45,10 @@
 		46ED8C391A5283B000D1313A /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED8C381A5283B000D1313A /* MainNavigationController.swift */; };
 		46ED8C3B1A5284A300D1313A /* PopNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED8C3A1A5284A300D1313A /* PopNoAnimationSegue.swift */; };
 		46EDFFF91A955E840079C40C /* YZSwipeBetweenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EDFFF81A955E840079C40C /* YZSwipeBetweenViewController.m */; };
+		F94F6BB41AA7E77B00313A20 /* PhoneNumberSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F6BB31AA7E77B00313A20 /* PhoneNumberSettingsTableViewController.swift */; };
+		F94F6BB61AA7EA2300313A20 /* ProfilePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F6BB51AA7EA2300313A20 /* ProfilePictureViewController.swift */; };
+		F94F6BB81AAA881E00313A20 /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F6BB71AAA881E00313A20 /* NewPasswordViewController.swift */; };
+		F94F6BBA1AAAB19000313A20 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F6BB91AAAB19000313A20 /* BioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +71,6 @@
 		46A579B81A524F3F0031D1E9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		46A579BA1A524F480031D1E9 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		46A579BC1A5253A00031D1E9 /* PushNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNoAnimationSegue.swift; sourceTree = "<group>"; };
-		46B76A5E1AA7E6C4002DBCA5 /* PhoneNumberSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberSettingsTableViewController.swift; sourceTree = "<group>"; };
 		46B8D1901A707B8A002C1059 /* UIRectHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIRectHelper.swift; sourceTree = "<group>"; };
 		46BF80DB1A512A6500F46CA6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		46BF80DC1A512A6500F46CA6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -104,6 +106,10 @@
 		46ED8C3A1A5284A300D1313A /* PopNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopNoAnimationSegue.swift; sourceTree = "<group>"; };
 		46EDFFF71A955E840079C40C /* YZSwipeBetweenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZSwipeBetweenViewController.h; sourceTree = "<group>"; };
 		46EDFFF81A955E840079C40C /* YZSwipeBetweenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZSwipeBetweenViewController.m; sourceTree = "<group>"; };
+		F94F6BB31AA7E77B00313A20 /* PhoneNumberSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberSettingsTableViewController.swift; sourceTree = "<group>"; };
+		F94F6BB51AA7EA2300313A20 /* ProfilePictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePictureViewController.swift; sourceTree = "<group>"; };
+		F94F6BB71AAA881E00313A20 /* NewPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
+		F94F6BB91AAAB19000313A20 /* BioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,8 +180,11 @@
 		46B8D18D1A707627002C1059 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				F94F6BB31AA7E77B00313A20 /* PhoneNumberSettingsTableViewController.swift */,
+				F94F6BB71AAA881E00313A20 /* NewPasswordViewController.swift */,
+				F94F6BB91AAAB19000313A20 /* BioViewController.swift */,
+				F94F6BB51AA7EA2300313A20 /* ProfilePictureViewController.swift */,
 				46CAFB5A1A5BE18100C7F66D /* SettingsTableViewController.swift */,
-				46B76A5E1AA7E6C4002DBCA5 /* PhoneNumberSettingsTableViewController.swift */,
 				466891021A5BD3C2006A3B87 /* Settings.storyboard */,
 			);
 			name = Settings;
@@ -452,14 +461,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				469CDB221A536C030033483C /* FriendListViewController.swift in Sources */,
+				F94F6BB61AA7EA2300313A20 /* ProfilePictureViewController.swift in Sources */,
+				F94F6BBA1AAAB19000313A20 /* BioViewController.swift in Sources */,
 				46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */,
 				46ED8C3B1A5284A300D1313A /* PopNoAnimationSegue.swift in Sources */,
 				46CAFB5B1A5BE18100C7F66D /* SettingsTableViewController.swift in Sources */,
 				46A579BB1A524F480031D1E9 /* SignupViewController.swift in Sources */,
+				F94F6BB81AAA881E00313A20 /* NewPasswordViewController.swift in Sources */,
 				46A579BD1A5253A00031D1E9 /* PushNoAnimationSegue.swift in Sources */,
 				46ED8C391A5283B000D1313A /* MainNavigationController.swift in Sources */,
 				465E51591A52B5F500C80EFB /* ForgotPasswordViewController.swift in Sources */,
-				46B76A5F1AA7E6C4002DBCA5 /* PhoneNumberSettingsTableViewController.swift in Sources */,
+				F94F6BB41AA7E77B00313A20 /* PhoneNumberSettingsTableViewController.swift in Sources */,
 				46EDFFF91A955E840079C40C /* YZSwipeBetweenViewController.m in Sources */,
 				466E2FD11A5B6E32001D87C4 /* SwipeViewController.swift in Sources */,
 				46CDA0C81A50FEE1001FCCB3 /* WelcomeViewController.swift in Sources */,

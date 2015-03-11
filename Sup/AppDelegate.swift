@@ -35,7 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func startParse(lo: [NSObject: AnyObject]?) {
         Parse.enableLocalDatastore()
-        Parse.setApplicationId("fCots4c5CyFuKxLchx8JvYrC9NgmUoWqZVmbzBPj", clientKey: "qcMWYJoWmgqcLaks8Tq6I5btKTB25elTH1bzh3Ik")
+            Parse.setApplicationId("j0Q5Z5SwEzwWIgFdFez84BHW3GRx3ve8sue5Ag65",
+            clientKey:"LHziz1giCVpc6TLKXzkl9ZUkx4SjT6HaqjYfu8Oa")
         PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(lo, block: nil)
     }
     
@@ -56,7 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func logout() {
         PFUser.logOut()
         let mainNav = self.window?.rootViewController as MainNavigationController
-        mainNav.popToRootViewControllerAnimated(false)
+        mainNav.popToRootViewControllerAnimated(true)
     }
 }
 

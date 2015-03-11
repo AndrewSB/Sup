@@ -12,6 +12,7 @@ class SettingsTableViewController: UITableViewController {
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var mobileNumberLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var bio: UILabel!
     
     let app = UIApplication.sharedApplication()
     
@@ -19,14 +20,13 @@ class SettingsTableViewController: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         println((PFUser.currentUser()).objectForKey("email"))
         
-        
-        usernameLabel.text = PFUser.currentUser().email
-        mobileNumberLabel.text = PFUser.currentUser()["phoneNumber"] as String!
+        bio.text = PFUser.currentUser()["bio"] as String!
+        usernameLabel.text = PFUser.currentUser().username
+        mobileNumberLabel.text = PFUser.currentUser()["phone"] as String!
         emailLabel.text = PFUser.currentUser().email
         
         super.viewWillAppear(animated)
     }
-
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println("did select \(indexPath)")
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
@@ -55,7 +55,7 @@ class SettingsTableViewController: UITableViewController {
                 app.openURL(NSURL(string: "http://google.com")!)
             case 3:
                 let appDel = app.delegate as AppDelegate
-                appDel.logout()
+                PFUser.logOut()
                 
             default:
                 println("switch failed section 1 \(indexPath.row)")
