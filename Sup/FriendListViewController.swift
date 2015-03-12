@@ -12,17 +12,8 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var tableV: UITableView!
     @IBOutlet weak var statusSwitch: UISwitch!
     
-    var query = PFUser.query()
-    var user = PFUser.currentUser()
-    var friends: AnyObject! = self.user["friends"];
-    for(var i = 0; i < friends.count; i++){
-    query.whereKey("username", equalTo:friends[i])
-    }
-    var friendsArray = query.findObjects()
-    
     override func loadView() {
         super.loadView()
-        
     }
     
     override func viewDidLoad() {
@@ -30,6 +21,9 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
         tableV.dataSource = self
         self.tableV.reloadData()
         super.viewDidLoad()
+        var user = PFUser.currentUser()
+        var friends: AnyObject! = user["friends"]
+        
     }
 
     
@@ -45,6 +39,7 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var user = PFUser.currentUser()
+        var friends: AnyObject! = user["friends"];
         if(friends == nil){
             var username: AnyObject = user.username
             println("\(username)")
@@ -98,15 +93,19 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
         var statusArray = [""]
         var pictureArray = [] as NSMutableArray
         var pictureUrl = [""]
-        
-        for(var i = 0; i < friends.count-1; i++){
+        var query = PFUser.query()
+        query.whereKey("username", equalTo:friends[0])
+        var friendsArray = query.findObjects()
+        println(friendsArray)
+        for(var i = 0; i < friends.count; i++){
+            
             var bios : AnyObject = friendsArray[0]["bio"] as String
             var status : AnyObject = friendsArray[0]["status"] as NSObject
             var profilePicture: AnyObject = friendsArray[0]["profilePicture"] as PFFile
             bioArray.insert("\(bios)", atIndex: bioArray.count-1)
             statusArray.insert("\(status)", atIndex: statusArray.count-1)
             pictureArray.addObject(profilePicture)
-            pictureUrl.insert(pictureArray[0].url, atIndex: pictureUrl.count-1)
+            pictureUrl.insert(pictureArray[i].url, atIndex: pictureUrl.count-1)
         }
         println(friends)
         println(bioArray)
@@ -114,7 +113,6 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
         println(pictureArray)
         println(pictureUrl)
         for(var i = 0; i < friends.count; i++){
-            
             var friendsLabel: AnyObject = friends[indexPath.row]
             cell!.textLabel?.text = "\(friendsLabel)"
             var eachBio : AnyObject = bioArray[indexPath.row]
@@ -137,17 +135,7 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
         // Make a new post
         switch indexPath.row {
         case 0:
-            var bio: AnyObject! = user["bio"]
-            var statuses: AnyObject! = user["status"]
-            if("\(statuses)" == "1"){
-                statusLabel.backgroundColor = UIColor.greenColor()
-            }else{
-                statusLabel.backgroundColor = UIColor.redColor()
-            }
-            cell!.textLabel?.text = user.username
-            cell!.detailTextLabel?.text = "\(bio)";
-            statusLabel.text = "\(statuses)"
-            
+            println("config for rest")
         default:
             println("config for rest")
         }

@@ -38,7 +38,7 @@ class SettingsTableViewController: UITableViewController {
             case 2:
                 println()//self.performSegueWithIdentifier("segueToMobileNumber", sender: self)
             case 3:
-                println()//self.performSegueWithIdentifier("segueToEmail", sender: self)
+                println()
             case 4:
                 println()//self.performSegueWithIdentifier("segueToPassword", sender: self)
             default:
@@ -54,8 +54,10 @@ class SettingsTableViewController: UITableViewController {
             case 2:
                 app.openURL(NSURL(string: "http://google.com")!)
             case 3:
-                let appDel = app.delegate as AppDelegate
                 PFUser.logOut()
+                let appDel = app.delegate as AppDelegate
+                appDel.switchToLogin()
+                
                 
             default:
                 println("switch failed section 1 \(indexPath.row)")

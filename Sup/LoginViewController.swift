@@ -57,6 +57,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction func loginButtonHit(sender: AnyObject) {
         PFUser.logInWithUsernameInBackground(usernameTextField.text, password: passwordTextField.text, block: {(succeeded, error) in
             if error == nil {
+                
                 self.appDel.switchToMain()
             } else {
                 let alert = UIAlertController(title: "Uh oh!", message: "\(error.userInfo)", preferredStyle: .Alert)

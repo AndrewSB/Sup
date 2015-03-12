@@ -45,8 +45,9 @@
 		46CDA0E91A50FFF3001FCCB3 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CDA0E71A50FFF3001FCCB3 /* Fabric.framework */; };
 		46ED8C391A5283B000D1313A /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED8C381A5283B000D1313A /* MainNavigationController.swift */; };
 		46ED8C3B1A5284A300D1313A /* PopNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED8C3A1A5284A300D1313A /* PopNoAnimationSegue.swift */; };
+		F90ECA281AB25608006B8F04 /* ProfilePictureViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F90ECA271AB25608006B8F04 /* ProfilePictureViewController.storyboard */; };
+		F90ECA2A1AB257AA006B8F04 /* ProfilePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90ECA291AB257AA006B8F04 /* ProfilePictureViewController.swift */; };
 		F94F6BB41AA7E77B00313A20 /* PhoneNumberSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F6BB31AA7E77B00313A20 /* PhoneNumberSettingsTableViewController.swift */; };
-		F94F6BB61AA7EA2300313A20 /* ProfilePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F6BB51AA7EA2300313A20 /* ProfilePictureViewController.swift */; };
 		F94F6BB81AAA881E00313A20 /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F6BB71AAA881E00313A20 /* NewPasswordViewController.swift */; };
 		F94F6BBA1AAAB19000313A20 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F6BB91AAAB19000313A20 /* BioViewController.swift */; };
 		F94F6BBF1AAFFEDE00313A20 /* A-4.png in Resources */ = {isa = PBXBuildFile; fileRef = F94F6BBE1AAFFEDE00313A20 /* A-4.png */; };
@@ -108,8 +109,9 @@
 		46CDA0E71A50FFF3001FCCB3 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
 		46ED8C381A5283B000D1313A /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		46ED8C3A1A5284A300D1313A /* PopNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopNoAnimationSegue.swift; sourceTree = "<group>"; };
+		F90ECA271AB25608006B8F04 /* ProfilePictureViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfilePictureViewController.storyboard; sourceTree = "<group>"; };
+		F90ECA291AB257AA006B8F04 /* ProfilePictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePictureViewController.swift; sourceTree = "<group>"; };
 		F94F6BB31AA7E77B00313A20 /* PhoneNumberSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberSettingsTableViewController.swift; sourceTree = "<group>"; };
-		F94F6BB51AA7EA2300313A20 /* ProfilePictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePictureViewController.swift; sourceTree = "<group>"; };
 		F94F6BB71AAA881E00313A20 /* NewPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
 		F94F6BB91AAAB19000313A20 /* BioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
 		F94F6BBE1AAFFEDE00313A20 /* A-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "A-4.png"; path = "Images.xcassets/A-4.imageset/A-4.png"; sourceTree = "<group>"; };
@@ -175,6 +177,8 @@
 				46CDA0C91A50FEE1001FCCB3 /* Main.storyboard */,
 				466E2FD01A5B6E32001D87C4 /* SwipeViewController.swift */,
 				469CDB211A536C030033483C /* FriendListViewController.swift */,
+				F90ECA271AB25608006B8F04 /* ProfilePictureViewController.storyboard */,
+				F90ECA291AB257AA006B8F04 /* ProfilePictureViewController.swift */,
 				46B8D18D1A707627002C1059 /* Settings */,
 			);
 			name = "Page Based Main Feed";
@@ -187,7 +191,6 @@
 				F94F6BB31AA7E77B00313A20 /* PhoneNumberSettingsTableViewController.swift */,
 				F94F6BB71AAA881E00313A20 /* NewPasswordViewController.swift */,
 				F94F6BB91AAAB19000313A20 /* BioViewController.swift */,
-				F94F6BB51AA7EA2300313A20 /* ProfilePictureViewController.swift */,
 				46CAFB5A1A5BE18100C7F66D /* SettingsTableViewController.swift */,
 				466891021A5BD3C2006A3B87 /* Settings.storyboard */,
 			);
@@ -428,6 +431,7 @@
 			files = (
 				46CDA0CB1A50FEE1001FCCB3 /* Main.storyboard in Resources */,
 				461D2DA41A75D52700FF9A7D /* FirstLaunch.storyboard in Resources */,
+				F90ECA281AB25608006B8F04 /* ProfilePictureViewController.storyboard in Resources */,
 				46CDA0D01A50FEE1001FCCB3 /* LaunchScreen.xib in Resources */,
 				F94F6BBF1AAFFEDE00313A20 /* A-4.png in Resources */,
 				46CDA0CD1A50FEE1001FCCB3 /* Images.xcassets in Resources */,
@@ -467,13 +471,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				469CDB221A536C030033483C /* FriendListViewController.swift in Sources */,
-				F94F6BB61AA7EA2300313A20 /* ProfilePictureViewController.swift in Sources */,
 				F94F6BBA1AAAB19000313A20 /* BioViewController.swift in Sources */,
 				46A579B91A524F3F0031D1E9 /* LoginViewController.swift in Sources */,
 				46ED8C3B1A5284A300D1313A /* PopNoAnimationSegue.swift in Sources */,
 				469193CC1AAFD6A700D201EE /* YZSwipeBetweenViewController.m in Sources */,
 				46CAFB5B1A5BE18100C7F66D /* SettingsTableViewController.swift in Sources */,
 				46A579BB1A524F480031D1E9 /* SignupViewController.swift in Sources */,
+				F90ECA2A1AB257AA006B8F04 /* ProfilePictureViewController.swift in Sources */,
 				F94F6BB81AAA881E00313A20 /* NewPasswordViewController.swift in Sources */,
 				46A579BD1A5253A00031D1E9 /* PushNoAnimationSegue.swift in Sources */,
 				46ED8C391A5283B000D1313A /* MainNavigationController.swift in Sources */,

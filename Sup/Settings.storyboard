@@ -125,9 +125,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="62y-lL-1gp" kind="show" id="So8-E0-kJM"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ifG-wh-o90" detailTextLabel="XIe-7n-iqD" style="IBUITableViewCellStyleValue1" id="X7k-Z5-Wv0">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -390,50 +387,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xQ4-Ug-6lf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6399" y="869"/>
-        </scene>
-        <!--Profile Picture View Controller-->
-        <scene sceneID="ygt-nN-6Sg">
-            <objects>
-                <tableViewController id="62y-lL-1gp" customClass="ProfilePictureViewController" customModule="Sup" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ann-XT-8Zh">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <sections>
-                            <tableViewSection id="Oic-lh-tsJ">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="483" id="J28-bd-2Vm">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J28-bd-2Vm" id="dxt-Uc-QkA">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcb-43-nwM">
-                                                    <rect key="frame" x="8" y="227" width="46" height="30"/>
-                                                    <state key="normal" title="Button">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="getImage:" destination="62y-lL-1gp" eventType="touchUpInside" id="bcC-Zk-lSl"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="62y-lL-1gp" id="3bx-ei-FcP"/>
-                            <outlet property="delegate" destination="62y-lL-1gp" id="Z4x-A3-rK7"/>
-                        </connections>
-                    </tableView>
-                    <connections>
-                        <outlet property="getImage" destination="vcb-43-nwM" id="rgQ-sR-1gA"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nFU-W4-lgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5739" y="869"/>
         </scene>
         <!--Bio View Controller-->
         <scene sceneID="gjk-vM-Pot">
