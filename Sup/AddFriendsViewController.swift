@@ -14,29 +14,23 @@ class AddFriendsViewController: UITableViewController {
     @IBOutlet weak var friendUsername: UILabel!
 
     @IBAction func addFriendAction(sender: AnyObject) {
-        var friendToAdd = searchFeild.text
         var user = PFUser.currentUser()
-        var friends: [AnyObject] = user["friends"] as Array
+        var friendToAdd = searchFeild.text
         var query = PFUser.query()
         query.whereKey("username", equalTo:friendToAdd)
         var friend = query.findObjects()
-        for(var i = 0; i < friends.count-1; i++){
-            if(friend[i] as NSString == friendToAdd){
-                friend = nil;
+        var addFriend: [AnyObject] = user["friends"] as Array
+        for(var i = 0; i < addFriend.count-1; i++){
+            if(addFriend[i] as NSString == friendToAdd){
+                friendToAdd = nil;
             }
         }
         if(friend != nil){
-            friendUsername.text = friendToAdd
-            println(friends)
-            friends.insert(friendToAdd, atIndex: friends.count)
-            println(friends)
-            user["friends"] = friends;
+            addFriend.insert(friendToAdd, atIndex: addFriend.count-1)
             user.saveInBackgroundWithBlock(nil)
+            println("urajew")
         }else{
-            let alert = UIAlertController(title: "Uh oh!", message: "User does not exist!", preferredStyle: .Alert)
-            let ok = UIAlertAction(title: "Ok", style: .Cancel, handler: nil)
-            alert.addAction(ok)
-            self.presentViewController(alert, animated: true, completion: nil)
+            
         }
         
     }

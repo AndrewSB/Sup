@@ -57,11 +57,11 @@
                         <viewControllerLayoutGuide type="bottom" id="M4i-4g-aQ4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zfG-0q-Hgu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="59" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="kMi-jC-pC1">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellID" textLabel="bU3-ea-18b" detailTextLabel="dTI-BB-Lhz" rowHeight="59" style="IBUITableViewCellStyleSubtitle" id="UB0-i6-VOp">
@@ -108,7 +108,6 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="gear" id="hEz-Tq-zXA"/>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="statusSwitch" destination="47H-uT-ht0" id="DWh-MR-kTN"/>
                         <outlet property="tableV" destination="kMi-jC-pC1" id="mdf-72-314"/>

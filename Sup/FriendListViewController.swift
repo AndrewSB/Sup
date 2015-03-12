@@ -11,15 +11,24 @@ import UIKit
 class FriendListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableV: UITableView!
     @IBOutlet weak var statusSwitch: UISwitch!
-
+    
+    var query = PFUser.query()
+    var user = PFUser.currentUser()
+    var friends: AnyObject! = self.user["friends"];
+    for(var i = 0; i < friends.count; i++){
+    query.whereKey("username", equalTo:friends[i])
+    }
+    var friendsArray = query.findObjects()
+    
     override func loadView() {
         super.loadView()
+        
     }
     
     override func viewDidLoad() {
         tableV.delegate = self
         tableV.dataSource = self
-    
+        self.tableV.reloadData()
         super.viewDidLoad()
     }
 
@@ -36,7 +45,6 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var user = PFUser.currentUser()
-        var friends: AnyObject! = user["friends"];
         if(friends == nil){
             var username: AnyObject = user.username
             println("\(username)")
@@ -90,10 +98,8 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
         var statusArray = [""]
         var pictureArray = [] as NSMutableArray
         var pictureUrl = [""]
-        for(var i = 0; i < friends.count; i++){
-            var query = PFUser.query()
-            query.whereKey("username", equalTo:friends[i])
-            var friendsArray = query.findObjects()
+        
+        for(var i = 0; i < friends.count-1; i++){
             var bios : AnyObject = friendsArray[0]["bio"] as String
             var status : AnyObject = friendsArray[0]["status"] as NSObject
             var profilePicture: AnyObject = friendsArray[0]["profilePicture"] as PFFile
@@ -101,10 +107,6 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
             statusArray.insert("\(status)", atIndex: statusArray.count-1)
             pictureArray.addObject(profilePicture)
             pictureUrl.insert(pictureArray[0].url, atIndex: pictureUrl.count-1)
-        }
-        
-        for(var i = 0; i < friends.count-1; i++){
-            
         }
         println(friends)
         println(bioArray)
