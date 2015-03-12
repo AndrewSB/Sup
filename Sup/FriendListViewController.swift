@@ -15,7 +15,11 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
     override func loadView() {
         super.loadView()
     }
-    
+    var label: AnyObject! = ""
+    var bioArray = [""]
+    var statusArray = [""]
+    var pictureArray = [] as NSMutableArray
+    var pictureUrl = [""]
     override func viewDidLoad() {
         tableV.delegate = self
         tableV.dataSource = self
@@ -23,7 +27,25 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
         super.viewDidLoad()
         var user = PFUser.currentUser()
         var friends: AnyObject! = user["friends"]
-        
+        var query = PFUser.query()
+        query.whereKey("username", equalTo:friends[0])
+        var friendsArray = query.findObjects()
+        println(friendsArray)
+        for(var i = 0; i < friends.count; i++){
+            
+            var bios : AnyObject = friendsArray[0]["bio"] as String
+            var status : AnyObject = friendsArray[0]["status"] as NSObject
+            var profilePicture: AnyObject = friendsArray[0]["profilePicture"] as PFFile
+            bioArray.insert("\(bios)", atIndex: bioArray.count-1)
+            statusArray.insert("\(status)", atIndex: statusArray.count-1)
+            pictureArray.addObject(profilePicture)
+            pictureUrl.insert(pictureArray[i].url, atIndex: pictureUrl.count-1)
+        }
+        println(friends)
+        println(bioArray)
+        println(statusArray)
+        println(pictureArray)
+        println(pictureUrl)
     }
 
     
@@ -86,32 +108,9 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
         if(user["bio"] == nil){
             user["bio"] = "I dont have a bio yet!"
         }
-        var label: AnyObject! = ""
+        
         configureAvatarImage(cell!)
         var friends: [AnyObject] = user["friends"] as Array
-        var bioArray = [""]
-        var statusArray = [""]
-        var pictureArray = [] as NSMutableArray
-        var pictureUrl = [""]
-        var query = PFUser.query()
-        query.whereKey("username", equalTo:friends[0])
-        var friendsArray = query.findObjects()
-        println(friendsArray)
-        for(var i = 0; i < friends.count; i++){
-            
-            var bios : AnyObject = friendsArray[0]["bio"] as String
-            var status : AnyObject = friendsArray[0]["status"] as NSObject
-            var profilePicture: AnyObject = friendsArray[0]["profilePicture"] as PFFile
-            bioArray.insert("\(bios)", atIndex: bioArray.count-1)
-            statusArray.insert("\(status)", atIndex: statusArray.count-1)
-            pictureArray.addObject(profilePicture)
-            pictureUrl.insert(pictureArray[i].url, atIndex: pictureUrl.count-1)
-        }
-        println(friends)
-        println(bioArray)
-        println(statusArray)
-        println(pictureArray)
-        println(pictureUrl)
         for(var i = 0; i < friends.count; i++){
             var friendsLabel: AnyObject = friends[indexPath.row]
             cell!.textLabel?.text = "\(friendsLabel)"
