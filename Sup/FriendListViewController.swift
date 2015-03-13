@@ -26,12 +26,11 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
         self.tableV.reloadData()
         super.viewDidLoad()
         var user = PFUser.currentUser()
-        var friends: AnyObject! = user["friends"]
+        var friends: [AnyObject] = user["friends"] as Array
+        for(var i = 0; i < friends.count-1; i++){
         var query = PFUser.query()
-        query.whereKey("username", equalTo:friends[0])
+        query.whereKey("username", equalTo:friends[i])
         var friendsArray = query.findObjects()
-        println(friendsArray)
-        for(var i = 0; i < friends.count; i++){
             
             var bios : AnyObject = friendsArray[0]["bio"] as String
             var status : AnyObject = friendsArray[0]["status"] as NSObject
@@ -39,7 +38,7 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
             bioArray.insert("\(bios)", atIndex: bioArray.count-1)
             statusArray.insert("\(status)", atIndex: statusArray.count-1)
             pictureArray.addObject(profilePicture)
-            pictureUrl.insert(pictureArray[i].url, atIndex: pictureUrl.count-1)
+            pictureUrl.insert(pictureArray[0].url, atIndex: pictureUrl.count-1)
         }
         println(friends)
         println(bioArray)
@@ -134,7 +133,7 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
         // Make a new post
         switch indexPath.row {
         case 0:
-            println("config for rest")
+            println("config for self")
         default:
             println("config for rest")
         }
