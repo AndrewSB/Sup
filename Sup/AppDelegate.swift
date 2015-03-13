@@ -52,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func switchToLogin() {
         window?.rootViewController = UIStoryboard(name: "Login", bundle: NSBundle.mainBundle()).instantiateInitialViewController() as? UIViewController
     }
-    
+
     
     func logout() {
         PFUser.logOut()

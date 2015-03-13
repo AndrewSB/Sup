@@ -34,7 +34,7 @@
         <!--Navigation Controller-->
         <scene sceneID="mSf-Sl-fvm">
             <objects>
-                <navigationController id="wgm-RR-obc" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ProfilePictureViewController" id="wgm-RR-obc" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nug-ZC-E08">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

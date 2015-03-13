@@ -38,7 +38,8 @@ class SettingsTableViewController: UITableViewController {
             case 2:
                 println()//self.performSegueWithIdentifier("segueToMobileNumber", sender: self)
             case 3:
-                println()
+                let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("ProfilePictureViewController")
+                self.showViewController(vc as UIViewController, sender: vc)
             case 4:
                 println()//self.performSegueWithIdentifier("segueToPassword", sender: self)
             default:

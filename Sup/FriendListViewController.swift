@@ -27,7 +27,7 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
         super.viewDidLoad()
         var user = PFUser.currentUser()
         var friends: [AnyObject] = user["friends"] as Array
-        for(var i = 0; i < friends.count-1; i++){
+        for(var i = 0; i < friends.count; i++){
         var query = PFUser.query()
         query.whereKey("username", equalTo:friends[i])
         var friendsArray = query.findObjects()
@@ -38,7 +38,7 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
             bioArray.insert("\(bios)", atIndex: bioArray.count-1)
             statusArray.insert("\(status)", atIndex: statusArray.count-1)
             pictureArray.addObject(profilePicture)
-            pictureUrl.insert(pictureArray[0].url, atIndex: pictureUrl.count-1)
+            pictureUrl.insert(pictureArray[i].url, atIndex: pictureUrl.count-1)
         }
         println(friends)
         println(bioArray)
