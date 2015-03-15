@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 asb. All rights reserved.
 //
 
-import UIKit
+import UIKit;
+import MobileCoreServices
 
 class ProfilePictureViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIAlertViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIPopoverControllerDelegate{
     @IBOutlet weak var tableV: UITableView!
@@ -35,75 +36,36 @@ class ProfilePictureViewController: UIViewController, UITableViewDelegate, UITab
     
     //DataSource
     
-    @IBAction func btnImagePickerClicked(sender: AnyObject)
-    {
-        var alert:UIAlertController=UIAlertController(title: "Choose Image", message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
+    @IBAction func btnImagePickerClicked(sender: AnyObject){
+        let imagePicker = UIImagePickerController()
         
-        var cameraAction = UIAlertAction(title: "Camera", style: UIAlertActionStyle.Default)
-            {
-                UIAlertAction in
-                self.openCamera()
-                
-        }
-        var gallaryAction = UIAlertAction(title: "Gallary", style: UIAlertActionStyle.Default)
-            {
-                UIAlertAction in
-                self.openGallary()
-        }
-        var cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel)
-            {
-                UIAlertAction in
-                
+        imagePicker.delegate = self
+        imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        imagePicker.mediaTypes = [kUTTypeImage as NSString]
+        imagePicker.allowsEditing = false
+        
+        self.presentViewController(imagePicker, animated: true,
+            completion: nil)
+        func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+            var user = PFUser.currentUser()
+            let image = info[UIImagePickerControllerOriginalImage] as UIImage
+            let imageData = UIImageJPEGRepresentation(image, 0.05)
+            let imageFile = PFFile(name:"image.jpg", data:imageData)
+            user["profilePicture"] = imageFile;
+            user.saveInBackgroundWithBlock(nil)
+            
+            self.dismissViewControllerAnimated(true, completion: nil)
         }
         
-        // Add the actions
-        alert.addAction(cameraAction)
-        alert.addAction(gallaryAction)
-        alert.addAction(cancelAction)
-        // Present the controller
-        if UIDevice.currentDevice().userInterfaceIdiom == .Phone
-        {
-            self.presentViewController(alert, animated: true, completion: nil)
+        func imagePickerControllerDidCancel(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+            var user = PFUser.currentUser()
+            let image = info[UIImagePickerControllerOriginalImage] as UIImage
+            let imageData = UIImageJPEGRepresentation(image, 0.05)
+            let imageFile = PFFile(name:"image.jpg", data:imageData)
+            user["profilePicture"] = imageFile;
+            user.saveInBackgroundWithBlock(nil)
+            self.dismissViewControllerAnimated(true, completion: nil)
         }
-        else
-        {
-            popover=UIPopoverController(contentViewController: alert)
-            popover!.presentPopoverFromRect(btnClickMe.frame, inView: self.view, permittedArrowDirections: UIPopoverArrowDirection.Any, animated: true)
-        }
-    }
-    func openCamera()
-    {
-        if(UIImagePickerController .isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera))
-        {
-            picker!.sourceType = UIImagePickerControllerSourceType.Camera
-            self .presentViewController(picker!, animated: true, completion: nil)
-        }
-        else
-        {
-            openGallary()
-        }
-    }
-    func openGallary()
-    {
-        picker!.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        if UIDevice.currentDevice().userInterfaceIdiom == .Phone
-        {
-            self.presentViewController(picker!, animated: true, completion: nil)
-        }
-        else
-        {
-            popover=UIPopoverController(contentViewController: picker!)
-            popover!.presentPopoverFromRect(btnClickMe.frame, inView: self.view, permittedArrowDirections: UIPopoverArrowDirection.Any, animated: true)
-        }
-    }
-    func imagePickerController(picker: UIImagePickerController!, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]!)
-    {
-        picker .dismissViewControllerAnimated(true, completion: nil)
-        imageView.image=info[UIImagePickerControllerOriginalImage] as? UIImage
-    }
-    func imagePickerControllerDidCancel(picker: UIImagePickerController!)
-    {
-        println("picker cancel.")
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return 1;

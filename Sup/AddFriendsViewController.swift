@@ -28,7 +28,7 @@ class AddFriendsViewController: UITableViewController {
         if(friend != nil){
             addFriend.insert(friendToAdd, atIndex: addFriend.count-1)
             user.saveInBackgroundWithBlock(nil)
-            println("urajew")
+            println("itWorksBruh")
         }else{
             
         }
