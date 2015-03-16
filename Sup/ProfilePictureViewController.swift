@@ -18,11 +18,16 @@ class ProfilePictureViewController: UIViewController, UITableViewDelegate, UITab
     override func loadView() {
         super.loadView()
     }
+    let imagePicker = UIImagePickerController()
     override func viewDidLoad() {
         tableV.delegate = self
         tableV.dataSource = self
         self.tableV.reloadData()
         super.viewDidLoad()
+        imagePicker.delegate = self
+        imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        imagePicker.mediaTypes = [kUTTypeImage as NSString]
+        imagePicker.allowsEditing = false
     }
     
     
@@ -37,12 +42,9 @@ class ProfilePictureViewController: UIViewController, UITableViewDelegate, UITab
     //DataSource
     
     @IBAction func btnImagePickerClicked(sender: AnyObject){
-        let imagePicker = UIImagePickerController()
         
-        imagePicker.delegate = self
-        imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        imagePicker.mediaTypes = [kUTTypeImage as NSString]
-        imagePicker.allowsEditing = false
+        
+        
         
         self.presentViewController(imagePicker, animated: true,
             completion: nil)

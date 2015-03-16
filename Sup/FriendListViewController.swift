@@ -120,7 +120,7 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
             statusLabel.text = "\(statuses)"
             var profilePictures: AnyObject = pictureUrl[indexPath.row]
             let url = NSURL(string: "\(profilePictures)")
-            let data = NSData(contentsOfURL: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check
+            let data = NSData(contentsOfURL: url!)
             cell!.imageView?.image = UIImage(data: data!)
             if("\(statuses)" == "1"){
                 statusLabel.backgroundColor = UIColor.greenColor()
@@ -139,7 +139,14 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
         }
         return cell!
     }
+    var selectedRowIndex: NSIndexPath = NSIndexPath(forRow: -1, inSection: 0)
     
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if indexPath.row == selectedRowIndex.row {
+            return 100
+        }
+        return 70
+    }
     
     func configureAvatarImage(cell: UITableViewCell) {
         let itemSize = CGSizeMake(20, 20);

@@ -1,68 +1,58 @@
 //
-//  PhoneNumberSettingsTableViewController.swift
+//  FriendListViewController.swift
 //  Sup
 //
-//  Created by Andrew Breckenridge on 3/4/15.
-//  Copyright (c) 2015 asb. All rights reserved.
+//  Created by Andrew Breckenridge on 12/30/14.
+//  Copyright (c) 2014 asb. All rights reserved.
 //
 
 import UIKit
 
-class AddFriendsViewController: UITableViewController {
-    @IBOutlet weak var searchFeild: UITextField!
-    @IBOutlet weak var addFriend: UIButton!
-    @IBOutlet weak var friendUsername: UILabel!
-
-    @IBAction func addFriendAction(sender: AnyObject) {
-        var user = PFUser.currentUser()
-        var friendToAdd = searchFeild.text
-        var query = PFUser.query()
-        query.whereKey("username", equalTo:friendToAdd)
-        var friend = query.findObjects()
-        var addFriend: [AnyObject] = user["friends"] as Array
-        for(var i = 0; i < addFriend.count-1; i++){
-            if(addFriend[i] as NSString == friendToAdd){
-                friendToAdd = nil;
-            }
+class AddFriendsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    override func loadView() {
+        super.loadView()
+    }
+    
+    
+    
+    //Delegate
+    //    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    //        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    //    }
+    
+    
+    
+    //DataSource
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return 1;
+        
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("cellID") as? UITableViewCell
+        if cell == nil {
+            println("created at \(indexPath.row)")
+            cell = UITableViewCell(style: .Default, reuseIdentifier: "cellID")
         }
-        if(friend != nil){
-            addFriend.insert(friendToAdd, atIndex: addFriend.count-1)
-            user.saveInBackgroundWithBlock(nil)
-            println("itWorksBruh")
-        }else{
-            
+        var addButton: UIButton = UIButton (frame:CGRectMake(253, 20, 42, 21));
+        // Make a new post
+        switch indexPath.row {
+        case 0:
+            println("config for self")
+        default:
+            println("config for rest")
         }
-        
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    // MARK: - Table view data source
-    
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
-        return 1
-    }
-    
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return 1
+        return cell!
     }
     
     
-    
+    func configureAvatarImage(cell: UITableViewCell) {
+        let itemSize = CGSizeMake(20, 20);
+        UIGraphicsBeginImageContextWithOptions(itemSize, false, UIScreen.mainScreen().scale);
+        let imageRect = CGRectMake(0.0, 0.0, itemSize.width, itemSize.height);
+        cell.imageView?.image?.drawInRect(imageRect)
+        cell.imageView?.image = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+    }
 }

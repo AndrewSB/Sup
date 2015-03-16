@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Friends-->
+        <scene sceneID="ex5-M6-46D">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eic-gP-JM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="Y4q-l2-WX2" customClass="AddFriendsViewController" customModule="Sup" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="SI3-s0-Y4e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="HyL-Ww-ilO">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HyL-Ww-ilO" id="jlO-QA-eQP">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bI0-bv-R0g">
+                                            <rect key="frame" x="8" y="15" width="362" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="bI0-bv-R0g" secondAttribute="trailing" constant="222" id="iBc-9g-EvP"/>
+                                        <constraint firstAttribute="centerY" secondItem="bI0-bv-R0g" secondAttribute="centerY" constant="-0.5" id="v2b-d8-jxU"/>
+                                        <constraint firstItem="bI0-bv-R0g" firstAttribute="leading" secondItem="jlO-QA-eQP" secondAttribute="leadingMargin" id="xTH-MJ-z14"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Y4q-l2-WX2" id="WBe-tX-Uo3"/>
+                            <outlet property="delegate" destination="Y4q-l2-WX2" id="Znu-28-g4F"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Friends" id="KzU-D6-kb0">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="l54-90-qqS">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="41c-bi-Ido">
+                                <rect key="frame" x="16" y="7" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="5230" y="1650"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B9M-rw-cAE">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VrW-RF-bRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="FriendsListViewController" id="6xt-j7-MYk" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GvN-lv-GbO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y4q-l2-WX2" kind="relationship" relationship="rootViewController" id="HOK-rH-sGs"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="4410" y="1650"/>
+        </scene>
+    </scenes>
+</document>
