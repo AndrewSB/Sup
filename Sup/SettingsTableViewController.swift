@@ -36,11 +36,11 @@ class SettingsTableViewController: UITableViewController {
             case 1:
                 println()//self.performSegueWithIdentifier("segueToProfilePicture", sender: self)
             case 2:
-                println()//self.performSegueWithIdentifier("segueToMobileNumber", sender: self)
-            case 3:
                 let profilePictureStoryboard = UIStoryboard(name: "ProfilePictureViewController", bundle: NSBundle.mainBundle())
                 let vc : AnyObject! = profilePictureStoryboard.instantiateViewControllerWithIdentifier("ProfilePictureViewController")
-                self.showViewController(vc as UIViewController, sender: vc)
+                self.showViewController(vc as UIViewController, sender: vc)//self.performSegueWithIdentifier("segueToMobileNumber", sender: self)
+            case 3:
+                println()
             case 4:
                 println()//self.performSegueWithIdentifier("segueToPassword", sender: self)
             default:

@@ -48,7 +48,7 @@
             </objects>
             <point key="canvasLocation" x="1249" y="-329"/>
         </scene>
-        <!--Sup-->
+        <!--Friend List View Controller-->
         <scene sceneID="dH0-kN-8zg">
             <objects>
                 <viewController storyboardIdentifier="friendListVC" id="hdP-hu-oas" customClass="FriendListViewController" customModule="Sup" customModuleProvider="target" sceneMemberID="viewController">
@@ -96,7 +96,8 @@
                             <constraint firstItem="kMi-jC-pC1" firstAttribute="top" secondItem="zfG-0q-Hgu" secondAttribute="top" id="zMU-SA-K9G"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Sup" id="oKw-Fx-YcG">
+                    <navigationItem key="navigationItem" id="oKw-Fx-YcG">
+                        <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" style="plain" id="1iv-92-gDS">
                             <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="47H-uT-ht0">
                                 <rect key="frame" x="185" y="98" width="51" height="31"/>
@@ -106,7 +107,11 @@
                                 </connections>
                             </switch>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="gear" id="hEz-Tq-zXA"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="NhR-zL-IGH">
+                            <connections>
+                                <action selector="reloadTableView:" destination="hdP-hu-oas" id="aW9-VM-1mY"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="statusSwitch" destination="47H-uT-ht0" id="DWh-MR-kTN"/>
@@ -140,7 +145,4 @@
             <point key="canvasLocation" x="341" y="398"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="gear" width="30" height="29"/>
-    </resources>
 </document>

@@ -52,10 +52,9 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     @IBAction func signupButtonHit(sender: AnyObject) {
         //validate
         let user = PFUser()
-        user.username = usernameTextField.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
-        user.email = emailTextField.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
-        user.password = passwordTextField.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
-        
+        user.username = usernameTextField.text
+        user.email = emailTextField.text
+        user.password = passwordTextField.text
         
         user.signUpInBackgroundWithBlock({(succeeded, error) in
             if error == nil {

@@ -7,23 +7,28 @@
 //
 
 import UIKit
+import MessageUI
 
-class FriendListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FriendListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var tableV: UITableView!
     @IBOutlet weak var statusSwitch: UISwitch!
     
     override func loadView() {
         super.loadView()
     }
+    var backgroundColor = UIColor.greenColor()
     var label: AnyObject! = ""
     var bioArray = [""]
     var statusArray = [""]
     var pictureArray = [] as NSMutableArray
     var pictureUrl = [""]
     override func viewDidLoad() {
+        bioArray = [""]
+        statusArray = [""]
+        pictureArray = [] as NSMutableArray
+        pictureUrl = [""]
         tableV.delegate = self
         tableV.dataSource = self
-        self.tableV.reloadData()
         super.viewDidLoad()
         var user = PFUser.currentUser()
         var friends: [AnyObject] = user["friends"] as Array
@@ -45,8 +50,20 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
         println(statusArray)
         println(pictureArray)
         println(pictureUrl)
+        if(user["status"] as NSObject == true){
+            statusSwitch.setOn(true, animated: false)
+        }else{
+            statusSwitch.setOn(false, animated: false)
+        }
     }
-
+    @IBAction func sendMessage(sender: AnyObject) {
+        var messageVC = MFMessageComposeViewController()
+        
+        messageVC.body = "ur a fucking homosexual";
+        messageVC.recipients = ["5157242794"]
+    
+        self.presentViewController(messageVC, animated: false, completion: nil)
+    }
     
     
     //Delegate
@@ -82,19 +99,27 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
         var x: AnyObject! = user["status"]
         if(statusSwitch.on){
             user["status"] = true;
+            backgroundColor = UIColor.greenColor()
             
         }else{
             user["status"] = false;
+            backgroundColor = UIColor.redColor()
         }
         user.saveInBackgroundWithBlock(nil)
-        
+        self.tableV.reloadData()
     }
+    @IBAction func reloadTableView(sender: AnyObject) {
+        viewDidLoad()
+        self.tableV.reloadData()
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("cellID") as? UITableViewCell
         if cell == nil {
             println("created at \(indexPath.row)")
             cell = UITableViewCell(style: .Default, reuseIdentifier: "cellID")
         }
+        
         var statusLabel: UILabel = UILabel (frame:CGRectMake(253, 20, 42, 21));
         cell?.contentView.addSubview(statusLabel)
         statusLabel.userInteractionEnabled = true;
@@ -117,35 +142,36 @@ class FriendListViewController: UIViewController, UITableViewDelegate, UITableVi
             var stringRepresentation = "\(eachBio)"
             cell!.detailTextLabel?.text = stringRepresentation;
             var statuses = statusArray[indexPath.row]
-            statusLabel.text = "\(statuses)"
+            statusLabel.text = ""
             var profilePictures: AnyObject = pictureUrl[indexPath.row]
             let url = NSURL(string: "\(profilePictures)")
             let data = NSData(contentsOfURL: url!)
             cell!.imageView?.image = UIImage(data: data!)
             if("\(statuses)" == "1"){
-                statusLabel.backgroundColor = UIColor.greenColor()
+                cell?.backgroundColor = UIColor.greenColor()
             }else{
-                statusLabel.backgroundColor = UIColor.redColor()
+                cell?.backgroundColor = UIColor.redColor()
             }
         }
-        
+        if(statusSwitch.on){
+            backgroundColor = UIColor.greenColor()
+            
+        }else{
+            backgroundColor = UIColor.redColor()
+        }
         
         // Make a new post
         switch indexPath.row {
         case 0:
-            println("config for self")
+            cell?.backgroundColor = backgroundColor
+            println("case 0")
+            if(cell?.selected != false){
+                
+            }
         default:
-            println("config for rest")
+            println("case default")
         }
         return cell!
-    }
-    var selectedRowIndex: NSIndexPath = NSIndexPath(forRow: -1, inSection: 0)
-    
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if indexPath.row == selectedRowIndex.row {
-            return 100
-        }
-        return 70
     }
     
     func configureAvatarImage(cell: UITableViewCell) {
